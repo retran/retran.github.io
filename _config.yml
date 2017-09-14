@@ -1,1 +1,11 @@
-theme: jekyll-theme-minimal
+title: retran explains
+description: >-
+  Авторский блог об основах computer science.
+baseurl: ""
+url: "http://retran.me"
+markdown: kramdown
+remote_theme: chesterhow/tale
+permalink:      /:year-:month-:day/:title
+plugins:
+  - jekyll-remote-theme
+

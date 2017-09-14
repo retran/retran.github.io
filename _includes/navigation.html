@@ -1,0 +1,14 @@
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/">
+      <h2 class="nav-title">
+        {{ site.title }}
+      </h2>
+    </a>
+    <ul>
+      <li><a href="{{ '/about' | prepend: site.baseurl }}">О блоге</a></li>
+      <li><a href="{{ '/archive' | prepend: site.baseurl }}">Архив</a></li>      
+      <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>      
+    </ul>
+  </div>
+</nav>
