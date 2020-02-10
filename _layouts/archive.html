@@ -14,7 +14,8 @@ layout: default
               {% capture tag_name %}{{ tag }}{% endcapture %}
               {{ tag_name }}&nbsp;
             {% endfor %}
-          </span>    
+          </span>
+          <br/>    
           <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%Y.%m.%d" }}</time>
           <h2 class="catalogue-title">{{ post.title }}</h2>
           <div class="catalogue-line"></div>
