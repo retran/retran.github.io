@@ -2,6 +2,12 @@
   margin: 0 0 1rem 0;
 }
 
+.tags {
+  color: $default-tint;
+  font-family: $serif-secondary;
+  letter-spacing: .5px;
+}
+
 .catalogue {
   &-item {
     border-bottom: 1px solid $grey-2;
