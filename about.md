@@ -1,18 +1,31 @@
 ---
 layout: post
-title: About
+title: Об авторе
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Привет! Меня зовут Андрей "retran" Васильев. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Первую программу набрал из учебника (это была прекрасная "Мышка-программышка в стране Информатике" Ш. Дворчки и Л. Василенки) в 5 лет.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+В школе вляпался в спортивное программирование и к институту смог его бросить.
 
+Мечтал работать в геймдеве. К счастью, не сложилось.
 
-[jekyll-organization]: https://github.com/jekyll
+Когда-то давно разбирался в operations research, SOA и веб-разработке.
+
+Преподавал студентам "Программирование на языках высокого уровня" и "Распознавание образов и машинное обучение".
+
+С 2013 года плотно интересуюсь темой "инструментов разработки" - от архитектуры фреймворков, DSL, data driven и метапрограммирования 
+до компиляторов, средств отладки, инструментов статического анализа и IDE.
+
+Приложил руку к ozon.ru и Acumatica.
+
+Работал в 1С (и в фирме, и в "программе") и умею программировать на "встроенном языке программирования 1С" (и мне не стыдно).
+
+С 2018 года работаю в JetBrains и помогаю делать ReSharper и Rider.
+
+Написать мне множно: 
+- на почту me@retran.me
+- в твиттер https://twitter.com/retran
+- в telegram @retran
