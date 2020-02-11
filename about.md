@@ -27,5 +27,5 @@ permalink: /about/
 
 Написать мне множно: 
 - на почту [me@retran.me](mailto:me@retran.me)
-- в твиттер [@retran](https://twitter.com/retran)
-- в telegram [@retran](https://t.me/retran)
+- в Twitter [@retran](https://twitter.com/retran)
+- в Telegram [@retran](https://t.me/retran)
