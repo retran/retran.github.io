@@ -78,15 +78,17 @@ footer,
 
   .socialicon 
   {
-    padding: 0 1rem 0 0;
+    padding: 0 0.5rem 0 0;
+    top: .3em;
+    position: relative;
 
     &:last-child {
       padding-right: 0;
     }
 
     svg {
-      height: 1em;
-      width: 1em;
+      height: 1.4em;
+      width: 1.4em;
     }
   }
   
