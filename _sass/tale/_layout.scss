@@ -76,6 +76,16 @@ footer,
     }
   }
 
+  .socialicon 
+  {
+    padding: 0 1rem 0 0;
+
+    svg {
+      height: 1em;
+      width: 1em;
+    }
+  }
+  
   a {
     color: $default-color;
     font-family: $sans-serif;
