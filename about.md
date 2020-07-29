@@ -26,6 +26,5 @@ permalink: /about/
 С 2018 года работаю в JetBrains и помогаю делать ReSharper и Rider.
 
 Мне множно написать: 
-- на почту [contact@retran.me](mailto:contact@retran.me)
 - в Twitter [@retran](https://twitter.com/retran)
 - в Telegram [@retran](https://t.me/retran)
