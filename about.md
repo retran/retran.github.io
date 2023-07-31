@@ -1,30 +1,25 @@
 ---
 layout: about
-title: Об авторе
+title: About
 permalink: /about/
 ---
 
-Меня зовут Андрей "retran" Васильев. 
+My name is Andrey "retran" Vasilyev.
 
-Первую программу набрал из учебника (это была прекрасная "Мышка-программышка в стране Информатике" Ш. Дворчик и Л. Василенки) в 5 лет.
+At the age of five, I keyed in my first program from a textbook, which was the delightful "Logibul au pays de l'informatique" by Sh. Dvorchik and L. Vasilenki.
 
-В школе вляпался в спортивное программирование и к институту смог его бросить.
+During school, I became engrossed in competitive programming, but fortunately, I was able to quit it by the time I reached university.
 
-Мечтал работать в геймдеве. К счастью, не сложилось.
+I once dreamt of working in game development, but to my relief, that did not materialize.
 
-Когда-то давно разбирался в operations research, SOA и веб-разработке.
+I once was proficient in operations research, service-oriented architecture (SOA), and web development.
 
-Преподавал студентам "Программирование на языках высокого уровня" и "Распознавание образов и машинное обучение".
+I have taught "High-Level Language Programming" and "Pattern Recognition and Machine Learning" to students of Moscow Aviation Institute (National Research University) from 2011 to 2014.
 
-С 2013 года плотно интересуюсь темой "инструментов разработки": от архитектуры фреймворков, DSL, data driven и метапрограммирования 
-до компиляторов, средств отладки, инструментов статического анализа и IDE.
+I have contributed to ozon.ru and Acumatica.
 
-Приложил руку к ozon.ru и Acumatica.
+Since 2013, I have been deeply interested in the topic of "development tools". This ranges from the architecture of frameworks, domain-specific languages (DSLs), data-driven design and metaprogramming to compilers, debugging tools, static analysis tools, and Integrated Development Environments.
 
-Работал в 1С (и в фирме, и в среде разработки) и умею программировать на "встроенном языке программирования 1С" (и мне не стыдно).
+I have worked at 1C (both the company and the development environment) and am skilled in programming with the "1C programming language" (and I am not ashamed of it).
 
-С 2018 года работаю в JetBrains и помогаю делать ReSharper и Rider.
-
-Мне множно написать: 
-- в Twitter [@retran](https://twitter.com/retran)
-- в Telegram [@retran](https://t.me/retran)
+Since 2018, I have been working at JetBrains, helping in the development of ReSharper and Rider.
