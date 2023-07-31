@@ -4,22 +4,26 @@ title: About
 permalink: /about/
 ---
 
-My name is Andrew "retran" Vasilyev.
+Hi, my name is Andrew Vasilyev, but I'm also known by the nickname "retran".
 
-At the age of five, I keyed in my first program from a textbook, which was the delightful "Logibul au pays de l'informatique" by Sh. Dvorchik and L. Vasilenki.
+My fascination with programming started at the tender age of five when I keyed in my first program from a textbook titled "Logibul au pays de l'informatique", authored by Sh. Dvorchik and L. Vasilenki.
 
-During school, I became engrossed in competitive programming, but fortunately, I was able to quit it by the time I reached university.
+Throughout my school years, I found myself deeply involved in competitive programming. However, by the time I was ready to attend university, I had managed to set aside this obsession.
 
-I once dreamt of working in game development, but to my relief, that did not materialize.
+There was a period when I had aspirations of working in game development, but much to my relief, this dream did not take shape.
 
-I once was proficient in operations research, service-oriented architecture (SOA), and enterprise software development.
+At one point, I was quite proficient in areas such as operations research, service-oriented architecture (SOA), and enterprise software development.
 
-I have taught "High-Level Language Programming" and "Pattern Recognition and Machine Learning" to students of Moscow Aviation Institute (National Research University) from 2011 to 2014.
+Between 2011 and 2014, I had the pleasure of teaching courses in "High-Level Language Programming" and "Pattern Recognition and Machine Learning" to students at the Moscow Aviation Institute (National Research University).
 
-I have contributed to ozon.ru and Acumatica.
+I've had the opportunity to contribute my expertise to ozon.ru and Acumatica.
 
-Since 2013, I have been deeply interested in the topic of "development tools". This ranges from the architecture of frameworks, domain-specific languages (DSLs), data-driven design, and metaprogramming to compilers, debugging tools, static analysis tools, and Integrated Development Environments.
+Since 2013, I've been intrigued by the subject of "development tools". This includes a broad spectrum of areas ranging from the architecture of frameworks, domain-specific languages (DSLs), data-driven design, metaprogramming, all the way to compilers, debugging tools, static analysis tools, and Integrated Development Environments.
 
-I have worked at 1C (both the company and the development environment) and am skilled in programming with the "1C programming language" (and I am not ashamed of it).
+I've had the experience of working at 1C, a company that also has a development environment of the same name. I'm adept at using the "1C programming language", a fact that I wear with pride.
 
-Since 2018, I have been working at JetBrains, helping in the development of ReSharper and Rider.
+From 2018 onwards, I've been a part of the JetBrains team, contributing to the development of ReSharper and Rider.
+
+In 2021, I had the unique opportunity to share my knowledge about "IDE Development" with students at the National Research University Higher School of Economics.
+
+In addition to my teaching experiences, I also served as a mentor at Practicum by Yandex between 2021 and 2022, guiding students on topics such as algorithms and data structures.
