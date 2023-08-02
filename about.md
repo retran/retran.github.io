@@ -28,7 +28,11 @@ In 2021, I had the unique opportunity to share my knowledge about "IDE Developme
 
 In addition to my teaching experiences, I also served as a mentor at Practicum by Yandex between 2021 and 2022, guiding students on topics such as algorithms and data structures.
 
+## Courses
+
+1. <https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN>
+
 ## Media
 
-2. https://habr.com/ru/companies/yandex_praktikum/articles/593039/
-1. https://habr.com/en/companies/JetBrains/articles/477026/
+2. <https://habr.com/ru/companies/yandex_praktikum/articles/593039/>
+1. <https://habr.com/en/companies/JetBrains/articles/477026/>
