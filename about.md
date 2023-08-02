@@ -41,10 +41,10 @@ In addition to my teaching experiences, I also served as a mentor at Practicum b
     Recordings: <https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN>
 
 2. "High-Level Programming Languages"  
-   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of control systems, informatics and electrical engineering
+   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of Control Systems, Informatics and Electrical Engineering
 
 3. "Pattern Recognition and Machine Learning"  
-   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of control systems, informatics and and electrical engineering
+   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of Control Systems, Informatics and Electrical Engineering
 
 ## Media
 
