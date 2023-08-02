@@ -10,18 +10,6 @@
     font-size: 1.1rem;
   }
 
-  .top {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    font-family: $sans-serif;
-    font-size: 1.1rem;
-    opacity: .6;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
   .arrow {
     @include transition(all .3s ease-out);
     color: $default-color;
