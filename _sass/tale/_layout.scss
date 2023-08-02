@@ -132,10 +132,8 @@ footer {
     color: $default-color;
     font-size: .8rem;
 
-    .decorate-links {
-      a:hover {
-        text-decoration: underline;
-      }
+    a:hover {
+      text-decoration: underline;
     }
 
     .top {
