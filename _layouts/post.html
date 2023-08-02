@@ -27,6 +27,7 @@ layout: default
   {% include disqus_comments.html %}
 {% endif %}
 
+{% if page.next.url or page.previous.url %}
 <div class="pagination">
   {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
@@ -35,3 +36,4 @@ layout: default
     <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
 </div>
+{% endif %}
