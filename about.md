@@ -14,7 +14,7 @@ There was a period when I had aspirations of working in game development, but mu
 
 At one point, I was quite proficient in areas such as operations research, service-oriented architecture (SOA), and enterprise software development.
 
-Between 2011 and 2014, I had the pleasure of teaching courses in "High-Level Language Programming" and "Pattern Recognition and Machine Learning" to students at the Moscow Aviation Institute (National Research University).
+Between 2011 and 2014, I had the pleasure of teaching courses about "High-Level Language Programming" and "Pattern Recognition and Machine Learning" to students of the Moscow Aviation Institute (National Research University).
 
 I've had the opportunity to contribute my expertise to ozon.ru and Acumatica.
 
@@ -30,9 +30,23 @@ In addition to my teaching experiences, I also served as a mentor at Practicum b
 
 ## Courses
 
-1. <https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN>
+1. ["IDE Development"](https://www.hse.ru/en/edu/courses/470906340)  
+    2021, Moscow, [National Research University Higher School of Economics](https://www.hse.ru/en/), [Faculty of Computer Science](https://cs.hse.ru/en/)
+
+    Awards:  
+    "Best Course for Career Development"  
+    "Best Course for Broadening Horizons and Diversity of Knowledge and Skills"  
+    "Best Course for New Knowledge and Skills"
+
+    Recordings: <https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN>
+
+2. "High-Level Programming Languages"  
+   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of control systems, informatics and electrical engineering
+
+3. "Pattern Recognition and Machine Learning"  
+   2011-2014, Moscow, [Moscow Aviation Institute (National Research University)](https://en.mai.ru/), Faculty of control systems, informatics and and electrical engineering
 
 ## Media
 
-2. <https://habr.com/ru/companies/yandex_praktikum/articles/593039/>
-1. <https://habr.com/en/companies/JetBrains/articles/477026/>
+1. <https://habr.com/ru/companies/yandex_praktikum/articles/593039/>
+2. <https://habr.com/ru/companies/JetBrains/articles/477026/>
