@@ -132,6 +132,12 @@ footer {
     color: $default-color;
     font-size: .8rem;
 
+    .decorate-links {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
     .top {
       @include transition(all .3s ease-out);
       color: $default-color;
@@ -141,6 +147,7 @@ footer {
   
       &:hover {
         opacity: 1;
+        text-decoration: none;
       }
     }
   }
