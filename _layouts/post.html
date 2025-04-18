@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="post decorate-links">
+  <div class="post-info">
+    <!-- <span>
+      {% for tag in page.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        {{ tag_name }}&nbsp;
+      {% endfor %}
+    </span>
+ -->
+    {% if page.date %}    
+      <!-- <br> -->
+      <time datetime="{{ page.date }}">{{ page.date | date: "%Y.%m.%d" }}</time>
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+</div>
+
+{% if page.comments %}
+  {% include disqus_comments.html %}
+{% endif %}
+
+{% if page.next.url or page.previous.url %}
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+</div>
+{% endif %}
