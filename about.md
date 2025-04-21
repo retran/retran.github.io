@@ -52,7 +52,10 @@ When I'm not coding or teaching, I'm tinkering with hardware, gadgets, or random
 ### Connect with Me
 
 - **LinkedIn**: [Andrew Vasilyev](https://www.linkedin.com/in/retran/)
-- **Instagram**: [retraninthenetherlands](https://www.instagram.com/retraninthenetherlands)
-- **BlueSky** (English): [retran.bsky.social](https://bsky.app/profile/retran.bsky.social)
+- **Instagram**: [retraninthenetherlands](httsps://www.instagram.com/retraninthenetherlands)
+- **BlueSky**: [retran.bsky.social](https://bsky.app/profile/retran.bsky.social)
+- **Mastodon**: [@retran](https://mastodon.social/@retran)
+- **X / Twitter**: [@retran](https://x.com/retran)
 - **Telegram Channel** (Russian): [retran_in_the_netherlands](https://t.me/retran_in_the_netherlands)
+- **GitHub**: [retran](https://github.com/retran)
 - **Email**: me [at] retran [dot] me
