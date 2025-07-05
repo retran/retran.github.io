@@ -23,20 +23,26 @@ When I’m not writing code, I like taking apart gadgets, experimenting with com
 ## Courses I've Taught
 
 1. **["IDE Development"](https://retran.me/ide-development-2023/)**
+
    2023, Bremen, [Constructor University](https://www.jacobs-university.de/)
 
 2. **["IDE Development"](https://www.hse.ru/en/edu/courses/470906340)**
+
    2021, Moscow, [Higher School of Economics](https://www.hse.ru/en/), [CS Faculty](https://cs.hse.ru/en/)
+
    *Awards:*
    - "Best Course for Career Development"
    - "Best Course for Broadening Horizons and Diversity of Knowledge and Skills"
    - "Best Course for New Knowledge and Skills"
+
    *Recordings:* [YouTube Playlist](https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN)
 
 3. **"High-Level Programming Languages"**
+
    2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)
 
 4. **"Pattern Recognition and Machine Learning"**
+
    2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)
 
 ## Media Mentions
