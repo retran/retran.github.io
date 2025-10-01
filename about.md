@@ -4,60 +4,57 @@ title: About Me
 permalink: /about/
 ---
 
-Hey, I’m **Andrew Vasilyev**, though online I usually go by **"retran"**. I'm a developer, mentor, and curious human currently living in Amsterdam.
+# Hey, I'm Andrew
 
-My programming journey started early — when I was five, I typed my first program from a children’s book called _"Logibul au pays de l'informatique"_. That single moment sparked a lifelong passion for figuring out how things work and how to make them better.
+Online, I usually go by **"retran"**. I’m a developer, a mentor, and a curious human living in Amsterdam, but my story begins with a book.
 
-In school, I dove headfirst into programming contests, loving the thrill of solving puzzles. Later, my path drifted through game dev experiments, enterprise platforms, and service architectures before I finally found my calling in developer tools and applied AI.
+When I was five, I found a children's book from France called *Logibul au pays de l'informatique.* Sitting with my father, I typed my first lines of code from its pages. I couldn’t have known it then, but that single moment sparked a lifelong fascination with the hidden machinery of the digital world—a desire not just to use things, but to understand how they work and how to make them better.
 
-At **Ozon.ru**, I led a small team that built a loyalty system for millions of users — and somehow, it worked flawlessly from day one. At **Acumatica**, I built an API framework and helped streamline mobile client development. Later at **1C Company**, I dove deep into the world of virtual machines and debuggers, and even helped plug their dev tools into VS Code and Eclipse.
+This curiosity first led me to the thrill of programming contests in school, where every problem was a puzzle waiting to be unlocked. After university, my path drifted through the complex landscapes of enterprise software. At **Ozon.ru**, I led a small team that built a loyalty system for millions of users, holding our breath on launch day as it worked without a hitch. At **Acumatica**, I built frameworks that helped generate APIs and mobile clients, getting my first taste of creating tools that empowered other developers. Later, at **1C Company**, I dove deeper than ever before, into the very heart of a development platform—implementing a virtual machine, building debuggers, and helping connect their proprietary tools to the outside world through VS Code and Eclipse. I was no longer just building on top of platforms; I was building the platforms themselves.
 
-In 2018, I joined **JetBrains**, where I spent several years building tools for .NET developers. I had the privilege of mentoring 8 interns (earning the unofficial title of “head of interns” on the .NET team), running internal workshops, and co-building features like inlay hints, predictive debugging, and static analyzers for Entity Framework — many of which are still around in ReSharper and Rider. Eventually, I led the **ReSharper AI** team, where we integrated LLMs and RAG into everyday developer workflows. [Here’s a demo](https://www.youtube.com/watch?v=cZE92XhZLSs) if you're curious.
+In 2018, I found my calling when I joined **JetBrains**. It was here that my love for puzzles and my experience in systems programming finally merged. For several years, I helped build the tools I had always wanted to use, contributing to features like inlay hints, predictive debugging, and static analyzers for Entity Framework—many of which are still quietly helping thousands of .NET developers in ReSharper and Rider today. I also had the privilege of mentoring eight interns, a role that became an unexpected passion and earned me the unofficial title of “head of interns” on the .NET team. Eventually, I was asked to lead the **ReSharper AI** team, where we worked to weave the power of LLMs and RAG directly into the fabric of the coding experience. If you’re curious, [here’s a demo of our work](https://www.youtube.com/watch?v=cZE92XhZLSs).
 
-After a short but interesting two-month sprint at **Uber**, where I built internal tooling for the Kotlin ecosystem and supported contributors in the Kotlin world—including Google Summer of Code participants—I joined **Nebius** in 2025, where I now work on AI infrastructure.
+After JetBrains, I took a short but intense sprint at **Uber**, diving headfirst into the massive scale of their Kotlin ecosystem. There, I built internal tooling and supported open-source contributors, including participants in the Google Summer of Code.
 
-Teaching and mentoring have always been close to my heart. I’ve taught "IDE Development" at the [Higher School of Economics](https://www.hse.ru/en/) and [Constructor University](https://www.jacobs-university.de/), and earlier in my career, I taught programming and machine learning at the [Moscow Aviation Institute](https://en.mai.ru/). From 2021 to 2022, I mentored students in algorithms at [Practicum by Yandex](https://habr.com/ru/companies/yandex_praktikum/articles/593039/).
+Woven throughout my professional journey is a deep love for teaching. It’s a thread that has run from my earliest days as a teaching assistant for programming and machine learning at the [Moscow Aviation Institute](https://en.mai.ru/), to mentoring students in algorithms at [Practicum by Yandex](https://habr.com/ru/companies/yandex_praktikum/articles/593039/), to developing and teaching my own "IDE Development" course at the [Higher School of Economics](https://www.hse.ru/en/) and later at [Constructor University](https://www.jacobs-university.de/) in Germany.
 
-When I’m not writing code, I like taking apart gadgets, experimenting with compilers, or building little tools just for the fun of it. My [GitHub](https://github.com/retran) is a mix of serious projects and playgrounds.
+When I’m not at a keyboard for work, I’m often at one for play—taking apart gadgets, experimenting with compilers, or building little tools just for the fun of it. My [GitHub](https://github.com/retran) is a reflection of this: a mix of serious projects and digital playgrounds.
+
+---
 
 ## Courses I've Taught
 
-1. **["IDE Development"](https://retran.me/ide-development-2023/)**
+1. **["IDE Development"](https://retran.me/ide-development-2023/)**  
+   *2023, Bremen, [Constructor University](https://www.jacobs-university.de/)*
 
-   2023, Bremen, [Constructor University](https://www.jacobs-university.de/)
+2. **["IDE Development"](https://www.hse.ru/en/edu/courses/470906340)**  
+   *2021, Moscow, [Higher School of Economics](https://www.hse.ru/en/)*  
+   *Awards:* “Best Course for Career Development,” “Best Course for Broadening Horizons,” “Best Course for New Knowledge.”  
+   *Recordings:* [YouTube Playlist](https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN)
 
-2. **["IDE Development"](https://www.hse.ru/en/edu/courses/470906340)**
+3. **"High-Level Programming Languages"**  
+   *2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)*
 
-   2021, Moscow, [Higher School of Economics](https://www.hse.ru/en/), [CS Faculty](https://cs.hse.ru/en/)
+4. **"Pattern Recognition and Machine Learning"**  
+   *2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)*
 
-   _Awards:_
-   - "Best Course for Career Development"
-   - "Best Course for Broadening Horizons and Diversity of Knowledge and Skills"
-   - "Best Course for New Knowledge and Skills"
-
-   _Recordings:_ [YouTube Playlist](https://www.youtube.com/playlist?list=PLjufDdskD5S6jwrQZP-ikUtNWnRj5xNuN)
-
-3. **"High-Level Programming Languages"**
-
-   2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)
-
-4. **"Pattern Recognition and Machine Learning"**
-
-   2011–2014, Moscow, [Moscow Aviation Institute](https://en.mai.ru/)
+---
 
 ## Media Mentions
 
-1. [Interview about my mentoring experience at Yandex Practicum](https://habr.com/ru/companies/yandex_praktikum/articles/593039/)
-2. [JetBrains Hackathon – where our "Hello, Space!" project won first place](https://habr.com/ru/companies/JetBrains/articles/477026/)
+1. [Interview about my mentoring experience at Yandex Practicum](https://habr.com/ru/companies/yandex_praktikum/articles/593039/) (Russian)
+2. [JetBrains Hackathon – where our "Hello, Space!" project won first place](https://habr.com/ru/companies/JetBrains/articles/477026/) (Russian)
 3. [How to get started with prompt engineering – InfoWorld article](https://www.infoworld.com/article/2334745/how-to-get-started-with-prompt-engineering.html)
+
+---
 
 ## Connect with Me
 
-- **GitHub**: [retran](https://github.com/retran)
-- **LinkedIn**: [Andrew Vasilyev](https://www.linkedin.com/in/retran/)
-- **X / Twitter**: [@retran](https://x.com/retran)
-- **Mastodon**: [@retran](https://mastodon.social/@retran)
-- **BlueSky**: [retran.bsky.social](https://bsky.app/profile/retran.bsky.social)
-- **Telegram Channel** (🇷🇺): [retran_in_the_netherlands](https://t.me/retran_in_the_netherlands)
-- **Instagram**: [retraninthenetherlands](https://www.instagram.com/retraninthenetherlands/)
-- **Email**: me [at] retran [dot] me
+- [LinkedIn](https://linkedin.com/in/retran)
+- [X](https://twitter.com/retran)
+- [Mastodon](https://mastodon.social/@retran)
+- [Bluesky](https://bsky.app/profile/retran.bsky.social)
+- [Telegram](https://t.me/retran_in_the_netherlands)
+- [Instagram](https://instagram.com/retraninthenetherlands)
+
+**Email:** [me@retran.me](mailto:me@retran.me)
