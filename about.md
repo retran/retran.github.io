@@ -50,6 +50,7 @@ When I’m not at a keyboard for work, I’m often at one for play—taking apar
 
 ## Connect with Me
 
+- [GitHub](https://github.com/retran)
 - [LinkedIn](https://linkedin.com/in/retran)
 - [X](https://twitter.com/retran)
 - [Mastodon](https://mastodon.social/@retran)
