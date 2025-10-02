@@ -45,17 +45,3 @@ When I’m not at a keyboard for work, I’m often at one for play—taking apar
 1. [Interview about my mentoring experience at Yandex Practicum](https://habr.com/ru/companies/yandex_praktikum/articles/593039/) (Russian)
 2. [JetBrains Hackathon – where our "Hello, Space!" project won first place](https://habr.com/ru/companies/JetBrains/articles/477026/) (Russian)
 3. [How to get started with prompt engineering – InfoWorld article](https://www.infoworld.com/article/2334745/how-to-get-started-with-prompt-engineering.html)
-
----
-
-## Connect with Me
-
-- [GitHub](https://github.com/retran)
-- [LinkedIn](https://linkedin.com/in/retran)
-- [X](https://twitter.com/retran)
-- [Mastodon](https://mastodon.social/@retran)
-- [Bluesky](https://bsky.app/profile/retran.bsky.social)
-- [Telegram](https://t.me/retran_in_the_netherlands)
-- [Instagram](https://instagram.com/retraninthenetherlands)
-
-**Email:** [me@retran.me](mailto:me@retran.me)
