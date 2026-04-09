@@ -1,0 +1,27 @@
+---
+// About layout — two-column (photo left 30%, content right)
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <div class="post">
+    <h1 class="post-title">{title}</h1>
+    <div class="post-line"></div>
+
+    <div class="about-layout">
+      <div class="about-photo">
+        <img src="/assets/about_photo.jpg" alt="Andrew Vasilyev" />
+      </div>
+      <div class="about-content prose">
+        <slot />
+      </div>
+    </div>
+  </div>
+</Base>

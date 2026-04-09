@@ -1,0 +1,31 @@
+// =============================================================================
+// Tale — Master Import
+// =============================================================================
+// Import order matters: theme tokens first, then variables, then base styles,
+// then layout, then component-specific partials.
+// =============================================================================
+
+// Fonts: imported in Base.astro layout via JS import (avoids SCSS namespace issues)
+// @fontsource-variable/inter and @fontsource/jetbrains-mono
+
+// 1. Theme tokens (CSS custom properties for colors + font families)
+@use 'tale/theme';
+
+// 2. Variables (SCSS values for spacing, typography scale, breakpoints)
+// Note: Each partial imports variables directly via @use 'variables' as *
+@use 'tale/variables';
+
+// 3. Base (reset, body, headings, links, block elements)
+@use 'tale/base';
+
+// 4. Layout (container, nav, about columns, footer)
+@use 'tale/layout';
+
+// 5. Code (inline code + code blocks)
+@use 'tale/code';
+
+// 6. Syntax (Shiki dual-theme overrides)
+@use 'tale/syntax';
+
+// 7. Catalogue (collection listings, post styles, pagination)
+@use 'tale/catalogue';

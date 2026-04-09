@@ -1,0 +1,62 @@
+---
+// Projects listing page — featured projects only, link to GitHub for full list
+import { getCollection } from 'astro:content';
+import Collection from '../layouts/Collection.astro';
+
+const projects = await getCollection('projects', ({ data }) => !data.draft);
+
+// Group by category
+const grouped = projects.reduce(
+  (acc, project) => {
+    const cat = project.data.category;
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(project);
+    return acc;
+  },
+  {} as Record<string, typeof projects>,
+);
+
+// Sort categories: "Project Meow" first, then alphabetical
+const pinnedCategories = ['Project Meow'];
+const sortedCategories = Object.keys(grouped).sort((a, b) => {
+  const aPin = pinnedCategories.indexOf(a);
+  const bPin = pinnedCategories.indexOf(b);
+  if (aPin !== -1 && bPin !== -1) return aPin - bPin;
+  if (aPin !== -1) return -1;
+  if (bPin !== -1) return 1;
+  return a.localeCompare(b);
+});
+---
+
+<Collection title="Projects" description="Selected open-source projects and tools.">
+  <Fragment slot="intro">
+    <p>A selection of things I've built or maintain. For the full list, see my <a href="https://github.com/retran">GitHub profile</a>.</p>
+  </Fragment>
+
+  {sortedCategories.length === 0 && <p class="catalogue-empty">No projects listed yet.</p>}
+
+  {sortedCategories.map((category) => (
+    <section class="catalogue-section">
+      <h2>{category}</h2>
+      <div class="catalogue-items">
+        {grouped[category].map((project) => (
+          <div class="catalogue-item">
+            <h3>
+              {project.data.repo ? (
+                <a href={project.data.repo}>{project.data.title}</a>
+              ) : (
+                project.data.title
+              )}
+              {project.data.status === 'deprecated' && <span class="status-badge deprecated">deprecated</span>}
+              {project.data.status === 'archived' && <span class="status-badge archived">archived</span>}
+            </h3>
+            <p class="catalogue-description">{project.data.description}</p>
+            {project.data.url && project.data.url !== project.data.repo && (
+              <a class="catalogue-link" href={project.data.url}>Website</a>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+</Collection>

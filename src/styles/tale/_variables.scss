@@ -1,0 +1,48 @@
+// =============================================================================
+// Variables — SCSS values for spacing, typography scale, breakpoints, layout
+// =============================================================================
+// These are build-time SCSS variables (not CSS custom properties).
+// CSS custom properties for colors live in _theme.scss.
+// =============================================================================
+
+// --- Breakpoints ---
+$bp-sm: 600px;
+$bp-md: 900px;
+$bp-lg: 1200px;
+
+// --- Layout ---
+$measure: 65ch;              // Optimal reading line length (60-75 chars)
+$container-width: 80%;       // Container width percentage
+$container-max: 800px;       // Absolute max container width
+$about-photo-width: 30%;     // Left column in about layout
+
+// --- Spacing scale (based on 1rem = body line height) ---
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+$space-2xl: 3rem;
+$space-3xl: 4rem;
+
+// --- Typography scale ---
+// Base: 16px mobile floor, 18px desktop ceiling.
+// Heading ratio: ~1.25x between levels.
+$font-size-base: clamp(0.9rem, 0.855rem + 0.225vw, 1.0125rem);
+$font-size-sm: 0.85rem;
+$font-size-xs: 0.75rem;
+
+$font-size-h1: clamp(2rem, 1.75rem + 1.25vw, 2.5rem);
+$font-size-h2: clamp(1.65rem, 1.475rem + 0.875vw, 2rem);
+$font-size-h3: clamp(1.3rem, 1.2rem + 0.5vw, 1.5rem);
+$font-size-h4: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
+$font-size-h5: 1.1rem;
+$font-size-h6: 1rem;
+
+$line-height-body: 1.6;
+$line-height-heading: 1.25;
+$line-height-code: 1.4;
+
+// --- Transitions ---
+$transition-fast: 0.2s ease-out;
+$transition-normal: 0.3s ease-out;

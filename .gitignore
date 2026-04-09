@@ -1,3 +1,19 @@
+# Astro build output
+dist/
+.astro/
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Legacy Jekyll (kept until cleanup)
 *.gem
 .bundle
 .sass-cache
