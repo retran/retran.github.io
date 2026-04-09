@@ -1,0 +1,26 @@
+---
+// Collection layout — listing page for articles, talks, or projects
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Base title={`${title} — retran.me`} description={description}>
+  <div class="catalogue">
+    <h1 class="post-title">{title}</h1>
+    <div class="post-line"></div>
+
+    <div class="prose">
+      <slot name="intro" />
+    </div>
+
+    <div class="catalogue-list">
+      <slot />
+    </div>
+  </div>
+</Base>

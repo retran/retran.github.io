@@ -1,0 +1,207 @@
+// =============================================================================
+// Catalogue — Collection listing styles (articles, talks, projects)
+// =============================================================================
+
+@use 'variables' as *;
+
+.catalogue {
+  padding: $space-xl 0;
+
+  &-item {
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+    display: block;
+    padding: $space-md 0;
+    transition: background-color $transition-fast;
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: var(--color-muted);
+    font-size: $font-size-sm;
+    letter-spacing: 0.5px;
+  }
+
+  &-title {
+    color: var(--color-heading);
+    display: block;
+    font-size: $font-size-h3;
+    font-weight: 700;
+    margin: $space-sm 0;
+  }
+
+  &-description {
+    color: var(--color-text);
+    font-size: $font-size-base;
+    margin: 0;
+  }
+
+  &-tags {
+    color: var(--color-muted);
+    font-size: $font-size-sm;
+    letter-spacing: 0.5px;
+    margin-top: $space-xs;
+  }
+
+  &-line {
+    border-top: 0.2rem solid var(--color-heading);
+    display: block;
+    transition: width $transition-normal;
+    width: 2rem;
+  }
+}
+
+// --- Catalogue section grouping (projects, talks, articles) ---
+.catalogue-section {
+  margin-bottom: $space-xl;
+
+  h2 {
+    color: var(--color-heading);
+    font-size: $font-size-h2;
+    margin-bottom: $space-md;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: $space-sm;
+  }
+}
+
+.catalogue-items {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.catalogue-meta {
+  color: var(--color-muted);
+  font-size: $font-size-sm;
+  margin: $space-xs 0;
+
+  time {
+    &::before {
+      content: ' · ';
+    }
+  }
+}
+
+.catalogue-venue {
+  font-weight: 600;
+}
+
+.catalogue-links {
+  display: flex;
+  gap: $space-md;
+  margin-top: $space-xs;
+  font-size: $font-size-sm;
+
+  a {
+    color: var(--color-link);
+  }
+}
+
+.catalogue-link {
+  color: var(--color-link);
+  font-size: $font-size-sm;
+  margin-top: $space-xs;
+  display: inline-block;
+}
+
+.catalogue-empty {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.status-badge {
+  font-size: $font-size-sm;
+  font-weight: 400;
+  margin-left: $space-sm;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+
+  &.deprecated {
+    color: var(--color-muted);
+    border: 1px solid var(--color-muted);
+  }
+
+  &.archived {
+    color: var(--color-muted);
+    border: 1px solid var(--color-border);
+  }
+}
+
+// --- Post/Article page styles ---
+.post {
+  padding: $space-xl 0;
+
+  &-info {
+    color: var(--color-muted);
+    font-size: $font-size-sm;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  &-title {
+    color: var(--color-heading);
+    font-size: $font-size-h1;
+    margin: $space-md 0;
+    text-align: center;
+  }
+
+  &-line {
+    border-top: 0.4rem solid var(--color-heading);
+    display: block;
+    margin: 0 auto $space-xl;
+    width: 4rem;
+  }
+
+  p {
+    margin: 0 0 $space-md;
+    text-align: left;
+  }
+
+  img {
+    margin: 0 auto $space-sm;
+  }
+
+  img + em {
+    color: var(--color-muted);
+    display: block;
+    font-size: $font-size-sm;
+    font-style: normal;
+    text-align: center;
+  }
+}
+
+// --- Pagination ---
+.pagination {
+  border-top: 1px solid var(--color-border);
+  padding-top: $space-md;
+  position: relative;
+  text-align: center;
+
+  span {
+    color: var(--color-heading);
+    font-size: 1.1rem;
+  }
+
+  .arrow {
+    color: var(--color-text);
+    position: absolute;
+    transition: opacity $transition-normal;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  }
+
+  .left { left: 0; }
+  .right { right: 0; }
+}

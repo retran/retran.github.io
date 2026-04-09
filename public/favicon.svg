@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+    }
+  </style>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
+        font-family="system-ui, sans-serif" font-size="24" font-weight="700"
+        fill="#353535">r</text>
+</svg>

@@ -1,0 +1,84 @@
+---
+// Talks and courses listing page
+import { getCollection } from 'astro:content';
+import Collection from '../layouts/Collection.astro';
+
+const talks = await getCollection('talks', ({ data }) => !data.draft);
+
+// Sort by date, newest first
+talks.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Group by type
+const courses = talks.filter((t) => t.data.type === 'course');
+const presentations = talks.filter((t) => t.data.type === 'talk' || t.data.type === 'workshop');
+---
+
+<Collection title="Talks & Courses" description="Conference talks, workshops, and university courses.">
+  <Fragment slot="intro">
+    <p>Conference talks, workshops, and university courses.</p>
+  </Fragment>
+
+  {presentations.length > 0 && (
+    <section class="catalogue-section">
+      <h2>Talks & Workshops</h2>
+      <div class="catalogue-items">
+        {presentations.map((talk) => (
+          <div class="catalogue-item">
+            <h3>
+              {talk.data.url ? (
+                <a href={talk.data.url}>{talk.data.title}</a>
+              ) : talk.data.video ? (
+                <a href={talk.data.video}>{talk.data.title}</a>
+              ) : (
+                talk.data.title
+              )}
+            </h3>
+            <div class="catalogue-meta">
+              <span class="catalogue-venue">{talk.data.venue}</span>
+              <time datetime={talk.data.date.toISOString().slice(0, 10)}>
+                {talk.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+              </time>
+            </div>
+            <p class="catalogue-description">{talk.data.description}</p>
+            {(talk.data.url || talk.data.slides || talk.data.video) && (
+              <div class="catalogue-links">
+                {talk.data.url && <a href={talk.data.url}>Link</a>}
+                {talk.data.slides && <a href={talk.data.slides}>Slides</a>}
+                {talk.data.video && <a href={talk.data.video}>Video</a>}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {courses.length > 0 && (
+    <section class="catalogue-section">
+      <h2>Courses</h2>
+      <div class="catalogue-items">
+        {courses.map((course) => (
+          <div class="catalogue-item">
+            <h3>
+              {course.data.url ? (
+                <a href={course.data.url}>{course.data.title}</a>
+              ) : (
+                course.data.title
+              )}
+            </h3>
+            <div class="catalogue-meta">
+              <span class="catalogue-venue">{course.data.venue}</span>
+              <time datetime={course.data.date.toISOString().slice(0, 10)}>
+                {course.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+              </time>
+            </div>
+            <p class="catalogue-description">{course.data.description}</p>
+            {course.data.url && <a class="catalogue-link" href={course.data.url}>Course materials</a>}
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {talks.length === 0 && <p class="catalogue-empty">No talks or courses listed yet. Check back soon.</p>}
+</Collection>

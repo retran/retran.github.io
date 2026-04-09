@@ -1,0 +1,85 @@
+// =============================================================================
+// Theme — CSS Custom Properties for Light/Dark Modes
+// =============================================================================
+// Light palette: Tale-derived values, improved for contrast.
+// Dark palette: GitHub-derived warm dark (ADR Q2).
+// Strategy: :root sets light. prefers-color-scheme sets OS dark.
+// [data-theme] overrides both for manual toggle.
+// =============================================================================
+
+// --- Light theme (default) ---
+:root {
+  --color-bg: #fff;
+  --color-bg-accent: #f9f9f9;
+  --color-text: #555;
+  --color-heading: #353535;
+  --color-link: #2a6cb6;
+  --color-link-hover: #1d4f85;
+  --color-muted: #6e6e6e;
+  --color-border: #e5e5e5;
+  --color-code-bg: #f9f9f9;
+  --color-code-text: #a0434b;
+  --color-blockquote-border: #e5e5e5;
+  --color-blockquote-text: #707070;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+
+  // Font families (constant across themes)
+  --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-code: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
+}
+
+// --- Dark theme via OS preference ---
+// NOTE: Dark token values are intentionally duplicated in the [data-theme='dark']
+// block below — CSS custom properties cannot be shared across these selectors
+// without a preprocessor mixin. Update both blocks when changing dark palette.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: #111118;
+    --color-bg-accent: #1a1a22;
+    --color-text: #c9d1d9;
+    --color-heading: #e6edf3;
+    --color-link: #58a6ff;
+    --color-link-hover: #79b8ff;
+    --color-muted: #8b949e;
+    --color-border: #2d2d3a;
+    --color-code-bg: #161620;
+    --color-code-text: #f47067;
+    --color-blockquote-border: #2d2d3a;
+    --color-blockquote-text: #8b949e;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+  }
+}
+
+// --- Dark theme via manual toggle ---
+[data-theme='dark'] {
+  --color-bg: #111118;
+  --color-bg-accent: #1a1a22;
+  --color-text: #c9d1d9;
+  --color-heading: #e6edf3;
+  --color-link: #58a6ff;
+  --color-link-hover: #79b8ff;
+  --color-muted: #8b949e;
+  --color-border: #2d2d3a;
+  --color-code-bg: #161620;
+  --color-code-text: #f47067;
+  --color-blockquote-border: #2d2d3a;
+  --color-blockquote-text: #8b949e;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+}
+
+// --- Light theme via manual toggle (overrides OS dark) ---
+[data-theme='light'] {
+  --color-bg: #fff;
+  --color-bg-accent: #f9f9f9;
+  --color-text: #555;
+  --color-heading: #353535;
+  --color-link: #2a6cb6;
+  --color-link-hover: #1d4f85;
+  --color-muted: #6e6e6e;
+  --color-border: #e5e5e5;
+  --color-code-bg: #f9f9f9;
+  --color-code-text: #a0434b;
+  --color-blockquote-border: #e5e5e5;
+  --color-blockquote-text: #707070;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+}

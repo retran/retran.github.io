@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://retran.me/sitemap-index.xml

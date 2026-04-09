@@ -1,0 +1,45 @@
+// =============================================================================
+// Syntax — Shiki dual-theme overrides
+// =============================================================================
+// Astro's Shiki integration handles syntax highlighting with inline styles.
+// We configure dual themes (github-light + github-dark) in astro.config.mjs.
+// This file provides minimal overrides for Shiki's <pre> and <code> output.
+// =============================================================================
+
+@use 'variables' as *;
+
+// Shiki generates <pre class="astro-code"> with inline background-color.
+// Override to use our theme tokens instead.
+pre.astro-code {
+  background-color: var(--color-code-bg) !important;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: $space-md;
+  margin: 0 0 $space-md;
+
+  code {
+    background: transparent;
+  }
+}
+
+// Dark theme: Shiki dual-theme uses CSS variables for token colors.
+// The github-light/github-dark pair handles this automatically via
+// --shiki-dark and --shiki-light custom properties.
+// We just need to tell Shiki which set to display.
+:root:not([data-theme='dark']) pre.astro-code span {
+  color: var(--shiki-light, inherit) !important;
+}
+
+[data-theme='light'] pre.astro-code span {
+  color: var(--shiki-light, inherit) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) pre.astro-code span {
+    color: var(--shiki-dark, inherit) !important;
+  }
+}
+
+[data-theme='dark'] pre.astro-code span {
+  color: var(--shiki-dark, inherit) !important;
+}

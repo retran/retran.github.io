@@ -1,0 +1,40 @@
+---
+// Navigation — site title, page links, social icons, theme toggle
+import SocialIcons from './SocialIcons.astro';
+import ThemeToggle from './ThemeToggle.astro';
+
+const navLinks = [
+  { href: '/', label: 'About' },
+  { href: '/projects/', label: 'Projects' },
+  { href: '/talks/', label: 'Talks' },
+  { href: '/articles/', label: 'Articles' },
+];
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string): boolean {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <span class="nav-title">retran<br />in the netherlands</span>
+    </a>
+    <ul>
+      {navLinks.map((link) => (
+        <li>
+          <a href={link.href} class:list={{ active: isActive(link.href) }}>
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <SocialIcons />
+      <li class="social-icon">
+        <ThemeToggle />
+      </li>
+    </ul>
+  </div>
+</nav>

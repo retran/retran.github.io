@@ -1,0 +1,55 @@
+---
+// Articles listing page — grouped by topic
+import { getCollection } from 'astro:content';
+import Collection from '../../layouts/Collection.astro';
+
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+
+// Group by topic
+const grouped = articles.reduce(
+  (acc, article) => {
+    const topic = article.data.topic;
+    if (!acc[topic]) acc[topic] = [];
+    acc[topic].push(article);
+    return acc;
+  },
+  {} as Record<string, typeof articles>,
+);
+
+// Sort topics alphabetically, articles by date (newest first)
+const sortedTopics = Object.keys(grouped).sort();
+for (const topic of sortedTopics) {
+  grouped[topic].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+}
+---
+
+<Collection title="Articles" description="Standalone articles on programming, tools, and software engineering.">
+  <Fragment slot="intro">
+    <p>A collection of standalone articles, organized by topic.</p>
+  </Fragment>
+
+  {sortedTopics.length === 0 && <p class="catalogue-empty">No articles yet. Check back soon.</p>}
+
+  {sortedTopics.map((topic) => (
+    <section class="catalogue-section">
+      <h2>{topic}</h2>
+      <div class="catalogue-items">
+        {grouped[topic].map((article) => (
+          <div class="catalogue-item">
+            <h3>
+              <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+            </h3>
+            <time datetime={article.data.date.toISOString().slice(0, 10)}>
+              {article.data.date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
+            <p class="catalogue-description">{article.data.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+</Collection>

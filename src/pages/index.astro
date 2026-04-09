@@ -1,0 +1,11 @@
+---
+// Index — serves the about page directly at /
+import About from '../layouts/About.astro';
+
+// Import the about page content as a Markdown file
+const { default: AboutContent } = await import('../content/about.md');
+---
+
+<About title="About" description="Andrew Vasilyev — developer, mentor, tool-builder. Currently a Principal Developer at Mendix, working on Studio Pro and Maia.">
+  <AboutContent />
+</About>

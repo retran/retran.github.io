@@ -1,0 +1,211 @@
+// =============================================================================
+// Layout — Container, navigation, about columns, footer
+// =============================================================================
+
+@use 'variables' as *;
+
+// --- Container ---
+.container {
+  margin: 0 auto;
+  max-width: $container-max;
+  width: $container-width;
+}
+
+main,
+footer,
+.nav-container {
+  display: block;
+  margin: 0 auto;
+  max-width: $container-max;
+  width: $container-width;
+}
+
+// --- Prose measure constraint ---
+.prose {
+  max-width: $measure;
+}
+
+// --- About page: two-column layout ---
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+
+  @media (min-width: $bp-sm) {
+    flex-direction: row;
+    gap: $space-xl;
+  }
+}
+
+.about-photo {
+  flex-shrink: 0;
+
+  @media (min-width: $bp-sm) {
+    width: $about-photo-width;
+  }
+
+  img {
+    border-radius: 4px;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: $bp-sm) {
+      max-width: none;
+      margin: 0;
+    }
+  }
+}
+
+.about-content {
+  flex: 1;
+  min-width: 0;
+}
+
+// --- Navigation ---
+.nav {
+  box-shadow: 0 2px 2px -2px var(--color-shadow);
+  overflow: visible;
+
+  &-container {
+    margin: 0.825rem auto;
+    position: relative;
+    text-align: center;
+  }
+
+  &-title {
+    color: var(--color-text);
+    display: inline-block;
+    font-size: 0.935rem;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0.6;
+    padding-right: $space-xs;
+    transition: opacity $transition-fast;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    @media (min-width: $bp-sm) {
+      max-width: 50%;
+      line-height: 1.3;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0.825rem 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.935rem;
+  }
+
+  li {
+    color: var(--color-text);
+    display: inline-block;
+    margin-bottom: 0;
+    opacity: 0.6;
+    padding: 0 0.825rem 0 0;
+    transition: opacity $transition-fast;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  a.active {
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  .social-icon {
+    padding: 0 0.385rem 0 0;
+    position: relative;
+    top: 0.165em;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    svg {
+      height: 1.21em;
+      width: 1.21em;
+      fill: var(--color-text);
+      overflow: visible;
+      transition: fill $transition-fast;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: var(--color-link);
+    }
+  }
+
+  a {
+    color: var(--color-text);
+    font-family: var(--font-body);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $bp-sm) {
+  .nav {
+    &-container {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    ul {
+      margin-top: 0;
+      text-align: right;
+    }
+  }
+}
+
+// --- Footer ---
+footer {
+  font-family: var(--font-body);
+  padding: $space-md 0;
+  text-align: center;
+
+  span {
+    color: var(--color-muted);
+    font-size: $font-size-sm;
+
+    a {
+      color: var(--color-muted);
+
+      &:hover {
+        color: var(--color-link);
+        text-decoration: underline;
+      }
+    }
+
+    .top {
+      color: var(--color-muted);
+      font-size: 1.1rem;
+      opacity: 0.6;
+      transition: opacity $transition-normal;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}

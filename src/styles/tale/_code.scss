@@ -1,0 +1,33 @@
+// =============================================================================
+// Code — Inline code and code blocks
+// =============================================================================
+
+@use 'variables' as *;
+
+// --- Inline code ---
+code {
+  background-color: var(--color-code-bg);
+  border-radius: 3px;
+  color: var(--color-code-text);
+  font-family: var(--font-code);
+  font-size: 85%;
+  padding: 0.2em 0.4em;
+}
+
+// --- Code blocks (Astro/Shiki output wraps in <pre><code>) ---
+pre {
+  background-color: var(--color-code-bg);
+  border-radius: 6px;
+  line-height: $line-height-code;
+  margin: 0 0 $space-md;
+  overflow-x: auto;
+  padding: $space-md;
+
+  code {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    font-size: 100%;
+    padding: 0;
+  }
+}
