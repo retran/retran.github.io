@@ -25,6 +25,14 @@ footer,
   max-width: $measure;
 }
 
+// --- Article metadata block ---
+.post-meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
 // --- About page: two-column layout ---
 .about-layout {
   display: flex;

@@ -7,13 +7,17 @@ draft: false
 ---
 
 
+<div class="post-meta">
+
 _Version 2.0 — May 2026._
 
-Author's channel — [https://t.me/retran_in_the_netherlands](https://t.me/retran_in_the_netherlands)
+Author's channel — [Telegram: @retran_in_the_netherlands](https://t.me/retran_in_the_netherlands)
+
+</div>
 
 I welcome any feedback, questions, additions, or comments.
 
-## **Why You Need This List**
+## Why You Need This List
 
 A company in the Netherlands does not guarantee anything. It seems that if it is located here, you get European standards, legal protection, and work-life balance. In reality, many international and expat-focused firms import their own culture — which is not European at all. It just looks like they play by the rules from the outside.
 
@@ -21,11 +25,11 @@ Expats live in a bubble: they don't immediately see the difference between "this
 
 This checklist helps you distinguish employers who *actually* follow European standards from those who put "Trust," "Ownership," and "People First" on their website but play by different rules internally.
 
-📌 **What This List Is Based On**
+### 📌 What This List Is Based On
 
 Over three years of conversations with recruiters from dozens of companies (Dutch, German, French, Swedish, American, Russian), discussions with Arbodienst staff (including an OVAL meeting), the College voor de Rechten van de Mens, a mediator, employment lawyers, and an NLA inspector. Plus dozens of personal stories from expats and EU citizens.
 
-## **Is It Okay to Ask Such Questions?**
+## Is It Okay to Ask Such Questions?
 
 **Yes.**
 
@@ -41,7 +45,7 @@ In Dutch culture, it is perfectly normal to ask directly about:
 
 This is seen as **professionalism**, not as being "difficult." Directness is valued here.
 
-## **The Risks: When a Company Ignores the Rules**
+## The Risks: When a Company Ignores the Rules
 
 Violations affect you directly:
 
@@ -57,7 +61,7 @@ Violations affect you directly:
 10. A company's toxic reputation stains your CV. Behind closed doors, hiring managers admit they filter out candidates from certain firms. You will be rejected not for your actions, but for where you worked.
 11. The CSDDD Directive (Directive 2024/1760) forces large European corporations to check the labor practices of partners throughout their supply chain (applies to companies from July 26, 2029). If an employer systematically violates human rights, they risk losing major clients. And you risk losing your job.
 
-## **Quick Guide to the Laws**
+## Quick Guide to the Laws
 
 **Burgerlijk Wetboek Boek 7 (Civil Code, Book 7 – Employment Contract)**
 
@@ -95,7 +99,7 @@ Violations affect you directly:
 
 - The sponsor has a duty of care (*zorgplicht*) toward the employee, must keep records, and promptly report data to the immigration service.
 
-## **Mini-Glossary of Terms**
+## Mini-Glossary of Terms
 
 Useful during interviews and — heaven forbid — in case of a conflict.
 
@@ -132,14 +136,14 @@ Useful during interviews and — heaven forbid — in case of a conflict.
 - **Kantonrechter** — Cantonal judge. The standard, affordable state court for labor disputes.
 - **Rechtsbijstandverzekering** — Legal aid insurance. Essential protection for expats. Get it before conflicts arise.
 
-## **How to Use This Checklist**
+## How to Use This Checklist
 
 1. **Do not ask everything at once.** Choose 2–4 questions suitable for the current stage (screening, hiring manager interview, final round).
 2. An interview is not an exam; it is a **negotiation between equal partners**. Watch their reaction:
    - They answer calmly, to the point, and provide links to documents → ✅ A plus for them.
-   - They get annoyed, brush it off as a joke, change the subject, or accuse you of being nitpicky → 🚩 That is also an answer..
+   - They get annoyed, brush it off as a joke, change the subject, or accuse you of being nitpicky → 🚩 That is also an answer.
 
-## **The Questions**
+## The Questions
 
 - [Section 1. Contract and Legal Status](#section-1-contract-and-legal-status)
 - [Section 2. Visa, 30% Ruling, and CAO](#section-2-visa-30-ruling-and-cao)
@@ -520,7 +524,7 @@ If the company still revokes the offer:
 
 In practice: check that the offer clearly states the start date and terms, without any "surprises" (like "offer valid subject to budget approval"). Such clauses are a red flag even before signing.
 
-## History
+### History
 
 | Version | Date       | Event                                                                                                                                                                 |
 |---------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
