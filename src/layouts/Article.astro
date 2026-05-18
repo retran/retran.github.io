@@ -1,15 +1,14 @@
 ---
-// Article layout — article page with title, date, topic tag, content slot
+// Article layout — article page with title, date, content slot
 import Base from './Base.astro';
 
 interface Props {
   title: string;
   description?: string;
   date?: Date;
-  topic?: string;
 }
 
-const { title, description, date, topic } = Astro.props;
+const { title, description, date } = Astro.props;
 ---
 
 <Base title={`${title} — retran.me`} description={description}>
@@ -20,7 +19,6 @@ const { title, description, date, topic } = Astro.props;
           {date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </time>
       )}
-      {topic && <span class="post-topic">{topic}</span>}
     </div>
 
     <h1 class="post-title">{title}</h1>

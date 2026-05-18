@@ -7,7 +7,6 @@ const articles = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
-    topic: z.string(),
     draft: z.boolean().default(false),
   }),
 });
