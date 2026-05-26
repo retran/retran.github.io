@@ -121,7 +121,7 @@ That's the leverage shift. Not "AI writes code so I don't have to." More like: "
 
 I spend more time now writing `AGENTS.md` files and task specs than I spend writing code. The return is direct: a well-written context file plus a precise task spec means the agent produces correct output on the first pass instead of the third. I built a [template system](https://github.com/retran/meowary) for this — a structured second brain that feeds context to AI agents. Project specs, architecture decisions, coding conventions, team context — all in plain Markdown, indexed for semantic search. When I start an agent session, the agent loads only the context it needs for the current task. It's not magic. It's file organization with intent.
 
-#### Enterprise IDEs: not dead, narrowing
+#### Classic IDEs: not dead, narrowing
 
 Visual Studio and Eclipse built their moats when writing code was the job. That job changed. Now they're becoming specialists. The reason is structural: a monolithic IDE invests in being a better code editor, while the lightweight-plus-agent stack invests in being a better agent host. When the agent updates weekly and the IDE updates quarterly, when the agent's context is a 2M-token window expandable via RAG and the IDE's context is whatever fits in heap memory — the architectural bets diverge, and so do the users they serve.
 
