@@ -16,7 +16,7 @@ A caveat before we go further: that colleague is a senior engineer with fifteen 
 
 One survey suggests [73% of developers use two or more AI coding tools regularly](https://ivern.ai/blog/state-of-ai-agents-developer-survey-2026) (Ivern AI, n=312, Apr 2026). The industry keeps asking "which one will win?" as if we haven't watched this movie before. In the 1990s it was going to be Visual Studio. In the 2000s, Eclipse. In the 2010s, VS Code. None of them won. Classical IDEs, VS Code, and Vim/Neovim coexist thirty years later — because each maps to a different way of thinking about code. Terminal people don't become GUI people. Visual builders don't become keyboard people. The tools diverge because the people diverge.
 
-I've built IDE features at JetBrains, shipped one of the first agentic LLM integrations into a production IDE, and built developer tooling for 1C (an enterprise platform dominant in CIS markets). Now I work on the AI layer for Mendix Studio Pro, part of Siemens, where the governance questions in Part III are not theoretical but Tuesday meetings.
+I've built IDE features at JetBrains, shipped one of the first agentic LLM integrations into a production IDE, and built developer tooling for 1C (an enterprise platform dominant in CIS markets). Now I work on the AI layer for Mendix Studio Pro, part of Siemens, where governance is an operational concern, not a theoretical one.
 
 The question "which AI coding tool will win?" contains a false premise. It assumes one tool can win. The answer is no. But the reason is more interesting than the answer.
 
@@ -140,7 +140,7 @@ That's the pro-dev market. But it's only one of three. The other two followed di
 
 The low-code market made a counterintuitive move. Instead of competing with external agents, the leading platforms opened up to them — while reinforcing the governance layer that external agents can't replicate.
 
-Working on the AI layer for Mendix, the thing that surprised me was how much the platform's metamodel functions as a pre-built spec layer. An agent operating on a metamodel platform can't hallucinate an API that doesn't exist in the model. The platform enforces constraints architecturally, not through documentation the agent might never see.
+What's notable about metamodel platforms is how much the metamodel functions as a pre-built spec layer. An agent operating on a metamodel platform can't hallucinate an API that doesn't exist in the model. The platform enforces constraints architecturally, not through documentation the agent might never see.
 
 #### The pattern across all three leaders
 
