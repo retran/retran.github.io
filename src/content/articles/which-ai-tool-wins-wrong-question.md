@@ -47,20 +47,20 @@ These are not segments of one market. They are three different markets that happ
 
 ## Table of Contents
 
-- Part I: The Fragmentation
-  - What AI Did to Pro-Dev Tools
-  - What AI Did to Enterprise Low-Code
-  - Citizen-Dev and Vibe Coding
-- Part II: The Convergence
-  - Spec-Driven Development
-  - The SCM Platform Absorbs Review
-  - The Open-Source Undercurrent
-  - The Platform Engineering Layer
-- Part III: The Enterprise Reality
-  - The Governance Gap
-  - The Legal Layer
-  - Three Scenarios
-  - What to Watch
+- [Part I: The Fragmentation](#part-i-the-fragmentation)
+  - [What AI Did to Pro-Dev Tools](#what-ai-did-to-pro-dev-tools)
+  - [What AI Did to Enterprise Low-Code](#what-ai-did-to-enterprise-low-code)
+  - [Citizen-Dev and Vibe Coding](#citizen-dev-and-vibe-coding)
+- [Part II: The Convergence](#part-ii-the-convergence)
+  - [Spec-Driven Development](#spec-driven-development)
+  - [The SCM Platform Absorbs Review](#the-scm-platform-absorbs-the-review-loop)
+  - [The Open-Source Undercurrent](#the-open-source-undercurrent)
+  - [The Platform Engineering Layer](#the-platform-engineering-layer)
+- [Part III: The Enterprise Reality](#part-iii-the-enterprise-reality)
+  - [The Governance Gap](#the-governance-gap)
+  - [The Legal Layer](#the-legal-layer)
+  - [Three Scenarios](#three-scenarios)
+  - [What to Watch](#what-to-watch)
 
 ---
 
