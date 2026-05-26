@@ -6,12 +6,13 @@ interface Props {
   title: string;
   description?: string;
   date?: Date;
+  ogImage?: string;
 }
 
-const { title, description, date } = Astro.props;
+const { title, description, date, ogImage } = Astro.props;
 ---
 
-<Base title={`${title} — retran.me`} description={description}>
+<Base title={`${title} — retran.me`} description={description} ogImage={ogImage}>
   <div class="post">
     <div class="post-info">
       {date && (

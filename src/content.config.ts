@@ -9,6 +9,7 @@ const articles = defineCollection({
     date: z.coerce.date(),
     draft: z.boolean().default(false),
     unlisted: z.boolean().default(false),
+    ogImage: z.string().optional(),
   }),
 });
 

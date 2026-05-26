@@ -4,7 +4,10 @@ description: "Three markets, not one — how AI is fragmenting developer tools i
 date: 2026-05-26
 draft: false
 unlisted: true
+ogImage: /assets/articles/which-ai-tool-wins.jpg
 ---
+
+![](/assets/articles/which-ai-tool-wins.jpg)
 
 *The views expressed here are my own and do not represent the position of my employer.*
 
