@@ -226,7 +226,7 @@ The fusion team pattern implies a coordination layer that none of the individual
 
 The leverage shift from Part I only works if the agent knows what to build. A faster executor with no brief produces noise faster. The industry figured this out simultaneously, from multiple directions.
 
-A developer on my team prompted Claude Code: "Add user authentication to this app." The agent produced 400 lines of plausible auth code — login forms, session management, token refresh logic. Tests passed. The code looked right.
+A developer prompted Claude Code: "Add user authentication to this app." The agent produced 400 lines of plausible auth code — login forms, session management, token refresh logic. Tests passed. The code looked right.
 
 Three days later, a penetration test revealed the session tokens never expired. The code was correct by the standards of a generic tutorial. It was wrong by the standards of our security requirements — requirements that existed in a Confluence page the agent had never seen.
 
