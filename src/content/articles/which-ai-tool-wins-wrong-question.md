@@ -7,7 +7,7 @@ unlisted: true
 ---
 
 
-# The Editor Wars Never Ended. They Just Got More Interesting.
+# Which AI Tool Wins? Wrong Question.
 
 Last month I watched a colleague hunt down a bug where an agent's frontend refactor silently broke an API contract two layers deeper in the backend. He was running Claude Code in one terminal pane to trace which parameter had gone missing. VS Code open in another, stepping through the TypeScript client that called the endpoint. Cursor on a second monitor, where he was already fixing the contract between the two components. Three AI coding tools. One person. One Tuesday afternoon.
 
