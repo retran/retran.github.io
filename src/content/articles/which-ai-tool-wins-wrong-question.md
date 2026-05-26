@@ -6,6 +6,8 @@ draft: false
 unlisted: true
 ---
 
+*The views expressed here are my own and do not represent the position of my employer.*
+
 Last month I watched a colleague hunt down a bug where an agent's frontend refactor silently broke an API contract two layers deeper in the backend. He was running Claude Code in one terminal pane to trace which parameter had gone missing. VS Code open in another, stepping through the TypeScript client that called the endpoint. Cursor on a second monitor, where he was already fixing the contract between the two components. Three AI coding tools. One person. One Tuesday afternoon.
 
 I asked him why not pick one. He looked at me like I'd asked why he owns both a screwdriver and a hammer.
