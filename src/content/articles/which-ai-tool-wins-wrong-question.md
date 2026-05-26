@@ -31,7 +31,9 @@ Four claims. Twenty minutes of reading to back them up.
 
 **TL;DR:** AI coding tools are fragmenting into three distinct markets (pro-dev, enterprise low-code, citizen-dev) that won't consolidate — but the protocols and platform layers underneath them are converging fast. For engineering organizations the strategic question isn't which tool to pick; it's whether your development platform exposes governed context to agents. The tools that solve governance as architecture, not as a checkbox, will capture enterprise adoption.
 
-These are not segments of one market. They are three different markets that happen to share the words "developer tool" and "AI." (By *vibe coding* I mean describing software in natural language and iterating on the output without writing or reading code directly.)
+These are not segments of one market. They are three different markets that happen to share the words "developer tool" and "AI."
+
+(By *vibe coding* I mean describing software in natural language and iterating on the output without writing or reading code directly.)
 
 | | **Pro-dev** | **Enterprise low-code** | **Citizen-dev / vibe** |
 |---|---|---|---|
@@ -120,7 +122,7 @@ Visual Studio and Eclipse built their moats when writing code was the job. That 
 
 Visual Studio (the full IDE, not Code) shipped cloud agent sessions, custom agents via `.agent.md`, and an enterprise MCP allowlist in April 2026. Its differentiator: a `@debugger` agent that reproduces bugs by driving live runtime execution. Not static analysis — actual debugging. Also `@profiler`, `@test`, `@modernize`. This is the enterprise .NET and C++ story. Pulling away from VS Code, not converging with it.
 
-Eclipse went open-source with its Copilot integration (MIT, May 2026). The `eclipse-agents` community project lets Claude Code and Gemini CLI drive Eclipse directly via ACP.
+Eclipse open-sourced its Copilot integration (MIT, May 2026). The `eclipse-agents` community project lets Claude Code and Gemini CLI drive Eclipse directly via ACP.
 
 The pattern: MCP is the common integration layer across all of them. The monolithic IDE becomes an agent host — which means its unique value narrows to what can't cross a protocol boundary. Deep runtime debugging. Profiling. Language-specific refactoring in closed ecosystems.
 
@@ -152,9 +154,9 @@ Here's the engineering argument, stated plainly:
 
 **The metamodel IS the specification.** Research shows 41.8% of agent failures trace to specification gaps (detailed in Part II). That failure rate nearly disappears when the platform encodes domain structure, valid operations, and data relationships. The agent can't hallucinate an API that doesn't exist in the model. It can't produce a data access pattern that violates the permission structure. The constraints are architectural, not documented.
 
-**Fewer files for agents to navigate.** Research shows that code reading, not code writing, is the central agent bottleneck. A Mendix or OutSystems app has hundreds of model objects, not thousands of source files. Fewer nodes means better agent traversal and fewer lost-context failures.
+**Fewer files for agents to navigate.** Evidence suggests that code reading, not code writing, is the central agent bottleneck. A Mendix or OutSystems app has hundreds of model objects, not thousands of source files. Fewer nodes means better agent traversal and fewer lost-context failures.
 
-**Platform upgrades vs. dependency rot.** Agent-generated code decays as libraries evolve — you get dependency drift, breaking changes, security patches that nothing applies. Platform-managed apps are upgraded by the vendor. The maintenance burden distributes differently.
+**Platform upgrades vs. dependency rot.** Agent-generated code decays as libraries evolve — you get dependency drift, breaking changes, security patches that no one applies. Platform-managed apps are upgraded by the vendor. The maintenance burden distributes differently.
 
 #### The honest counter
 
@@ -196,13 +198,13 @@ A scan of 1,645 Lovable showcase apps found 170 projects (10.3%) with critical R
 
 A reported incident in February 2026 allegedly exposed 18,697 user records — including 4,538 K-12 students — from a Lovable-built app whose AI-generated auth logic was described as inverted: blocking logged-in users while admitting anonymous visitors. (Source: security community disclosure; no formal CVE assigned; details unconfirmed by the vendor at time of writing.)
 
-This is structural to any tool where the user never sees the code. The security surface is invisible. The user can't audit what they can't see. And the platform's position is that security is the customer's responsibility.
+This is inherent to any tool where the user never sees the code. The security surface is invisible. The user can't audit what they can't see. And the platform's position is that security is the customer's responsibility.
 
 This doesn't make vibe coding tools wrong for their target segment. It means the target segment has a hard boundary at "apps where the user can accept the security risk." Consumer prototypes, internal tools with no sensitive data, event pages — fine. Enterprise apps handling PII, financial data, or regulated workflows — no.
 
 #### The fusion team bridge
 
-Gartner coined "fusion teams" — 84% of large organizations already have them, 63% of senior IT leaders call them "very effective" (Gartner, 2024).
+Gartner popularized "fusion teams" — 84% of large organizations already have them, 63% of senior IT leaders call them "very effective" (Gartner, 2024).
 
 The pattern: a principal engineer defines domain constraints and writes the spec. Business engineers build within those constraints using the low-code or vibe coding tool of their choice. External agents handle migrations, testing, and cross-cutting concerns via CLI/MCP. The metamodel or spec is the shared contract between all three.
 
@@ -224,7 +226,7 @@ The leverage shift from Part I only works if the agent knows what to build. A fa
 
 A developer on my team prompted Claude Code: "Add user authentication to this app." The agent produced 400 lines of plausible auth code — login forms, session management, token refresh logic. Tests passed. The code looked right.
 
-Three days later a penetration test revealed the session tokens never expired. The code was correct by the standards of a generic tutorial. It was wrong by the standards of our security requirements — requirements that existed in a Confluence page the agent had never seen.
+Three days later, a penetration test revealed the session tokens never expired. The code was correct by the standards of a generic tutorial. It was wrong by the standards of our security requirements — requirements that existed in a Confluence page the agent had never seen.
 
 The agent didn't fail because it was stupid. It failed because nobody told it what "authentication" meant in this specific context. It interpolated from training data. The spec gap cost three days and a security incident.
 
@@ -255,7 +257,7 @@ Every major AI coding tool now has its own flavor of SDD:
 
 **AWS Kiro** — spec, plan, tasks, and code in one agentic IDE workspace. AWS's marketing claims an 18-month rearchitecture completed in 76 days — treat that as a vendor demo, not a reproducible result. The direction is clear regardless of the specific numbers.
 
-**Claude Code** — `CLAUDE.md` as persistent spec artifact. The agent reads it before every session. Your project context, constraints, and conventions live in a file the agent consults like a contractor checking the brief before starting work.
+**Claude Code** — `CLAUDE.md` as persistent context artifact. The agent reads it before every session. Your project context, constraints, and conventions live in a file the agent consults like a contractor checking the brief before starting work.
 
 **[Cursor 3](https://cursor.com/blog/cursor-3)** — Plan Mode + `AGENTS.md`. The spec is grounded in the editor, not a separate document.
 
@@ -293,7 +295,7 @@ While the editor debate dominated developer Twitter, GitHub and GitLab quietly m
 
 In March 2026, the agentic architecture went GA — the agent retrieves repo context, reads linked issues, maps review strategy for long PRs. 8.1% immediate lift in positive feedback from the agentic redesign alone. 71% of reviews surface actionable feedback. The other 29%: the agent says nothing. Silence as deliberate signal quality.
 
-May 2026: "[Fix with Copilot](https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent/)" — review comments become delegated tasks. The coding agent implements fixes, self-reviews, updates the PR. [June 1 2026](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/): billing shifts to Actions minutes. The review loop is now literally part of CI.
+May 2026: "[Fix with Copilot](https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent/)" — review comments become delegated tasks. The coding agent implements fixes, self-reviews, updates the PR. [June 1, 2026](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/): billing shifts to Actions minutes. The review loop is now literally part of CI.
 
 [One-click Actions failure fix](https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent/) (May 2026): Copilot cloud agent investigates a failing CI job, pushes a fix to the branch, tags for review. The distinction between "code review tool" and "CI bot" dissolves.
 
@@ -337,7 +339,7 @@ What it actually is: a free, open-source autonomous AI agent that executes tasks
 
 The ClawHavoc incident (March 2026): three malicious skills on ClawHub caught executing unauthorized code. The comparison to npm supply chain attacks is exact — and the problem is identical. An open marketplace for executable agent code has the same trust surface as an open package registry. The attack vector didn't need to be novel.
 
-OpenClaw vs Claude Code is not a capability competition. It's two different bets. Claude Code bets on Anthropic-stable, coding-first, direct-to-API simplicity. OpenClaw bets on cross-provider, foundation-governed, general-purpose agent infrastructure. To be clear: OpenClaw is a community-driven project, not a production-grade enterprise tool — the ClawHavoc incident underscores the maturity gap. One mid-sized refactor session costs ~$8.30 in Claude Sonnet tokens (approximately 250K input + 50K output tokens at current API rates). That's not cheap — and it's why the self-hosted path exists.
+OpenClaw vs Claude Code is not a capability competition. It's two different bets. Claude Code bets on Anthropic-stable, coding-first, direct-to-API simplicity. OpenClaw bets on cross-provider, foundation-governed, general-purpose agent infrastructure. To be clear: OpenClaw is a community-driven project, not a production-grade enterprise tool — the ClawHavoc incident underscores the maturity gap. One mid-sized refactor session costs ~$8 in Claude Sonnet tokens across multiple iterations (a typical agentic loop consumes 500K–1M total tokens when you include planning, implementation, and self-correction passes). That's not cheap — and it's why the self-hosted path exists.
 
 #### The self-hosted ecosystem
 
@@ -426,7 +428,7 @@ This creates a new cost curve: the more autonomous the agent, the more tokens it
 
 Autonomous agents in multi-step loops amplify this further. A review agent flags a test failure. A fix agent writes a patch and pushes. CI runs. Another agent reads the failure log and retries with a different approach. The human who would have looked at the terminal and stopped is asleep. The agents are not.
 
-Infinite agentic loops — where agents retry, revert, and re-attempt without a circuit breaker — have produced $10K–50K overnight CI bills at early adopter organizations (reported by platform engineers at multiple companies; no public case study with a named org yet). Only 27% of organizations have hard limits on token usage. The rest learn from the invoice.
+Infinite agentic loops — where agents retry, revert, and re-attempt without a circuit breaker — have produced $10K–50K overnight CI bills at early adopter organizations (reported by platform engineers at multiple companies; no public case study with a named org yet). Only 27% of organizations have hard limits on token usage (CloudBees, 2026). The rest learn from the invoice.
 
 The response is a new infrastructure discipline: hard token quotas at the org level, agent-specific CI minute budgets, automatic loop detection (same diff hash submitted twice → halt), and escalation paths that route to a human when retry count exceeds threshold. Platform teams building the agent control plane need to treat FinOps as a first-class requirement, not an afterthought.
 
@@ -549,7 +551,7 @@ The real exposure: output liability, not training-data liability. Audit firms re
 Vendor indemnification scope:
 
 - **Microsoft** (Copilot Business/Enterprise): defends and indemnifies enterprise customers for third-party IP claims on output. The only structural output IP commitment from a major vendor.
-- **OpenAI** enterprise: covers claims from OpenAI's services. Explicitly excludes customer applications and combinations with third-party products.
+- **OpenAI** Enterprise: covers claims from OpenAI's services. Explicitly excludes customer applications and combinations with third-party products.
 - **Anthropic**: training-data settlement excludes output-based claims. No output IP indemnification for API customers.
 
 Your vendor's indemnification covers how the model was trained. It does not cover what the model generates. These are different legal questions with different answers.
@@ -629,7 +631,7 @@ The principal engineer's job in 2026 is two things at once. Choose the tooling a
 
 The tool is a detail. The platform is the investment. The first is a market question. The second is yours alone.
 
-That second task — protecting unstructured thinking time — matters more than it sounds. Because:
+That second task — protecting unstructured thinking time — matters more than it sounds.
 
 LLMs are extraordinary interpolators. They assemble any application that resembles something in the training corpus. They could not have invented React in 2013. Or Kafka. Or the relational model. Paradigm shifts require recognizing that the existing abstraction is wrong — and LLMs are trained to reproduce existing abstractions, not reject them. If the leverage shift consumes every engineer's cognitive surplus in review and orchestration, who builds the next paradigm?
 
@@ -657,7 +659,7 @@ The engineer who can answer that question is worth more than any tool that can't
 
 - GitHub Copilot Code Review (60M reviews, 12K orgs) — [github.blog](https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/)
 - GitHub "Fix with Copilot" (May 2026) — [github.blog/changelog](https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent/)
-- GitHub Copilot Code Review billing shift to Actions minutes (Jun 1 2026) — [github.blog/changelog](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/)
+- GitHub Copilot Code Review billing shift to Actions minutes (Jun 1, 2026) — [github.blog/changelog](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/)
 - GitHub one-click Actions failure fix (May 2026) — [github.blog/changelog](https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent/)
 - GitHub Spec Kit — [arxiv.org/abs/2604.05278](https://arxiv.org/abs/2604.05278)
 - GitLab Code Review Flow ($0.25/MR, Mar 2026) — [about.gitlab.com/blog](https://about.gitlab.com/blog/agentic-code-reviews-with-flat-rate-pricing)
