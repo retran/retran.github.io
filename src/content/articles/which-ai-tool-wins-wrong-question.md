@@ -16,7 +16,7 @@ One survey suggests [73% of developers use two or more AI coding tools regularly
 
 I've built IDE features at JetBrains, shipped one of the first agentic LLM integrations into a production IDE, and built developer tooling for 1C (an enterprise platform dominant in CIS markets). Now I work on the AI layer for Mendix Studio Pro, part of Siemens, where the governance questions in Part III are not theoretical but Tuesday meetings.
 
-The question "which AI coding tool will win?" contains a false premise. It assumes one tool can win. The answer, again, is no. But the reason is more interesting this time.
+The question "which AI coding tool will win?" contains a false premise. It assumes one tool can win. The answer is no. But the reason is more interesting than the answer.
 
 ---
 
