@@ -95,7 +95,7 @@ What happened next, in each camp:
 
 **[Cursor 3](https://cursor.com/blog/cursor-3)** rebuilt as an "agent-first workspace." Multi-repo layout. Agents fan out to cloud, results flow back to local. Still a VS Code fork, but diverging from upstream fast — betting that agent-native UX requires breaking from the extension model entirely.
 
-**Zed** went a different direction: [Agent Client Protocol](https://zed.dev/acp) (ACP) — an open standard co-created with Google and IBM. Think LSP, but for AI agents. Any agent that speaks ACP integrates with any ACP-compatible editor. Thirty agents, ten editors, and growing. The protocol matters more than the product.
+**Zed** went a different direction: [Agent Client Protocol](https://zed.dev/acp) (ACP) — an open standard created by Zed, with Google (Gemini CLI as the first integration) and JetBrains joining shortly after. Think LSP, but for AI agents. Any agent that speaks ACP integrates with any ACP-compatible editor. Thirty agents, ten editors, and growing. The protocol matters more than the product.
 
 **Neovim and Emacs** got ACP plugins. CodeCompanion for Neovim, agent-shell.el for Emacs. The gap between Neovim and VS Code collapsed — not because Neovim added a GUI, but because both now host the same agents over the same wire.
 
