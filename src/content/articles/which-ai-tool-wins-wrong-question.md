@@ -3,7 +3,7 @@ title: "Which AI Tool Wins? Wrong Question."
 description: "Three markets, not one — how AI is fragmenting developer tools into pro-dev, enterprise low-code, and citizen-dev segments that share infrastructure but serve different people."
 date: 2026-05-27
 draft: false
-unlisted: true
+unlisted: false
 ogImage: /assets/articles/which-ai-tool-wins.jpg
 ---
 
