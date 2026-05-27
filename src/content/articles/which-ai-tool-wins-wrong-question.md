@@ -133,6 +133,8 @@ The pattern: MCP is the common integration layer across all of them. The monolit
 
 That list gets shorter every year. It's not a crisis. It's a direction.
 
+It's very difficult to bet against your own product from inside the company that makes it. The organizations best positioned to build agent-first tools are the ones without a decade of editor investment to protect.
+
 I haven't opened a full IDE in two years. I didn't decide to stop. I just stopped needing to.
 
 ---
