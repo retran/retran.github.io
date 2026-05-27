@@ -1,6 +1,6 @@
 ---
 title: "Which AI Tool Wins? Wrong Question."
-description: "Three markets, not one — how AI is fragmenting developer tools into pro-dev, enterprise low-code, and citizen-dev segments that share infrastructure but serve different people."
+description: "Every week the internet produces another Cursor vs Claude Code vs Copilot comparison. It doesn't matter which one you pick. The thing that decides whether your engineering org succeeds with AI isn't visible in any tool comparison."
 date: 2026-05-27
 draft: false
 unlisted: false
