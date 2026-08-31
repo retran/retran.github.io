@@ -8,13 +8,13 @@ draft: false
 
 <div class="post-meta">
 
-_Godot 4.7 · GDScript + GDShader_
+_Godot 4.7, GDScript + GDShader_
 
 </div>
 
 I am building **Hephaestus**, a story-driven anti-4X survival game.
-The player commands a salvage ark in a hostile arm of the galaxy, keeps five
-thousand cryogenic sleepers alive, and decides where the ship goes next.
+The player commands a salvage ark in a hostile arm of the galaxy. The player
+keeps five thousand cryogenic sleepers alive and decides where the ship goes next.
 
 The game needs a different sky for every star system a campaign visits.
 
@@ -48,15 +48,15 @@ Worth copying:
 The production method does not transfer. FTL's backdrops are hand-painted, and a
 run lasts eight sectors, roughly two hours. A Hephaestus campaign runs 250 to 350
 turns across hundreds of systems. Hand-painting that many is not practical, and a
-small repeating set would make the galaxy feel small.
+small repeating set makes the galaxy feel small.
 
 The goal is a generator that produces what FTL's painters produced.
 
 ## What the generator has to satisfy
 
 **Every system needs its own sky.** Not physically distinct, though: two
-neighbouring systems share almost the same real sky, so an astronomically
-accurate generator would produce one image for the whole campaign. The backdrop
+neighbouring systems share almost the same real sky. An astronomically
+accurate generator produces one image for the whole campaign. The backdrop
 communicates location, so
 it differs between locations, and the astronomy is dropped.
 
@@ -71,7 +71,7 @@ breaks both requirements.
 
 **Every sky needs a composition, and content alone will not give it one.** A
 generator that scatters gas evenly across the sphere satisfies every requirement
-above and produces wallpaper.
+stated so far and produces wallpaper.
 Each system has to arrive with a subject, somewhere for the eye to go, and
 somewhere dark for it to read against.
 
@@ -87,7 +87,7 @@ completely static, and it never leaves it.
 
 So the sky the player can reach is a small patch of the sphere around them.
 Call it the **reachable
-cone**; it decides the shape of the texture in step 9 and where the billboards go
+cone**. It decides the shape of the texture in step 9 and where the billboards go
 in step 10.
 
 On top of that, four layers:
@@ -95,7 +95,7 @@ On top of that, four layers:
 | Layer | What it is | Why it is separate |
 |---|---|---|
 | Nebula | A baked texture covering the reachable cone | Volumetric, expensive, and near enough static |
-| Faint stars | 1600 additive billboards on a shell | Point detail a texture cannot keep sharp at every resolution — step 10 |
+| Faint stars | 1600 additive billboards on a shell | Point detail a texture cannot keep sharp at every resolution (step 10) |
 | Bright stars | 12 billboards with halos | Rare enough that each one is an event |
 | Distant galaxies | 10 faint billboards | The universe past this one |
 
@@ -223,9 +223,9 @@ const ANCHOR_RINGS: Array[Vector2] = [
 ]
 ```
 
-Those rings, the azimuth rule below, and a radius per index are the whole anchor
+Those rings, the azimuth rule described next, and a radius per index are the whole anchor
 placement. Each anchor is packed as `xyz` direction and `w` cosine of angular
-radius, and anchors past the drawn count carry a cosine above one, which the
+radius. Anchors past the drawn count carry a cosine above one, which the
 shader reads as switched off:
 
 ```gdscript
@@ -240,7 +240,7 @@ func cloud_anchors() -> Array[Vector4]:
 		var stream := ANCHOR_STREAM + index * 8
 		var ring: Vector2 = ANCHOR_RINGS[index]
 		# The subject holds the right, so the left stays the darker ground it
-		# reads against. A mass that could land anywhere would sometimes put two
+		# reads against. A mass that can land anywhere sometimes puts two
 		# of them on the same side.
 		var azimuth := (
 			lerpf(SUBJECT_MIN_AZIMUTH, SUBJECT_MAX_AZIMUTH, unit(stream + 1))
@@ -264,7 +264,7 @@ remaining anchors use the full 360-degree rotation, and act as background depth.
 
 The belt gets the same treatment from the other direction. Its axis is drawn
 perpendicular to the view direction, so the belt runs across the frame from edge to
-edge, then tilted slightly to keep it off dead centre:
+edge. The axis then tilts slightly to keep the belt off dead centre:
 
 ```gdscript
 func band_axis() -> Vector3:
@@ -298,11 +298,12 @@ func shader_offset() -> Vector3:
 ### The camera turns, so the guarantee has to survive turning
 
 The camera moves, so a constraint that only holds at the canonical angle is not
-worth much.
+worth much. Step 12 shows how far the camera actually drifts, and the test that
+checks this constraint holds across that drift.
 
 The star sits 16 to 24 degrees off the view axis. Its horizontal offset on screen
 is that angle times the cosine of its azimuth. At the far end of the arc that
-works out to 6.6 degrees, so a camera turned eight degrees would carry the star
+works out to 6.6 degrees. A camera turned eight degrees carries the star
 across the centre and onto the dark side of the frame.
 
 The azimuth ceiling therefore has to be derived from the offset each seed drew:
@@ -324,15 +325,15 @@ func star_direction() -> Vector3:
 ```
 
 Eight degrees is the limit this placement supports. Beyond it the ceiling closes
-to about 21 degrees of azimuth at the near end of the offset range, which
-flattens the up-and-right arc the composition depends on. A wider cone would
-require moving the star further from the axis, which changes the look. It is a
+to about 21 degrees of azimuth at the near end of the offset range. That
+flattens the up-and-right arc the composition depends on. A wider cone
+requires moving the star further from the axis, which changes the look. It is a
 different composition, and no longer a tuning value.
 
 Note which bound moves. The azimuth runs from `MIN_STAR_AZIMUTH` at the top of
 the arc to `MAX_STAR_AZIMUTH` at the bottom, and the ceiling only ever raises the
-top. Rebuild the draw from the bottom outward instead and the parameter reverses:
-the same `unit()` value that lands near the top of the arc now lands near the
+top. Rebuild the draw from the bottom outward instead and the parameter reverses.
+The same `unit()` value that lands near the top of the arc now lands near the
 bottom. The constraint holds either way, so nothing fails, but every sky the
 generator has already produced moves its star for no reason.
 
@@ -340,14 +341,14 @@ generator has already produced moves its star for no reason.
 
 The bake covers the reachable cone and nothing else, for reasons step 9 works
 through in memory terms. A cone maps to a flat projection, the way a photograph
-does, and the sky shader
+does. The sky shader
 has to read it back through exactly that one:
 
 ```glsl
 vec3 direction;
 if (projection == 1) {
 	// A flat projection of the cone. The image is a window rather than a
-	// map, so the sampling stays even across it instead of stretching at
+	// map, so the sampling stays even across it. It does not stretch at
 	// the poles the way an equirectangular one does.
 	vec2 ndc = UV * 2.0 - 1.0;
 	ndc.y = -ndc.y;
@@ -360,8 +361,8 @@ if (projection == 1) {
 ```
 
 The [equirectangular](https://en.wikipedia.org/wiki/Equirectangular_projection)
-branch, which is the latitude-longitude unwrap where U is the angle around the
-pole and V the angle down from it, introduces a subtle
+branch is the latitude-longitude unwrap, where U is the angle around the
+pole and V is the angle down from it. It introduces a subtle
 projection flaw. Note the negated `z`. The sign-flipped variant differs from
 the correct one by a
 mirror, so no value of `sky_rotation` corrects it. Every cloud
@@ -369,7 +370,7 @@ mass and the star end up somewhere other than where the composition placed
 them.
 
 ![The mirrored projection](/assets/skybox/bad-mirror.jpg)
-*Top: the correct inverse. Bottom: the same seed with the sign of `z` flipped. The belt survives, but the star and every cloud mass have moved.*
+*Top: the correct inverse. Bottom: the same seed with the sign of `z` flipped. The belt survives, but the star and every cloud mass moved.*
 
 Verify this against your engine's actual sampling. Memory is not good enough
 here.
@@ -380,7 +381,8 @@ The shader builds the nebula in stages. Each stage answers one question, and the
 first is where gas can exist at all.
 
 That is the structure envelope: a galactic belt plus the cloud masses the
-composition step placed.
+composition step placed. This function takes `warp` and `chaos` as given.
+Step 5 explains `warp`. Step 6 explains `chaos`.
 
 ```glsl
 float structure_envelope(vec3 direction, vec3 warp, float chaos) {
@@ -400,7 +402,7 @@ float structure_envelope(vec3 direction, vec3 warp, float chaos) {
 *The envelope on its own, contrast-stretched. The belt runs across the frame and the bright caps are the cloud masses the composition step placed.*
 
 The envelope biases a threshold. Multiply the final colour by it and its outline
-becomes visible in the image; bias the density threshold and nothing traces it.
+becomes visible in the image. Bias the density threshold instead and nothing traces it.
 
 The falloff is measured in angle. A ramp written across a span of
 cosines is narrow near the centre of a spherical cap and vanishes at its edge.
@@ -456,13 +458,13 @@ there. Removing the detailed octaves from the decision is the only fix.
 ![The gas density field](/assets/skybox/term-density.jpg)
 *Density after the contour decides the edge, contrast-stretched. Detail is everywhere, and none of it decides where the cloud ends.*
 
-Everything above reads `cloud_fields`, which is [fractional Brownian
-motion](https://iquilezles.org/articles/fbm): the
+Every function in steps 4 and 5 reads `cloud_fields`, which is [fractional Brownian
+motion](https://iquilezles.org/articles/fbm). It is the
 same smooth noise summed over seven octaves, each at double the frequency and
 half the amplitude of the last. Low octaves contribute broad masses, high ones
 contribute grain, and the sum is the classic cloud texture. It returns three
 fields from one pass, because each is wanted somewhere and sampling the noise
-three times over would cost three times as much:
+three times over costs three times as much:
 
 ```glsl
 // x: plain fBm. y: ridged, for filaments. z: the first LOW_OCTAVES only.
@@ -512,8 +514,8 @@ One modification between octaves:
 
 ```glsl
 // A rotation-and-scale between octaves. Turning the domain as well as scaling it
-// stops the octaves from stacking their features onto the same axes, which is
-// what makes plain fBm look like grid-aligned mould.
+// stops the octaves from stacking their features onto the same axes. Without it,
+// plain fBm looks like grid-aligned mould.
 const mat3 OCTAVE_TURN = mat3(
 	vec3(0.00, 0.80, 0.60),
 	vec3(-0.80, 0.36, -0.48),
@@ -522,7 +524,7 @@ const mat3 OCTAVE_TURN = mat3(
 ```
 
 [Domain warping](https://iquilezles.org/articles/warp) means sampling a field at a
-position displaced by another noise field. The field itself does not change; the coordinates it is read through bend,
+position displaced by another noise field. The field itself does not change. The coordinates it is read through bend,
 and straight features bend with them.
 
 The warp uses its own shorter fBm, three octaves, sampled three times to make a
@@ -558,7 +560,7 @@ produces the long sweeping curl a single warp cannot:
 ```glsl
 vec3 warp_near = warp_field(direction * 0.40 + seed * 0.09);
 vec3 warp_far = warp_field(direction * 0.85 + warp_near * 1.35 + seed.zxy * 0.13);
-// Enough warp to curl the folds, and no more: pushed harder it stops reading
+// Enough warp to curl the folds, and no more. Pushed harder, it stops reading
 // as turbulence and starts reading as brush strokes combed in one direction.
 vec3 warp = warp_near * 1.10 + warp_far * 0.72;
 ```
@@ -568,7 +570,7 @@ vec3 warp = warp_near * 1.10 + warp_far * 0.72;
 
 ## Step 6: assemble the fields, then march them
 
-The pieces above are functions. This is the order `fragment()` calls them in,
+The pieces described so far are functions. This is the order `fragment()` calls them in,
 which is not obvious from any of them alone.
 
 Four details in this block are critical for the final shape:
@@ -612,7 +614,7 @@ integration by sampling: walk along the view ray in fixed steps,
 evaluate the density at each, and accumulate what each step emits.
 
 Sixteen steps here, accumulated front to back and attenuated by [Beer-Lambert](https://en.wikipedia.org/wiki/Beer%E2%80%93Lambert_law)
-transmittance, which dims everything behind each sample by an exponential of the
+transmittance. Transmittance dims everything behind each sample by an exponential of the
 density that sample adds. That is what lets near gas veil far gas.
 
 The interval is the same for every direction, so this integrates a 3D field to
@@ -754,13 +756,13 @@ vec3 colour_out = saturated * (luma / max(saturated_luma, 1e-5));
 ![Saturation restored and not](/assets/skybox/pair-saturation.jpg)
 *Left: saturation restored and renormalised. Right: the same frame straight out of the integral, pulled toward grey.*
 
-The second is the cloud boundary. Every generator above leaves a long dim tail,
-and a tail one or two levels above zero covers the frame in something that looks
+The second is the cloud boundary. Every generator described so far leaves a long dim tail.
+A tail one or two levels above zero covers the frame in something that looks
 like a dirty lens. The tail has to go.
 
 Subtracting a floor is the obvious way to remove it, and the wrong one. It cuts
-the tail at a hard contour, and that contour lands exactly where the cloud should
-be dissolving, so the edge ends up looking cut out of paper.
+the tail at a hard contour. That contour lands exactly where the cloud is
+dissolving, so the edge ends up looking cut out of paper.
 
 A smoothstep knee reaches the same true black with nothing visible at the
 boundary:
@@ -771,12 +773,12 @@ colour_out *= smoothstep(0.0, black_floor * 5.0, luma);
 
 The floor is `0.00012`. That value looks low until you account for sRGB encoding.
 A linear floor of a few thousandths removes everything up to about a tenth of
-perceived brightness, which is the entire range over which a cloud fades out.
+perceived brightness. That is the entire range over which a cloud fades out.
 
 ## Step 9: bake only the reachable patch
 
 The nebula does not move, so it is rendered once into a texture and the shader
-never runs again. The remaining question is what shape that texture should be.
+never runs again. The remaining question is the texture's shape.
 
 An equirectangular sphere spreads its texels evenly across directions the camera
 cannot reach. Take 4096x2048, which is a reasonable size to reach for: it carries
@@ -847,7 +849,7 @@ func bake(identity: SkyboxIdentity, texture_size: Vector2i, cone: bool) -> Textu
 ```
 
 `use_hdr_2d` is required. The glow pass only reads values above 1.0, so an 8-bit
-target would clamp away the core term, which is the only thing in the frame that
+target clamps away the core term. That term is the only thing in the frame that
 blooms.
 
 The basis the cone is written along, which the sky shader reads back:
@@ -864,7 +866,7 @@ static func cone_basis() -> Basis:
 ```
 
 ![The cone bake](/assets/skybox/cone-texture.jpg)
-*The shipped texture. Not a map of a sphere — a window onto the patch of sky the camera can turn to.*
+*The shipped texture. Not a map of a sphere. A window onto the patch of sky the camera can turn to.*
 
 The same seed as a full equirectangular sphere, for comparison. Most of it is
 never sampled:
@@ -911,17 +913,17 @@ and the bake already matches screen density, so there is nothing to filter.
 ## Step 10: why the stars are geometry
 
 The cone bake holds 25.4 pixels per degree, which is enough to keep a point sharp
-at 1080p. So a texture *could* hold the stars, and geometry is still the better
+at 1080p. So a texture *can* hold the stars, and geometry is still the better
 answer.
 
 ![Stars as geometry and stars baked in](/assets/skybox/star-method.jpg)
-*One-to-one crops, brightened. Left: billboards. Right: the same stars written into the cone bake. Sharpness holds up better than expected at this density, and the bake flattens the colour spread and the brightness peaks the billboard layer draws for itself.*
+*One-to-one crops, brightened. Left: billboards. Right: the same stars written into the cone bake. Sharpness remains better than expected at this density, and the bake flattens the colour spread and the brightness peaks the billboard layer draws for itself.*
 
 The nebula and the stars are different kinds of signal.
 
 A nebula is low frequency. Magnify it 2.3 times and nothing in it is destroyed,
 because it contains no feature a soft pixel can lose. Its bake resolution is a
-knob for quality, and getting it wrong costs sharpness
+knob for quality. An inaccurate choice costs sharpness
 and nothing else.
 
 A star is the highest frequency content an image can carry. It is a single point,
@@ -933,26 +935,25 @@ does not as geometry, which has no fixed resolution.
 
 The table in step 9 states the same argument numerically. Keeping stars sharp in
 the texture means re-baking per display: 25 MB at 1080p, 44 at 1440p, 100 at 4K,
-177 at 5K. Billboards cost 1622 instances and one draw call at every resolution,
-and stay sharp at all of them.
+177 at 5K. Billboards cost 1622 instances (1600 faint stars, 12 bright stars, 10
+galaxies) and one draw call at every resolution. They stay sharp at all of them.
 
-Bright stars have a second reason. They carry halos, and a halo should respond to
+Bright stars have a second reason. They carry halos, and a halo must respond to
 the glow pass at its actual on-screen size, which a baked one cannot do.
 
 ### Drawing only the stars the camera can reach
 
 The same cone logic applies to the billboards, and more strongly. These are scene
-geometry, so a star outside the frame never reaches the sky texture or the
-[radiance map](https://docs.godotengine.org/en/stable/classes/class_sky.html) —
-the blurred copy of the sky the engine lights the scene with. It contributes
+geometry. A star outside the frame never reaches the sky texture. It also never
+reaches the [radiance map](https://docs.godotengine.org/en/stable/classes/class_sky.html), the blurred copy of the sky the engine lights the scene with. It contributes
 nothing, and is still submitted, culled and discarded every frame.
 
 ```gdscript
 ## Half-angle of the cone the star layers are drawn into.
 ##
-## **A star outside the frame reaches nothing.** These are scene billboards, not
-## part of the sky texture, so they never enter the radiance map either. A star
-## the camera cannot turn to is work with no output at all.
+## **A star outside the frame reaches nothing.** These are scene billboards. They
+## are not part of the sky texture, so they never enter the radiance map either.
+## A star the camera cannot turn to is work with no output at all.
 const _STAR_CONE := 0.95
 ```
 
@@ -1050,7 +1051,7 @@ var aim := toward_star.normalized().lerp(toward_viewer, _STAR_KEY_FILL).normaliz
 ## Step 12: move the camera, slowly
 
 A completely static frame looks painted. Fixing
-that needs no new machinery: the camera can already turn and the composition
+that needs no new machinery. The camera can already turn and the composition
 already reserves the room, so an idle drift costs two sine waves.
 
 ```gdscript
@@ -1145,7 +1146,7 @@ func bake_debug(identity: SkyboxIdentity, texture_size: Vector2i, term: int) -> 
 ![The region field](/assets/skybox/term-region.jpg)
 *A low-frequency field, contrast-stretched, that varies gas density from place to place. Without it the belt is one even ribbon.*
 
-Most of the fixes above came from that switch. A composite of seven fields cannot
+Most of the fixes described in this article came from that switch. A composite of seven fields cannot
 be debugged by looking at the composite. The hard-edge problem was invisible in
 the final image and obvious in the envelope on its own.
 
@@ -1155,7 +1156,7 @@ The seed selects the stellar family, which drives both the star and the five
 colour roles of the gas. Same code, four seeds:
 
 ![A blue primary](/assets/skybox/family-blue.jpg)
-*Blue giant. Tight, bright and dusty — hot stars carve their neighbourhood.*
+*Blue giant. Tight, bright and dusty. Hot stars carve their neighbourhood.*
 
 ![A white primary](/assets/skybox/family-white.jpg)
 *A white star over a wider, cooler belt.*
@@ -1168,17 +1169,19 @@ colour roles of the gas. Same code, four seeds:
 
 The shadow and main gas stay deep indigo across every family. The star's
 temperature is expressed only in the secondary cloud, the accents and the hot
-edges, so the sky never warms into the colours of an active stellar nursery.
+edges. The sky never warms into the colours of an active stellar nursery.
 
-One bake takes a single frame on an M4 Max. Every scene transition rebakes.
+One bake costs a single render pass: the viewport renders once and the image is
+read back. Every scene transition rebakes.
 
 ## Summary
 
 The goal was to replace FTL's painters with a generator. I expected the shader to
-be the painter; it turned out to be closer to the brush, and the painter is the
+be the painter. It turned out to be closer to the brush, and the painter is the
 composition stage. A subject holding one side of the frame, dark ground on the
-other, a star that keeps to its side through every angle the camera can turn. By the time the shader runs, every
-decision that makes a sky *this* sky has already been made, in plain integer
+other, a star that keeps to its side through every angle the camera can turn. By
+the time the shader runs, the composition stage already decided everything that
+makes a sky *this* sky. That decision is plain integer
 arithmetic a unit test can hold still.
 
 The same two ideas kept resurfacing under different names. Compose for the
