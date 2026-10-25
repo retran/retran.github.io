@@ -1,6 +1,6 @@
 ---
 title: "IDE Development"
-description: "A course on building development environments: syntax parsing, code analysis, refactoring engines, and editor integration. Taught at HSE, Moscow. Won three student-voted awards."
+description: "A course on building development environments: syntax parsing, code analysis, refactoring engines and editor integration. I taught it at the Higher School of Economics (HSE) in Moscow, and students voted it three awards."
 date: 2021-09-01
 venue: Higher School of Economics
 type: course

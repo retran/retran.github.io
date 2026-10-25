@@ -1,6 +1,6 @@
 ---
 title: my-little-lispy-experimental
-description: "Scheme-like Lisp interpreter written as a DSL engine for .NET applications."
+description: "A Scheme-like Lisp interpreter that .NET applications embed as an engine for a domain-specific language (DSL)."
 category: "Languages & Interpreters"
 repo: https://github.com/retran/my-little-lispy-experimental
 status: archived

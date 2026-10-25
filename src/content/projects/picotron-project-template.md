@@ -1,6 +1,6 @@
 ---
 title: picotron-project-template
-description: "Starter template for Picotron fantasy computer game development. Includes project structure, logging, and unit testing."
+description: "A starter template for games on the Picotron fantasy computer, with a project structure, logging and unit tests."
 category: "Game Development"
 repo: https://github.com/retran/picotron-project-template
 status: active

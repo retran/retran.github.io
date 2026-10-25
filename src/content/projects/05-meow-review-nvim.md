@@ -1,6 +1,6 @@
 ---
 title: meow.review.nvim
-description: "Inline code review annotations for AI-assisted development workflows in Neovim."
+description: "A Neovim plugin for inline code review annotations when you develop with AI assistants."
 category: "Project Meow"
 repo: https://github.com/retran/meow.review.nvim
 status: active

@@ -7,12 +7,12 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft && !
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<Collection title="Articles" description="Standalone articles on programming, tools, and software engineering.">
+<Collection title="Articles" description="Standalone articles on programming, tools and software engineering.">
   <Fragment slot="intro">
-    <p>A collection of standalone articles.</p>
+    <p>Articles on programming, developer tools and software engineering.</p>
   </Fragment>
 
-  {articles.length === 0 && <p class="catalogue-empty">No articles yet. Check back soon.</p>}
+  {articles.length === 0 && <p class="catalogue-empty">No articles yet.</p>}
 
   <div class="catalogue-items">
     {articles.map((article) => (

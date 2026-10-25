@@ -13,9 +13,9 @@ const courses = talks.filter((t) => t.data.type === 'course');
 const presentations = talks.filter((t) => t.data.type === 'talk' || t.data.type === 'workshop');
 ---
 
-<Collection title="Talks & Courses" description="Conference talks, workshops, and university courses.">
+<Collection title="Talks & Courses" description="Conference talks, workshops and university courses.">
   <Fragment slot="intro">
-    <p>Conference talks, workshops, and university courses.</p>
+    <p>Conference talks, workshops and university courses.</p>
   </Fragment>
 
   {presentations.length > 0 && (
@@ -80,5 +80,5 @@ const presentations = talks.filter((t) => t.data.type === 'talk' || t.data.type 
     </section>
   )}
 
-  {talks.length === 0 && <p class="catalogue-empty">No talks or courses listed yet. Check back soon.</p>}
+  {talks.length === 0 && <p class="catalogue-empty">No talks or courses listed yet.</p>}
 </Collection>
