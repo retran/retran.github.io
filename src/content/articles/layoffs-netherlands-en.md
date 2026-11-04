@@ -8,7 +8,7 @@ draft: false
 
 <div class="post-meta">
 
-_Version 1.0, November 2026._
+_Version 1.1, November 2026._
 
 [Русская версия](/articles/layoffs-netherlands-ru)
 
@@ -30,9 +30,9 @@ Companies know this and push with speed and fear: the first meeting comes as a s
 
 Every mistake in the company's layoff procedure is a legal risk with a price in euros. If you see those risks and can back them up, you don't have to ask for "a bit more": you come to the table with a calculation of what it costs the company not to settle. The guide explains the process, the tricks employers use and that calculation.
 
-### What this guide is based on
+### 📌 What this guide is based on
 
-The guide draws on the text of the law ([Burgerlijk Wetboek, Books 2 and 7](https://wetten.overheid.nl/BWBR0005290), the Collective Redundancy Act WMCO, the Works Councils Act WOR), material from the UWV and the IND, analysis by law firms and professional HR publications. Sources are listed at the end. It's written for an employee of a Dutch legal entity on a permanent contract; the rules for the highly skilled migrant permit (*kennismigrant*) get their own section.
+The guide draws on the text of the law ([Burgerlijk Wetboek, Books 2 and 7](https://wetten.overheid.nl/BWBR0005290), the Collective Redundancy Act WMCO, the Works Councils Act WOR), material from the UWV and the IND, analysis by law firms and professional HR publications. Sources are listed at the end. It's written for an employee of a Dutch legal entity on a permanent contract; Section 11 covers the rules for the highly skilled migrant permit (*kennismigrant*).
 
 ## The one-minute version
 
@@ -40,193 +40,15 @@ The guide draws on the text of the law ([Burgerlijk Wetboek, Books 2 and 7](http
 2. Sign nothing at the meeting. Say "Thank you, I'll review this with my lawyer" and leave. Every agreement can be negotiated (Section 8).
 3. Don't agree "in principle" in writing: a termination agreement doesn't have to be one document, and an "OK, agreed" in an email can become one. Write "I'm discussing this with my lawyer."
 4. You can cancel even a signed agreement without giving a reason within 14 days, or within three weeks if the agreement doesn't mention this right (Section 8).
-5. The company can't pick the "weak" performers for a layoff: in an economic layoff, people are selected by a formal selection rule (*afspiegeling*), and performance and loyalty don't count (Section 2). A sudden PIP before a layoff is a warning sign (Section 5).
+5. The company can't pick the "weak" performers for a layoff: in an economic layoff, people are selected by a formal selection rule (*afspiegeling*), and performance and loyalty count only in narrow exceptions (Section 2). A sudden PIP before a layoff is a warning sign (Section 5).
 6. Laying off 20 or more people in one region within 3 months is a collective redundancy: the company must notify the UWV and the unions and wait a month. If it breaches this rule, you can annul both the dismissal and a signed VSO (Section 3).
 7. Sick leave doesn't stop a layoff if the UWV received the application before you fell ill (Section 10).
-8. On a highly skilled migrant permit (*kennismigrant*), you have 3 months to find a job after your contract ends, or up to 6 months if you've held the permit for two years or more. The clock starts at the contract end date, so the date in the agreement decides how much time you get (Section 11).
-9. Your minimum is statutory severance: one third of a monthly salary per year worked. Everything above that is negotiable. Companies often offer 6 months' salary, so 3 months is a lowball (Section 15).
+8. On a highly skilled migrant permit (*kennismigrant*), you have 3 months from your contract's end date to find a job, or up to 6 months if you've held the permit for two years or more. So the end date in the agreement decides how much time you get (Section 11).
+9. Your minimum is statutory severance: one third of a monthly salary per year worked. Everything above that is negotiable. Judge an offer by your length of service and the company's risks: with a few years of service, offers of about 6 months' salary are common in my experience, but I have no data behind that number (Section 15).
 10. The company's mistakes cost it money: base your calculation on what not settling costs it, not on "how much do I want?" (Sections 14 and 15).
-11. Deadlines for claims are strict: 2 months for most claims, 6 months under the WMCO. Miss one by a single day and you lose the right to claim.
-12. Criticism isn't a ground for dismissal: a post, a complaint or joining a protest doesn't justify firing you. Retaliation costs the company fair compensation (*billijke vergoeding*, Section 6).
+11. Deadlines for claims are strict: 2 months for most claims, 6 months under the WMCO. Miss one by a single day and you lose the right to claim (Section 14).
+12. A post, a complaint or joining a protest isn't a ground for dismissal. Retaliation costs the company fair compensation (*billijke vergoeding*, Section 6).
 13. Get a lawyer before you sign. The company usually pays for them under the agreement.
-
-## Quick guide to the laws
-
-### Burgerlijk Wetboek Boek 7 (Civil Code, Book 7: the employment contract)
-
-| Article | What it says |
-|---|---|
-| 7:611 BW | *Goed werkgeverschap / goed werknemerschap*: both sides must act as a "good employer" and a "good employee". You invoke this principle when the company pressures you, isolates you, provokes a conflict or breaks its written promises. |
-| 7:611a BW | The company can't claw back the cost of training that the law or a CAO makes mandatory. |
-| 7:613 BW | The employer can change your working conditions unilaterally only if the contract provides for it and the employer's interest outweighs yours. |
-| 7:625 BW | For late salary, the employer pays a statutory increase of up to 50%. |
-| 7:641 BW | Untaken holiday is paid out when you leave. |
-| 7:656 BW | The employer must give you a certificate of employment (*getuigschrift*) on request. |
-| 7:662 BW onwards | In a transfer of undertaking (*overgang van onderneming*), employees move to the new employer automatically; dismissal because of the transfer itself is prohibited. |
-| 7:668 BW | *Aanzegplicht*: for a temporary contract of 6 months or more, the company must say in writing a month before the end whether it'll renew. |
-| 7:669 BW | Dismissal at the employer's initiative needs a valid reason (*redelijke grond*) from a closed list and proof that redeployment isn't possible. |
-| 7:670 BW | Dismissal bans (*opzegverbod*): during illness, pregnancy, works council membership and in other cases. |
-| 7:670b BW | 14 days to cancel a termination agreement. |
-| 7:672 BW | Notice periods. |
-| 7:673 BW | *Transitievergoeding*: the minimum severance payment for dismissal at the employer's initiative. |
-| 7:682 BW | If a dismissal permit was wrongly granted, the court reinstates the contract or awards a *billijke vergoeding*. The article also sets the rule on rehiring within 26 weeks. |
-| 7:686a BW | Claim deadline: 2 months for most claims, 3 months for the transitievergoeding. These are strict limitation periods (*vervaltermijn*). |
-
-### Free speech and protection against retaliation
-
-| Article or law | What it says |
-|---|---|
-| Article 7 of the Grondwet (the Constitution) and Article 10 of the ECHR (European Convention on Human Rights) | Protect freedom of expression, including about your employer, within the duty to be a good employee. |
-| Wet bescherming klokkenluiders | Prohibits disadvantaging a whistleblower; the burden of proof is on the company. |
-| AWGB, WGBH/CZ | Prohibit disadvantaging anyone who complained about discrimination. |
-
-### Burgerlijk Wetboek Boek 2 (Book 2: legal entities)
-
-| Article | What it says |
-|---|---|
-| 2:216 BW | Before a B.V. pays out to shareholders, the board checks that the company can still pay its debts after the distribution. Otherwise the directors are personally liable. |
-| 2:334a BW onwards | In a legal demerger (*splitsing*, *afsplitsing*), creditors can object, and after the demerger both companies are jointly liable for the debts. |
-| 2:403 BW | Under a 403 declaration, the parent company is liable for a subsidiary's debts, and the subsidiary may skip publishing full accounts. |
-
-### Burgerlijk Wetboek Boek 3
-
-Article 3:45 BW (*actio pauliana*) lets you challenge transactions that harm creditors, especially in insolvency.
-
-### Wet melding collectief ontslag (WMCO)
-
-If a company dismisses 20 or more people within 3 months in one UWV region, it must notify the UWV and the unions and wait a month. If it breaches this rule, you have 6 months to annul the dismissal or the VSO.
-
-### Wet op de ondernemingsraden (WOR)
-
-A company with 50 or more people must have an OR (works council).
-
-| Article | What it says |
-|---|---|
-| Article 25 | The OR has a right of advice (*adviesrecht*) on reorganisations, changes of control and major changes to the organisation. The company must ask while the advice can still affect the decision. |
-| Article 26 | The OR can appeal a decision to the Ondernemingskamer within one month. |
-
-### Werkloosheidswet (WW)
-
-The Unemployment Insurance Act (*Werkloosheidswet*) sets the amount and duration of unemployment benefit and the duty to look for work.
-
-### Algemene verordening gegevensbescherming (AVG / GDPR)
-
-Article 15 of the AVG gives the right to request all your personal data, including your personnel file and HR's notes.
-
-## Glossary
-
-### Abbreviations
-
-| Term | Meaning |
-|---|---|
-| AVG (Algemene verordening gegevensbescherming) | The Dutch name for the GDPR. |
-| B.V. (Besloten vennootschap) | Private limited company, the most common company form. Flexible rules for paying out to shareholders. |
-| BW (Burgerlijk Wetboek) | The Civil Code. |
-| CAO (Collectieve Arbeidsovereenkomst) | Collective labour agreement. |
-| IND (Immigratie- en Naturalisatiedienst) | The Immigration and Naturalisation Service. |
-| KvK (Kamer van Koophandel) | The Chamber of Commerce trade register: company accounts, 403 declarations, demerger proposals. |
-| NLA (Nederlandse Arbeidsinspectie) | The Netherlands Labour Authority. |
-| N.V. (Naamloze vennootschap) | Public limited company. Mandatory minimum capital and stricter payout rules. |
-| OR (Ondernemingsraad) | Works council: a body elected by your colleagues, mandatory from 50 people. |
-| PIP (Performance Improvement Plan) | A formal plan to improve your performance. |
-| RSU (Restricted Stock Units) | Company shares that become yours on a schedule (vesting). |
-| UWV (Uitvoeringsinstituut Werknemersverzekeringen) | The employee insurance agency: grants permits for economic dismissals and pays WW. |
-| VSO (Vaststellingsovereenkomst) | Settlement agreement, a termination by mutual consent and the most common way to part. |
-| WMCO (Wet melding collectief ontslag) | The Collective Redundancy Act. |
-| WOR (Wet op de ondernemingsraden) | The Works Councils Act. |
-| WW (Werkloosheidswet) | The Unemployment Insurance Act, and the benefit itself. |
-| ZZP (Zelfstandige zonder personeel) | A freelancer, self-employed without staff. |
-
-### Dismissal and procedure
-
-| Term | Meaning |
-|---|---|
-| Afspiegelingsbeginsel | The order-of-selection rule in an economic layoff. |
-| Bedrijfsvestiging | The business unit within which the order of selection is calculated. |
-| Disfunctioneren | Poor performance, the d-ground. |
-| Dringende reden | A serious reason for summary dismissal. |
-| Herplaatsing | The duty to move you to a suitable position before dismissing you, including in group companies. |
-| Herstel | Reinstatement of the contract by court order. |
-| Kantonrechter | Subdistrict court judge, the standard court for employment disputes. |
-| Ondernemingskamer | The Enterprise Chamber of the Amsterdam Court of Appeal; hears works council appeals. |
-| Ontbinding | Termination of the contract by court ruling. |
-| Ontslagadviescommissie | The UWV committee that reviews a dismissal application. |
-| Ontslag op staande voet | Summary dismissal for serious misconduct; courts review it very strictly. |
-| Ontslagvergunning | The UWV's dismissal permit. |
-| Opzegverbod | A ban on dismissal, for example during illness. |
-| Redelijke grond | A valid legal ground for dismissal from a closed list (a to i). |
-| Sociaal plan | An agreement between the company and the unions or the OR on layoff payments. |
-| Uitwisselbare functies | Interchangeable positions, the pool within which the order of selection is calculated. |
-| Verbetertraject | An improvement plan, the Dutch PIP. |
-| Vernietiging | Annulment of a dismissal, after which the contract is treated as never having ended. |
-| Verstoorde arbeidsverhouding | A broken working relationship, the g-ground. |
-| Vervaltermijn | A strict limitation period: a letter can't interrupt it, and it can't be extended. |
-| Verweer | Your written objection to the UWV. |
-| Verwijtbaar handelen | Employee misconduct, the e-ground. |
-| Vrijwillige vertrekregeling | A voluntary departure scheme in a social plan. |
-| Wederhoor | The right to respond to allegations: your written reply to a review or a PIP. |
-
-### Money and the agreement
-
-| Term | Meaning |
-|---|---|
-| Bijzondere beloning | Special remuneration, the tax category of a severance payment. |
-| Billijke vergoeding | An additional "fair compensation" from a court if the employer behaved unacceptably (*ernstig verwijtbaar*). |
-| Boetebeding | A penalty clause for breaching the agreement. |
-| Concurrentiebeding | Non-compete clause. |
-| Ernstig verwijtbaar | Seriously culpable conduct by the employer. |
-| Excl. btw | Excluding VAT; a VSO usually states the lawyer's fee this way. |
-| Fictieve opzegtermijn | The "fictitious" notice period the UWV applies to a VSO; WW isn't paid until it has passed. |
-| Finale kwijting | A mutual waiver of all claims in a VSO. |
-| Kort geding | Summary proceedings in court, for example to recover unpaid salary. |
-| Mediationovereenkomst | A mediation agreement, usually with a confidentiality clause. |
-| Non-actiefstelling | Suspension from work on full pay. |
-| Relatiebeding | A ban on working with the former employer's clients. |
-| Transitievergoeding | Statutory severance: one third of a monthly salary per year worked. |
-| Turbo-clausule | The right to leave before the end date and receive part of the remaining salary. |
-| Vakantiegeld | Holiday allowance, 8% of annual salary. |
-| Vrijstelling van werk | Release from work on full pay (garden leave). |
-| Werkgeversverklaring | The employer's statement you need to apply for WW. |
-
-### Corporate structure
-
-| Term | Meaning |
-|---|---|
-| 403-verklaring | A parent company's declaration of joint liability for a subsidiary's debts. |
-| Actio pauliana | A challenge to a transaction that harms creditors. |
-| Afsplitsing | A legal demerger: part of the assets moves to another company. |
-| Holding | A company that owns shares in other group companies. |
-| Overgang van onderneming | Transfer of undertaking: employees move with the work. |
-
-### Health and protection
-
-| Term | Meaning |
-|---|---|
-| Arbodienst | Occupational health service. |
-| Bedrijfsarts | Company doctor: assesses your fitness for work, doesn't share your diagnosis with the employer. |
-| Benadeling | Disadvantageous treatment; prohibited towards a whistleblower or anyone who complained about discrimination. |
-| College voor de Rechten van de Mens | The Netherlands Institute for Human Rights; reviews discrimination complaints free of charge. |
-| Deskundigenoordeel | An independent UWV opinion if you disagree with the bedrijfsarts. |
-| Huisarts | General practitioner. |
-| Huis voor Klokkenluiders | The Whistleblowers Authority. |
-| Klokkenluider | A whistleblower who reports wrongdoing. |
-| Plan van aanpak | The return-to-work plan during illness, signed by week 8. |
-| Rechtsbijstandsverzekering | Legal expenses insurance. Buy it before a conflict starts. |
-| Tweede spoor | The search for work outside the company after a year of illness. |
-| Vertrouwenspersoon | Confidential adviser on harassment. |
-| Wet verbetering Poortwachter | The Gatekeeper Improvement Act: reintegration steps during long illness. |
-| Ziektewet (ZW) | Sickness benefit from the UWV if your contract ends while you're ill. |
-
-### Visa and tax
-
-| Term | Meaning |
-|---|---|
-| 30% ruling (30%-regeling) | A tax benefit for expats. |
-| DAFT (Dutch-American Friendship Treaty) | A treaty under which US citizens can get a residence permit for their own business. |
-| DigiD | The digital ID for government services; needed to apply for WW. |
-| Erkend referent | "Recognised sponsor" status with the IND. |
-| Kennismigrant | Residence permit for a highly skilled migrant. |
-| Zoekjaar hoogopgeleiden | The orientation year, a job-search year for university graduates. |
 
 ## What to read in your situation
 
@@ -234,7 +56,8 @@ Article 15 of the AVG gives the right to request all your personal data, includi
 2. Already called to a meeting: Section 4 on dirty tricks, Section 8 on the agreement and Sections 14 and 15 on turning the company's mistakes into money.
 3. The company is also restructuring the group: Section 7.
 4. Put on a PIP, or afraid of retaliation for a post, a complaint or signing a petition: Sections 5 and 6.
-5. The way the company reacts to your questions shows how it'll run the process:
+5. Met an unfamiliar term or law: the glossary and the guide to the laws are in the appendices at the end.
+6. The way the company reacts to your questions shows how it'll run the process:
    - ✅ They answer in writing and to the point, and name the procedure and the deadlines: the company plays by the rules.
    - 🚩 They rush you, push a deadline, say "it's a standard agreement" or refuse to answer: that reaction tells you as much about the company as a written answer would.
 
@@ -256,6 +79,9 @@ Article 15 of the AVG gives the right to request all your personal data, includi
 - [Section 14. The company's legal risks](#section-14-the-companys-legal-risks)
 - [Section 15. Turning risk into money](#section-15-turning-risk-into-money)
 - [Section 16. What to do right now](#section-16-what-to-do-right-now)
+- [Where to get help](#where-to-get-help)
+- [Appendix 1. Quick guide to the laws](#appendix-1-quick-guide-to-the-laws)
+- [Appendix 2. Glossary](#appendix-2-glossary)
 
 ## Section 1. Three ways to end a contract
 
@@ -285,7 +111,7 @@ The law has no letter for "a reorganisation where we pick the strongest". To cut
 
 ### How it works in practice
 
-Departments can be cut legally only through the UWV on economic grounds. Companies almost always offer a VSO first, because it's faster and skips the UWV review and the selection rule. Refusing costs you nothing: the company goes to the UWV, the procedure takes a month to six weeks, you're paid throughout and you get the right to object.
+Departments can be cut legally only through the UWV on economic grounds. Companies almost always offer a VSO first, because it's faster and skips the UWV review and the selection rule. Refusing doesn't cost you your rights: the company goes to the UWV, the procedure takes a month to six weeks, you're paid throughout and you get the right to object. But if the company's procedure is clean, you can end up with only the legal minimum after refusing, so assess its weak spots first (Section 15, "The limits of this approach").
 
 A company can't fire you quickly for "poor performance", because the court requires documented problems, warnings and a real chance to improve. So a sudden PIP right before a reorganisation means the company is building a different ground (Section 5).
 
@@ -299,7 +125,7 @@ A company can't fire you quickly for "poor performance", because the court requi
 
 ### Written consent to dismissal can cost you WW
 
-Besides a VSO, the company can ask for your written consent to the dismissal (*instemming met opzegging*). The 14 days to cancel apply here too, but if the text doesn't state that the initiative came from the employer, your consent can cost you WW. Never write "I agree to the dismissal" in reply to HR until a lawyer has read the whole text.
+Besides a VSO, the company can ask for your written consent to the dismissal (*instemming met opzegging*). The 14 days to cancel (Section 8) apply here too, but if the text doesn't state that the initiative came from the employer, your consent can cost you WW. Never write "I agree to the dismissal" in reply to HR until a lawyer has read the whole text.
 
 The company can use summary dismissal (*ontslag op staande voet*) for serious misconduct such as theft, violence or refusal to work. Companies rarely do it, because courts review it strictly, but they often threaten it (for what to do about the threat, see Section 4).
 
@@ -310,7 +136,7 @@ The UWV procedure takes about a month to six weeks from filing, and you have a s
 ### How the procedure runs
 
 1. The company files an application through the UWV portal: the economic case, the list of positions to cut, the selection calculation by age group and its redeployment efforts. [The UWV requires](https://www.mkbservicedesk.nl/personeel/ontslag/ontslag-om-bedrijfseconomische-redenen) proof that the position disappears structurally, that is, for the long term and not for a couple of months. The company usually attaches financial statements, a business plan for the reorganisation and the new organisational structure.
-2. The UWV sends you a letter with a copy of the application. The letter marks the official start; watch the dates from that day on. Read the attachments carefully: they show which pool of interchangeable positions the company chose and where you stand in the selection order.
+2. The UWV sends you a letter with a copy of the application. The procedure officially starts with this letter, so watch the dates from that day on. Read the attachments: they show which pool of interchangeable positions the company chose and where you stand in the selection order.
 3. You usually have about two weeks for your objection (*verweer*). If you can't make it, ask the UWV in writing to extend the deadline before it expires, and give a reason. Ideally, write it through a lawyer and in Dutch, the UWV's working language.
 4. If your objection raises new points, the UWV can hold a second round, with 7 days each for the company and for you. Add only new points the second time: repetition doesn't help. With a second round, the procedure can take 8 to 9 weeks.
 5. The UWV committee (*ontslagadviescommissie*), made up of employer and employee representatives, reviews the case, and the UWV grants or refuses the permit. [Rocket Lawyer estimates](https://www.rocketlawyer.com/nl/nl/documenten/ontslag-na-ontvangst-vergunning) the whole procedure at about 4 weeks; in practice it can take longer.
@@ -319,23 +145,25 @@ The UWV procedure takes about a month to six weeks from filing, and you have a s
 
 ### What to put in your objection
 
-A strong objection answers each of the three UWV checks with facts.
+Your objection should answer each of the three UWV checks with facts.
 
 - On economics, show that the reason isn't structural: the work continues under another name, it's been given to contractors, the company is hiring for similar roles or the loss comes from intra-group prices (Section 7). If the company attached only slides, ask for the financial documents.
 - On the selection order, list who else does the same work, at what level and with what salary and length of service. Explain why your position is interchangeable with theirs and point out errors in the service calculation.
 - On redeployment, name dated vacancies at the company and in the group that you qualify for or would qualify for after reasonable retraining, and attach screenshots.
 - Add your personal circumstances: a visa, illness, long service, age. The UWV doesn't refuse a permit over them, but they carry weight in court and affect the price of the agreement.
 
-If the company hires someone for the same work within 26 weeks after dismissing you through the UWV, it must [offer the job to you first](https://www.uwv.nl/nl/ontslag/opnieuw-in-dienst). If it doesn't, you can claim reinstatement or fair compensation (*billijke vergoeding*), so watch your former employer's vacancies for six months.
+If the company hires someone for the same work within 26 weeks of giving you notice under a UWV permit, it must [offer the job to you first](https://www.uwv.nl/nl/ontslag/opnieuw-in-dienst); if it doesn't, you can claim reinstatement or fair compensation (*billijke vergoeding*, Section 14). So watch your former employer's vacancies for six months.
 
 ### Selection rule (*afspiegelingsbeginsel*)
 
-The company doesn't choose who goes. [Under the selection rule](https://www.rocketlawyer.com/nl/nl/personeel/ontslag-geven/rechtwijzer/stappenplan-aanvraag-uwv-ontslagvergunning), within each age group the person with the shortest service leaves first. The rule protects against favouritism, which is why companies so often try to get around it.
+The company doesn't choose who goes. [Under the selection rule](https://www.rocketlawyer.com/nl/nl/personeel/ontslag-geven/rechtwijzer/stappenplan-aanvraag-uwv-ontslagvergunning), within each age group the person with the shortest service leaves first. The rule protects against favouritism, which is why companies often try to get around it.
 
 - Temporary people go first: contractors, freelancers (*zzp*) and agency workers (*uitzendkrachten*), and also people receiving the state pension (*AOW*), on-call workers (*oproepkrachten*) and employees with no more than 26 weeks left on a temporary contract. If contractors still work in your category of positions while you're being cut, the company has got the order wrong.
 - The comparison covers only interchangeable positions (*uitwisselbare functies*) in the same business unit (*bedrijfsvestiging*), that is, positions with similar tasks, knowledge and skills, level and pay. The job title isn't decisive: two jobs with different titles can be the same position.
 - Cuts are spread across the age groups 15-25, 25-35, 35-45, 45-55 and 55+ in proportion to their size.
 - If a position is unique and disappears entirely, the selection order doesn't apply; [a court of appeal confirmed](https://www.hrpraktijk.nl/juridisch/ontslag/afspiegelingsbeginsel-geldt-niet-bij-unieke-functies-ontslag-afdelingshoofd-was-rechtsgeldig/) this exception in 2026.
+- The company can leave out of the selection order an employee with special knowledge or skills it would find too hard to work without ([article 11 of the Ontslagregeling](https://wetten.overheid.nl/BWBR0036599/)). It has to justify this to the UWV: what the special knowledge is, how often it's needed, who covers for the employee on leave and what a handover would cost. If the company protects a colleague this way, check whether the justification holds up.
+- A CAO can let the company leave out of the selection order up to 10% of the affected employees who are rated above average ([article 16 of the Ontslagregeling](https://wetten.overheid.nl/BWBR0036599/)). If a CAO sets up an independent committee (*cao-commissie*), that committee can decide in place of the UWV and apply its own selection rules (7:671a BW). Read your CAO: only the CAO shows whether such a rule applies to you.
 - [Service at group companies counts](https://www.uwv.nl/assets-kai/files/93cf060c-dfea-4f04-85af-d12178c85e96/uitvoeringsregels-ontslag-om-bedrijfseconomisch-e-redenen-juli-2025.pdf) if the gaps between contracts were 6 months or less and the group companies were successive employers for that work, or employees regularly move between them. HR often forgets this. Service on temporary contracts before the permanent one usually counts too.
 
 When a whole team closes, the company can't lay off a member only for the closure if they essentially do the same work as colleagues on other teams. The company has to compare them with all interchangeable positions in the business unit, and the person with the shortest service in the age group goes, even if their team carries on. Build your objection on that comparison.
@@ -347,7 +175,7 @@ Before dismissing you, the company must look for a suitable vacancy, including o
 - Suitable work matches your education, experience and abilities, and you can be trained for it within a reasonable time, usually a few months. A position one level lower can be suitable too.
 - Keep dated screenshots of the company's and the group's vacancies, apply in writing and keep the replies. Use any refusal to consider you without a reason in your objection.
 
-Turning down a suitable vacancy weakens your position at the UWV and in negotiations. So answer any offer in writing and on the merits: why it's suitable or not, for example a third less pay, a different profession or a move to another country.
+Turning down a suitable vacancy weakens your position at the UWV and in negotiations. So answer an offer in writing and on the merits: why it's suitable or not, for example a third less pay, a different profession or a move to another country.
 
 ### Merging departments before a layoff
 
@@ -356,7 +184,7 @@ Before a layoff, a company sometimes merges departments or teams into one busine
 - Merging departments is a reorganisation, so the works council (OR) has the right to advise on it before the decision. If the merger and the layoff are parts of one plan, the advice must cover the whole plan (Section 7).
 - The UWV checks the selection order against the actual work, not the org chart. If you do the same work after the merger, compare yourself with everyone who does the same work in the new unit.
 - If the new structure has a role similar to yours, the company must offer it to you before dismissing you. Social plans (*sociaal plan*) often set the principle that the person follows the work (*mens volgt werk*): if your position essentially remains, you move into it without competing for it.
-- If departments are merged shortly before the UWV application and people are moved around at the same time, that supports an argument that the structure was redrawn to get the layoff list the company wanted. Keep the old and new org charts with dates, and the job descriptions.
+- If departments are merged shortly before the UWV application and people are moved around at the same time, that suggests the structure was redrawn to get the layoff list the company wanted. Keep the old and new org charts with dates, and the job descriptions.
 
 ## Section 3. Collective redundancy: WMCO, unions, OR
 
@@ -392,7 +220,7 @@ OR members, candidates and former members for 2 years have stronger dismissal pr
 
 In a collective redundancy, the company often agrees a social plan (*sociaal plan*) with the unions or the OR. It sets a floor for everyone, and you can negotiate more individually.
 
-- A social plan usually pays above the statutory severance (*transitievergoeding*), for example by a formula with a multiplier, and also pays for retraining and outplacement, helps with the job search, tops up WW for a period and sets rules for voluntary departure.
+- A social plan usually pays above the statutory severance (*transitievergoeding*), for example by a formula with a multiplier. It also pays for retraining and outplacement, helps with the job search, tops up WW for a period and sets rules for voluntary departure.
 - Ask HR, the OR or the union for the text. A social plan signed with a union is often published.
 - The social plan doesn't cancel your individual arguments: errors in the selection order, retaliation, illness or a visa are reasons to demand more.
 
@@ -400,7 +228,7 @@ A social plan sometimes includes a voluntary departure scheme (*vrijwillige vert
 
 ## Section 4. Dirty tricks employers use
 
-The company has one legal route to a layoff and many ways around it. Most of these moves are legal and work because under pressure you react on the spot. The defence is always the same: recognise the move, pause and answer in writing. The moves are grouped by stage.
+The company has one legal route to a layoff and many ways around it. Most of these moves are legal and work because under pressure you react on the spot. The defence is always the same: recognise the move, pause and answer in writing.
 
 ### Before the announcement
 
@@ -488,7 +316,7 @@ You're asked to sign a letter "just as confirmation". The text above your signat
 
 You're threatened with summary dismissal (*ontslag op staande voet*) over something minor or old: being late, an old incident, a "policy violation", to scare you into signing the VSO.
 
-✅ Summary dismissal needs a serious reason, stated immediately, and courts review it strictly: they weigh your length of service, the consequences for you and proportionality. If one is announced, contest it in writing straight away and state that you're available for work. Never leave it unanswered: it costs you WW and the statutory severance (*transitievergoeding*), and you have only 2 months to ask the court to annul it.
+✅ Summary dismissal needs a serious reason, stated immediately, and courts review it strictly: they weigh your length of service, the consequences for you and proportionality. If one is announced, contest it in writing straight away and state that you're available for work. Never leave it unanswered: it costs you WW and the statutory severance, and you have only 2 months to ask the court to annul it.
 
 #### "Resign, it looks better on your CV"
 
@@ -516,7 +344,7 @@ Right after the meeting, your laptop is taken and your email and Slack switched 
 
 #### "Off the record, just an informal chat"
 
-Your manager invites you for "just a chat" and discusses your "situation" without HR, hoping for words such as "he said himself that he wants to leave" with no accountability for the company.
+Your manager invites you for "just a chat" and discusses your "situation" without HR. The company wants words from you that it isn't accountable for, such as "he said himself that he wants to leave".
 
 ✅ Promise nothing, don't share your plans, and afterwards send an email: "I'm confirming that today we discussed..."
 
@@ -524,9 +352,9 @@ Your manager invites you for "just a chat" and discusses your "situation" withou
 
 #### A deadline of "by Friday"
 
-"The offer is valid until the end of the week, then it gets worse" or "then we'll go to the UWV and you'll get the minimum." The company wants to avoid the UWV, the check of the selection order (*afspiegeling*) and the WMCO, and to keep you from a lawyer.
+"The offer is valid until the end of the week, then it gets worse" or "then we'll go to the UWV and you'll get the minimum." The company wants to avoid the UWV, the check of the selection order and the WMCO (Section 3), and to keep you from a lawyer.
 
-✅ The deadline has no legal force. Reply in writing that you're reviewing the offer with a lawyer and will answer within a reasonable time: the UWV procedure costs the company more than a week's wait. Either way, you have 14 days to cancel after signing.
+✅ The deadline has no legal force. Reply in writing that you're reviewing the offer with a lawyer and will answer within a reasonable time: the UWV procedure costs the company more than a week's wait. Either way, you have 14 days to cancel after signing (Section 8).
 
 #### Your "OK" in an email is treated as agreement
 
@@ -576,7 +404,7 @@ People are dismissed in waves of 19, through different group entities or "volunt
 
 After a short conversation, the company doctor (*bedrijfsarts*) declares you fit for work and HR immediately invites you to negotiate, to end your sick leave and put you back into the procedure.
 
-✅ Ask for a second opinion from another company doctor or for a UWV expert opinion (*deskundigenoordeel*), an independent opinion for which the employee pays EUR 100. Until the dispute is resolved, follow the company doctor's instructions so the company can't stop your salary.
+✅ Ask for a second opinion from another company doctor or for an independent UWV expert opinion (*deskundigenoordeel*), which costs you EUR 100. Until the dispute is resolved, follow the company doctor's instructions so the company can't stop your salary.
 
 #### "Let's discuss your future" while you're on sick leave
 
@@ -688,7 +516,7 @@ The amount is there but no payment date, or payment is tied to "returning compan
 
 ✅ State explicitly that the employer took the initiative and the employee isn't at fault (Section 8), or the UWV may refuse you WW.
 
-If the employer acted with serious culpability (*ernstig verwijtbaar*), a court can award fair compensation (*billijke vergoeding*) on top of the statutory severance (*transitievergoeding*). [For a highly skilled migrant (*kennismigrant*), courts also weigh](https://www.dirkzwager.nl/kennis/artikelen/verblijfsstatus-als-kennismigrant-speelt-een-rol-bij-beoordeling-of-een-werkgever-ernstig-verwijtbaar-heeft-gehandeld) the risk of losing the residence permit.
+If the employer acted with serious culpability (*ernstig verwijtbaar*), a court can award fair compensation on top of the statutory severance. [For a highly skilled migrant, courts also weigh](https://www.dirkzwager.nl/kennis/artikelen/verblijfsstatus-als-kennismigrant-speelt-een-rol-bij-beoordeling-of-een-werkgever-ernstig-verwijtbaar-heeft-gehandeld) the risk of losing the residence permit.
 
 ### After you leave
 
@@ -696,7 +524,7 @@ If the employer acted with serious culpability (*ernstig verwijtbaar*), a court 
 
 A couple of months later, the company's website posts a vacancy with your tasks under a new title: the layoff wasn't about economics.
 
-✅ If you were dismissed through the UWV, for 26 weeks the job must be offered to you first, including when the company gives the same work to a contractor or an employee of another group company. Keep screenshots: you have 2 months after the 26 weeks end to file a claim.
+✅ If you were dismissed through the UWV, for 26 weeks the job must be offered to you first, even when the work goes to a contractor or another group company (Section 14). Keep screenshots: you have 2 months after the 26 weeks end to file a claim.
 
 #### The final settlement is late
 
@@ -743,7 +571,7 @@ Sometimes the company says: "Choose: a 30-day PIP or a package of two months' sa
 
 ### How to act during a PIP
 
-1. Don't sign agreement with the assessment. If they ask for a signature, write *"voor ontvangst, niet voor akkoord"*.
+1. Don't sign agreement with the assessment. If they ask for a signature, write *"voor ontvangst, niet voor akkoord"* (Section 4).
 2. Give a written reply to the allegations (*wederhoor*) within one or two weeks: what you disagree with, the facts and the context (workload, shifting priorities, missing resources). Ask for your reply to be added to your personnel file.
 3. Ask in writing for each goal to be clarified: what, how it's measured, who assesses it, by what date. If the company refuses, record the refusal too.
 4. Ask for a coach, training, a mentor or a lighter workload during the PIP.
@@ -754,7 +582,7 @@ Sometimes the company says: "Choose: a 30-day PIP or a package of two months' sa
 9. If the problem is your manager, ask for a different assessor, for HR to take part or for mediation.
 10. Send a GDPR data request. The answer often shows when and why the PIP was decided, sometimes down to messages like "we need to manage him out".
 11. See a lawyer at the start of the PIP, while your replies can still be written with a court in mind.
-12. If the stress affects your health, see your GP (*huisarts*) and the company doctor (*bedrijfsarts*). Sick leave pauses a PIP, but don't use it tactically: the company doctor looks at your health.
+12. If the stress affects your health, see your GP (*huisarts*) and the company doctor (*bedrijfsarts*). Sick leave pauses a PIP, but don't use it tactically: the company doctor assesses only your health.
 
 ### What not to do
 
@@ -767,12 +595,12 @@ Sometimes the company says: "Choose: a 30-day PIP or a package of two months' sa
 
 - If you pass, ask for written confirmation that the goals were met.
 - If you fail, the company goes to the court (subdistrict court, *kantonrechter*) on the "poor performance" ground or offers a VSO. The court reads the whole file, including your replies. If the file is weak, the court refuses, the contract continues and the price of a VSO goes up.
-- If the PIP covers a layoff or retaliation, the company is swapping the ground: an economic layoff must go through the UWV with the selection order. The swap gives you an argument in court and leverage in negotiations (Sections 6 and 14).
+- If the PIP covers a layoff or retaliation, the company is swapping the ground: an economic layoff must go through the UWV under the selection rule (*afspiegeling*). The swap gives you an argument in court and leverage in negotiations (Sections 6 and 14).
 - For a highly skilled migrant (*kennismigrant*), a PIP doesn't affect the visa by itself: only the contract end date does.
 
 ## Section 6. Dismissal as retaliation
 
-Dutch law has no ground for "dismissal for criticism". To dismiss you over a post, a complaint or joining a protest, the company needs a legal ground: an urgent cause for summary dismissal (*dringende reden*), the "employee misconduct" ground (e-ground) or the "broken working relationship" ground (g-ground). Courts review each one strictly. For dismissal over lawfully exercising your rights, a court awards fair compensation (*billijke vergoeding*) for serious culpability by the employer, so retaliation is usually disguised: a sudden PIP, a bad review, a place on the layoff list.
+Dutch law has no ground for "dismissal for criticism". To dismiss you over a post, a complaint or joining a protest, the company needs a legal ground: an urgent cause for summary dismissal (*dringende reden*), the "employee misconduct" ground (e-ground) or the "broken working relationship" ground (g-ground). Courts review each one strictly. A court treats dismissal over lawfully exercising your rights as serious culpability by the employer and awards fair compensation (*billijke vergoeding*). So employers usually disguise retaliation: a sudden PIP, a bad review, a place on the layoff list.
 
 ### What's protected
 
@@ -805,7 +633,7 @@ Courts often find summary dismissal over a moderate post with no prior warnings 
 - No names, insults or guesses about specific people's motives.
 - No internal data: figures, plans, correspondence, Slack screenshots, information about colleagues.
 - Nothing that breaches a VSO you've already signed with a confidentiality clause.
-- It's better to wait until the VSO is signed: a post in the middle of negotiations gives the company a reason to lower its offer or build a case on the "employee misconduct" or "broken working relationship" ground.
+- Wait with the post until the VSO is signed: a post in the middle of negotiations gives the company a reason to lower its offer or build a case on the "employee misconduct" or "broken working relationship" ground.
 - Check the company's social media policy.
 - Let the draft sit for a day.
 
@@ -814,11 +642,11 @@ Courts often find summary dismissal over a moderate post with no prior warnings 
 - If they demand you take it down, remove or edit it and state in writing that you did so to de-escalate and see no breach. A court counts this in your favour.
 - If they call you to a meeting, admit nothing on the spot, then send a confirmation email and call your lawyer.
 - If they give you a warning, reply in writing with your position and ask for your reply to be added to the file.
-- If they dismiss you on the spot, contest it in writing straight away, state that you're available for work and see a lawyer. You have 2 months to claim annulment.
+- If they dismiss you on the spot, contest it in writing straight away, state that you're available for work and see a lawyer. You have 2 months to claim annulment (Section 14).
 
 ### A collective petition against management
 
-Each signatory of a petition against management's decisions, for example against the layoffs, has the same protections as the author of a single post. Freedom of association (Article 11 of the ECHR) comes on top, and if a union runs the petition, so does the ban on dismissal for union activity (7:670 BW). Signing isn't a ground for dismissal by itself: the company still needs the "poor performance" ground (d-ground), the "employee misconduct" ground or the "broken working relationship" ground, with evidence, and picking signatories for the layoff list breaks the selection order and looks like retaliation.
+Each signatory of a petition against management's decisions, for example against the layoffs, has the same protections as the author of a single post. Freedom of association (Article 11 of the ECHR) comes on top, and if a union runs the petition, so does the ban on dismissal for union activity (7:670 BW). Signing isn't a ground for dismissal by itself: the company still needs the "poor performance" ground (d-ground), the "employee misconduct" ground or the "broken working relationship" ground, with evidence. If the company picks signatories for the layoff list, it breaks the selection rule (*afspiegeling*), and that looks like retaliation.
 
 A court judges a petition by the same criteria as a post. Leaking confidential figures, insulting managers by name and going to the press without trying to talk internally give the company a reason to argue a breach of the duty to be a good employee.
 
@@ -826,7 +654,7 @@ A court judges a petition by the same criteria as a post. Leaking confidential f
 
 If a petition touches on discrimination, intimidation, harassment or workplace safety, the signatories have stronger protection than when they criticise business decisions.
 
-- The law treats sexual harassment, and harassment linked to sex, origin or another protected ground, as discrimination (Article 7:646 BW and the equal treatment laws). These laws protect not only the person who complained but also those who supported them, which includes the signatories.
+- The law treats sexual harassment, and harassment linked to sex, origin or another protected ground, as discrimination (Article 7:646 BW and the equal treatment laws). These laws protect both the person who complained and those who supported them, the signatories included.
 - In discrimination cases, the court usually shifts the burden of proof to the employer if you present facts that point to discrimination.
 - The Working Conditions Act (*Arbowet*) requires the employer to protect employees from inappropriate behaviour, including discrimination, intimidation and harassment, and to keep working conditions safe. The Labour Authority (*Nederlandse Arbeidsinspectie*) investigates such complaints and can demand corrections or fine the company.
 - If the company systematically breaks these rules and many people are affected, the problem may count as wrongdoing of public interest. Then the Whistleblower Protection Act covers the signatories and the people who help the reporter. Check this with a lawyer or the Whistleblowers Authority (*Huis voor Klokkenluiders*) before you send it.
@@ -863,7 +691,7 @@ If a petition touches on discrimination, intimidation, harassment or workplace s
 
 ### How to prove retaliation
 
-- The timeline: the date of the post or complaint, then the date of the reaction. After a clean record, a short gap points to a link. This is the main evidence.
+- The timeline, the main evidence: the date of the post or complaint, then the date of the reaction. After a clean record, a short gap points to a link.
 - Past reviews, praise and bonuses show there were no problems before.
 - A comparison with colleagues shows that others weren't treated this way for the same thing.
 - A GDPR data request can turn up management's correspondence about you after the post or complaint.
@@ -884,7 +712,7 @@ If a petition touches on discrimination, intimidation, harassment or workplace s
 3. Answer every measure in writing, calmly and with facts.
 4. See a lawyer straight away, or your union if you're a member.
 5. Pick the channel: a confidential adviser (*vertrouwenspersoon*), an internal complaint, the Whistleblowers Authority, the Netherlands Institute for Human Rights, the court. Your lawyer helps you choose the order.
-6. Watch the deadlines: you have 2 months to claim after a dismissal.
+6. Watch the deadlines: you have 2 months to claim after a dismissal (Section 14).
 7. Use the risk in negotiations: retaliation raises the company's risk of having to pay fair compensation and its reputational risk, and with them the price of a VSO (Section 15).
 
 ## Section 7. Group restructuring and moving assets
@@ -893,12 +721,12 @@ A group restructuring at the same time as a layoff barely simplifies the dismiss
 
 ### Common restructuring patterns
 
-Companies that run an operating business and own other group companies usually restructure along one of these patterns, or several at once. Each carries its own risk for employees.
+Companies that run an operating business and own other group companies usually restructure along one of these patterns, or several at once.
 
 | Pattern | What happens | Main risk for employees |
 |---|---|---|
 | Splitting off a holding company | The shares in subsidiaries and control of the group move to a separate company, while the operating business and the employees stay put | Valuable assets leave the company your claims are against, and its separate accounts may look weaker |
-| Moving functions to other group companies, including abroad | Teams, clients, contracts or IP move to another entity, and the people are laid off | The work carries on elsewhere, so a transfer of undertaking, a breach of the redeployment duty and the 26-week rule all come into play |
+| Moving functions to other group companies, including abroad | Teams, clients, contracts or IP move to another entity, and the people are laid off | The work carries on elsewhere, so a transfer of undertaking, a breach of the redeployment duty and the 26-week rule (Section 14) all come into play |
 | Changing the legal form, for example N.V. to B.V. | The legal entity stays the same, but the rules for paying out to shareholders change | Moving money up the group becomes easier, and creditor protection rests on the solvency test |
 
 ### What doesn't change
@@ -965,7 +793,7 @@ The usual reasons for such a step have nothing to do with layoffs: tax, simpler 
 
 ✅ A neutral restructuring shows when the shares are sold to the holding company at market price, cash and revenue stay in the operating company, and the 403 declaration stays in place.
 
-The restructuring itself doesn't show intent; what happens next to the operating company's assets, prices and functions does. You can follow that through KvK filings and the annual accounts.
+Intent shows in what happens next to the operating company's assets, prices and functions, and you can follow that through KvK filings and the annual accounts.
 
 ### Where to catch breaches
 
@@ -974,10 +802,10 @@ The levers run roughly from strongest to weakest:
 1. If after the split the work, teams, clients or IP move to another group company and the people are laid off, this may be a transfer of undertaking (*overgang van onderneming*). By law, employees move to the new employer automatically, and dismissal because of the transfer itself is prohibited. The signs: the same work continues at another group company, and contracts or revenue move there.
 2. The restructuring and the layoffs are in substance one decision, so the OR must advise on the whole plan at once, while its advice can still change something. The company breaches the OR's right of advice if the OR wasn't asked, was asked only about the formal side with the link to layoffs hidden, or was asked after everything was decided. The OR can appeal the decision to the Enterprise Chamber ([Ondernemingskamer](https://www.dirkzwager.nl/kennis/artikelen/roadmap-reorganisatie-3-het-beroepsrecht-van-de-ondernemingsraad)) within a month, and the Chamber can order the consequences reversed.
 3. If the operating company became loss-making because income was moved out or because of new transfer prices, challenge the economic case at the UWV as an artificially created reason. Ask for the group's accounts and an explanation of the prices. False or incomplete information in the application is a ground for fair compensation for serious culpability.
-4. The company breaches the WMCO when it splits the layoff across time, group entities or "voluntary" agreements to stay under 20 people in 3 months (Section 4). A breach gives you 6 months to annul both the dismissal and a signed VSO.
+4. The company breaches the WMCO when it splits the layoff across time, group entities or "voluntary" agreements to stay under 20 people in 3 months (Sections 3 and 4). A breach gives you 6 months to annul both the dismissal and a signed VSO.
 5. The company must look for redeployment positions across the whole group, including the new holding company. If you're laid off while the group has vacancies you qualify for, the UWV can refuse the permit, or you can bring a claim.
 6. The company breaches the selection order when it reshapes roles and moves people between teams or entities right before the layoff, to create "unique" roles or the pool it wants (Section 4).
-7. If within 26 weeks of the layoff a new hire, a contractor or an employee of another group company does the same work, you have a ground for reinstatement or fair compensation.
+7. If within 26 weeks of the layoff a new hire, a contractor or an employee of another group company does the same work, you have a ground for reinstatement or fair compensation (Section 14).
 8. If the operating company ends up "emptied", the creditor protections in the transfer method table and the 403 declaration subsection apply. On top of them, transactions that harm creditors can be challenged (*actio pauliana*), especially in insolvency, through the trustee.
 9. The company's written promises that employees will stay in their own legal entity or that the changes won't affect their work (Section 4) are evidence in court, including of a transfer of undertaking. If reality departs from them, you can argue that the company breached its duty to be a good employer (7:611 BW) and acted with serious culpability.
 
@@ -1002,7 +830,7 @@ Almost all of these levers get stronger when many people share one lawyer. The d
 
 ## Section 8. The settlement agreement (VSO)
 
-The first VSO offer is almost never final. Without your signature, the company needs the UWV, the WMCO waiting month and the risk of losing: that's your leverage. The agreement settles at once how much money you get, whether you get WW and when your contract ends, and with it your visa.
+The first VSO offer is almost never final. Without your signature, the company needs the UWV, the WMCO waiting month (Section 3) and the risk of losing: that's your leverage. The agreement settles at once how much money you get, whether you get WW and when your contract ends, and with it your visa.
 
 ### Keeping your WW
 
@@ -1025,7 +853,7 @@ Read the agreement before you sign anyway: if you cancel, a new agreement within
 
 If the company won't move on the amount, negotiate other items: each one is worth money or time.
 
-- [ ] Ask for a payment above the statutory severance (*transitievergoeding*) as a number of monthly salaries ("6 months gross, including holiday allowance") or as a multiplier of the statutory severance. Companies often offer 6 months' salary, so treat 3 months as a lowball. Back the amount up with the calculation from Section 15: the length of the procedure, the company's risks, your visa.
+- [ ] Ask for a payment above the statutory severance (*transitievergoeding*) as a number of monthly salaries ("6 months gross, including holiday allowance") or as a multiplier of the statutory severance. A reasonable amount depends on your length of service and the company's risks: back it up with the calculation in Section 15 (the length of the procedure, the company's risks, your visa) and check it against that section's "Market benchmarks".
 - [ ] Ask for the latest possible end date, with garden leave on full pay. Months in employment give you salary, pension contributions, holiday and, for a highly skilled migrant (*kennismigrant*), time on your visa before the search period starts.
 - [ ] Ask the company to pay your lawyer's fee, usually EUR 1,000 to 2,500 excluding VAT (*excl. btw*), directly against the lawyer's invoice. Wording: the company pays for the employee's legal assistance up to an amount of X excluding VAT.
 - [ ] Ask for a pro-rata bonus for the year. If the bonus depends on targets, ask for them to count as 100% met: you can't influence them after you leave.
@@ -1037,7 +865,7 @@ If the company won't move on the amount, negotiate other items: each one is wort
 - [ ] Ask to keep your laptop and phone. Companies often let you keep the equipment: for them it's pocket change and for you it's convenient.
 - [ ] Get an early-exit clause (*turbo-clausule*): if you get a new job, you leave early and get the rest of your salary up to the end date as a lump sum.
 - [ ] Ask for outplacement, courses and certifications: a budget for these is often easier to agree than money.
-- [ ] Get a right of first refusal or a top-up if the role reopens within 26 weeks.
+- [ ] Get a right of first refusal or a top-up if the role reopens within 26 weeks (Section 14).
 - [ ] Ask for a short payment deadline and, if the company is moving assets out, a parent company guarantee.
 - [ ] Move the payment to January if your income next year will be lower (Section 9).
 
@@ -1084,7 +912,7 @@ The employer's statutory notice period depends on your years of service: 1 month
 
 WW pays 75% of your daily wage for the first 2 months and 70% after that. The daily wage it counts is capped: [from 2026-07-01 at EUR 309.91 gross a day](https://rekenmachinepro.nl/blog/ww-uitkering-hoogte-duur-berekenen/), about EUR 4,700 gross a month after the second month. Above that cap WW pays far less than 70% of your salary, so each month of full salary in a VSO is worth almost twice a month of WW.
 
-WW lasts 3 months if you worked 26 of the last 36 weeks. If you also worked 4 of the last 5 years, you get one more month for each of your first 10 years of work history. After that, years up to 2015 give a month each and years from 2016 half a month each, up to 24 months in total. Work abroad before you came usually doesn't count, so someone who moved to the Netherlands 3 years ago usually gets about 3 months of WW. [The cut to 12 months has been postponed to 2029](https://www.intropersoneel.nl/blog/prinsjesdag-2026-maatregelen-sociale-zaken-werkgelegenheid/).
+WW lasts 3 months if you worked 26 of the last 36 weeks. If you also worked 4 of the last 5 years, WW lasts one month for each year of work history, with 3 months as the minimum: each of your first 10 years gives a month. After that, years up to 2015 give a month each and years from 2016 half a month each, up to 24 months in total. Work outside the EU doesn't count. Work in other EU and EEA countries and Switzerland can count towards both the 26 weeks and the work history for the duration, as long as your last job was in the Netherlands (article 61 of EU Regulation 883/2004). You need a [PD U1 form](https://www.uwv.nl/en/individuals/forms/pdu1-form) from that country, and check with the UWV how it will count your years. Without such periods, someone who moved to the Netherlands 3 years ago usually gets about 3 months of WW. [The cut to 12 months has been postponed to 2029](https://www.intropersoneel.nl/blog/prinsjesdag-2026-maatregelen-sociale-zaken-werkgelegenheid/).
 
 Apply on werk.nl no later than one week after your first day without work, because the UWV may pay less if you're late. You'll need your digital government ID (DigiD), the employer's statement for WW (*werkgeversverklaring*) and the agreement or the dismissal decision.
 
@@ -1108,9 +936,9 @@ Sick leave protects you from dismissal only in some cases. The order of events d
 
 ### How sick leave works
 
-- You report sick to your employer without a diagnosis or details: the employer isn't entitled to know the diagnosis and can't ask for it. You can say when you expect to return and whether they can contact you.
+- You report sick to your employer without a diagnosis or details: the employer isn't entitled to know the diagnosis or ask for it. You can say when you expect to return and whether they can contact you.
 - Your GP (*huisarts*) treats you and refers you to specialists but doesn't write notes for your employer, and sick leave needs no note.
-- A company doctor (*bedrijfsarts*), whom the company hires through an occupational health service (*Arbodienst*), assesses your fitness for work. The company doctor tells the employer only the prognosis and your limitations, never the diagnosis, and must by law be independent. But remember that the company hires and pays them and that the occupational health service has a long-term contract with it. So ask for a written report after each consultation and keep your own notes of what you said.
+- A company doctor (*bedrijfsarts*), whom the company hires through an occupational health service (*Arbodienst*), assesses your fitness for work. The company doctor tells the employer only the prognosis and your limitations, never the diagnosis, and must by law be independent. But the company pays them, and the occupational health service has a long-term contract with it, so ask for a written report after each consultation and keep your own notes of what you said.
 - If you disagree with the company doctor, ask for a second opinion from another company doctor or a UWV expert opinion (*deskundigenoordeel*).
 - For the first 2 years the employer pays at least 70% of your salary, and contracts often give 100% in the first year.
 - Reintegration follows the Gatekeeper Improvement Act (*Wet verbetering Poortwachter*): by week 6 the company doctor writes a problem analysis, by week 8 you and your employer sign a return-to-work plan (*plan van aanpak*), and regular evaluations follow. If after a year you can't return to your own job, the second track (*tweede spoor*) begins: the search for work outside the company.
@@ -1134,9 +962,9 @@ If your contract ends while you're still ill, the employer stops paying your sal
 
 ### How sick leave affects a layoff
 
-If you feel unwell, see a doctor and take sick leave, because that's your right. Sick leave on its own won't stop the layoff, though. The company doctor assesses your health, and if they see a work conflict with no medical cause, they may declare you fit for work and suggest mediation. So describe your symptoms honestly and specifically: sleep, concentration, anxiety, workload and how they get in the way of your work.
+If you feel unwell, see a doctor and take sick leave, because that's your right. Sick leave on its own won't stop the layoff, though. The company doctor assesses your health: if they see a work conflict with no medical cause, they may declare you fit for work and suggest mediation. So describe your symptoms honestly and specifically: sleep, concentration, anxiety, workload and how they get in the way of your work.
 
-Sick leave does strengthen your negotiating position: the employer can't dismiss a sick employee through the UWV and has to pay for up to 2 years, so the price of a VSO goes up. But sign a VSO on sick leave only with a lawyer, as above.
+Sick leave does strengthen your negotiating position: the employer can't dismiss a sick employee through the UWV and has to pay for up to 2 years, so the price of a VSO goes up.
 
 Burnout during a reorganisation is a common and genuine reason for sick leave. If your work made you ill, you also have an argument that the employer is at fault, especially if the company ignored the workload (Working Conditions Act, *Arbowet*).
 
@@ -1159,7 +987,7 @@ When you lose your job, you get a job-search period before you have to leave the
 
 ### Other ways to stay
 
-- Permanent residence or a Dutch passport removes the search-period limit. If you're close to 5 years, the contract end date can decide a great deal, so discuss it with an immigration lawyer.
+- Permanent residence or a Dutch passport removes the search-period limit. If you're close to 5 years, the contract end date can decide a lot, so discuss it with an immigration lawyer.
 - If your partner works in the Netherlands or has their own residence permit, check whether you can switch to a residence permit as their partner, which can take the time pressure off.
 - If you graduated in recent years from a Dutch university or a top-ranked university abroad, you may be entitled to a separate orientation year for graduates (*zoekjaar hoogopgeleiden*). Check the conditions on the IND website.
 - Since 2026-05-22 an EU Blue Card has the same search period, 3 or 6 months, so switching to one doesn't extend it.
@@ -1179,7 +1007,7 @@ On a temporary contract your main question is whether the company will renew it.
 - During probation the company can dismiss you without a reason, but if you ask, it must give the reason in writing. The reason can't be discriminatory, such as pregnancy, illness or origin.
 - A non-compete clause (*concurrentiebeding*) in a temporary contract is invalid unless the contract itself justifies it in writing with a substantial business interest (*zwaarwegend bedrijfsbelang*).
 - You're owed statutory severance (*transitievergoeding*) from the first day of work, also when the employer doesn't renew a temporary contract.
-- If a temporary contract has no early termination clause, neither you nor the company can end it early by giving notice. What remains is an agreement, summary dismissal for an urgent cause (*dringende reden*) or dissolution by the court (*kantonrechter*), so a company that wants to part ways earlier will usually have to pay.
+- If a temporary contract has no early termination clause, neither you nor the company can end it early by giving notice. What remains is an agreement, summary dismissal for an urgent cause (*dringende reden*) or dissolution by the court (*ontbinding*), so a company that wants to part ways earlier will usually have to pay.
 
 ## Section 13. How to fight your employer
 
@@ -1192,7 +1020,7 @@ In the Netherlands you win a fight with your employer through documents and proc
   > Hello [name], I'm confirming that today, [date], we discussed [topic]. You said that [summary]. I replied that [summary] and that I'll look into the matter with a lawyer. If I've misunderstood anything, please correct me in writing.
 
 - Keep your contract and its amendments, payslips, reviews, emails about bonuses and raises, relocation correspondence and restructuring announcements. Forward to yourself only what's yours: documents about you and addressed to you.
-- Don't take company data such as code, internal documents or other people's personal data. It gives the company grounds to dismiss you for misconduct and wrecks your position. Get what you need from internal documents through a GDPR request or through your lawyer.
+- Don't take company data such as code, internal documents or other people's personal data, because that gives the company grounds to dismiss you for misconduct and wrecks your position. Get what you need from internal documents through a GDPR request or through your lawyer.
 - In the Netherlands you can usually record a conversation you take part in and use the recording as evidence. Sharing it is a separate legal question, so discuss it with your lawyer first.
 - Don't correspond with your lawyer from a work device or work email, because under certain conditions the company can inspect them.
 - Keep a timeline in one file with the date, the event and the evidence. It saves your lawyer hours and you money.
@@ -1201,7 +1029,7 @@ In the Netherlands you win a fight with your employer through documents and proc
 
 Under Article 15 of the GDPR (AVG in the Netherlands), you can request all the data held about you without giving a reason: your personnel file, HR's notes and correspondence that mentions you. [The company must answer within one month](https://www.rendement.nl/algemene-verordening-gegevensbescherming-avg/nieuws/organisaties-weigeren-verzoeken-om-inzage-persoonsgegevens.html), or within three months in complex cases.
 
-You can send a request like this one to HR and the data protection officer (DPO):
+Send HR and the data protection officer (DPO) a request such as this one:
 
 > Subject: Request for access to personal data (Article 15 GDPR / AVG)
 >
@@ -1209,19 +1037,19 @@ You can send a request like this one to HR and the data protection officer (DPO)
 
 - The company redacts other people's data, and it may withhold internal legal advice: [the Supreme Court dealt with such a case in 2024](https://uitspraken.rechtspraak.nl/api/pdfdownload/ECLI_NL_HR_2024_1372).
 - If the company doesn't answer or answers incompletely, you can complain to the Dutch Data Protection Authority (*Autoriteit Persoonsgegevens*) or apply to a court.
-- The answer often shows how long the company has been preparing the dismissal, when and why it put you on the list and what it wrote about you. That's a strong argument in negotiations.
+- The answer often shows how long the company has been preparing the dismissal, when and why it put you on the list and what it wrote about you, which is a strong argument in negotiations.
 - Send the request early, because the month the company has to reply can eat up the whole negotiation period.
 
 ### Internal channels
 
-- A confidential adviser (*vertrouwenspersoon*) on harassment and inappropriate behaviour helps with a complaint and passes nothing on without your consent. The law doesn't yet require a company to appoint one, but the Labour Authority (*Nederlandse Arbeidsinspectie*) treats one as part of a policy against psychosocial workload, so a missing adviser supports an argument that the policy is weak.
+- A confidential adviser (*vertrouwenspersoon*) on harassment and inappropriate behaviour helps with a complaint and passes nothing on without your consent. The law doesn't yet require a company to appoint one. But the Labour Authority (*Nederlandse Arbeidsinspectie*) treats one as part of a policy against psychosocial workload, so a missing adviser supports an argument that the policy is weak.
 - File a formal complaint under the internal procedure and stick to facts: the date, what happened and the witnesses, with no judgements or emotions. The complaint sets a date from which any retaliation is later measured.
 - If many people are affected, the works council (OR) can demand information and influence the process.
 
 ### External channels
 
 - Under the Working Conditions Act (*Arbowet*), the employer must [have a policy against psychosocial workload](https://www.awvn.nl/ongewenst-gedrag/), covering harassment, intimidation, discrimination and excessive workload. The Labour Authority can investigate the company, demand corrections or fine it. The inspectorate won't resolve your individual case, but it puts pressure on the company, and you can report to it anonymously.
-- The Whistleblowers Authority (*Huis voor Klokkenluiders*) takes reports of serious wrongdoing in the public interest, and before you report you can get confidential advice there for free. The Whistleblower Protection Act prohibits retaliation for a report made in good faith.
+- The Whistleblowers Authority (*Huis voor Klokkenluiders*) takes reports of serious wrongdoing in the public interest, and before you report you can get confidential advice there for free. The Whistleblower Protection Act (*Wet bescherming klokkenluiders*) prohibits retaliation for a report made in good faith.
 - If the selection for the layoff shows signs of discrimination, turn to the Netherlands Institute for Human Rights (*College voor de Rechten van de Mens*). It's free, and you don't need a lawyer.
 - Union membership (FNV, CNV, De Unie) includes legal help, but not for conflicts that started before you joined. CNV also has a 3-month waiting period; under its terms, FNV has none. So join before a conflict starts. Unions also negotiate the social plan (*sociaal plan*).
 - If many people are affected, act together: one lawyer, one position on the social plan and a joint claim. A company finds it harder to pressure a group than individuals, and you share the lawyer's costs.
@@ -1339,23 +1167,36 @@ The inputs: a salary of EUR 8,000 gross a month, EUR 8,640 with holiday allowanc
 | Risk of WMCO annulment with a year's pay and the increase | 10% x 12 months x 1.5 (155,520) | 15,552 |
 | **Expected cost to the company** | | **about 61,800** |
 
-The company's first offer often equals the statutory severance (EUR 8,640), and the negotiating zone lies between that amount and about EUR 61,800.
+The company's first offer often equals the statutory severance (EUR 8,640). EUR 61,800 is the optimistic case, for a company that rushes and makes mistakes, and it comes with two caveats. The 1.5 multiplier in the last row is the maximum statutory increase for late salary (7:625 BW), and courts often reduce it. While the UWV procedure runs, you keep working, so the salary for that time isn't a pure loss to the company unless it has released you from work.
+
+### A conservative case
+
+A careful company notified the UWV under the WMCO in advance, consulted the OR and got the selection order right. Then the risks are gone, and only the unavoidable costs remain:
+
+| Item | Calculation | Cost to the company, EUR |
+|---|---|---|
+| Statutory severance | 8,640 / 3 x 3 years | 8,640 |
+| The company's lawyers for the UWV | Assumption | 10,000 |
+| Salary during the procedure, if you're released from work | 0 to 2 months x 8,640 | 0 to 17,280 |
+| **Expected cost to the company** | | **about 18,600 to 35,900** |
+
+In this case a reasonable target is 2 to 4 times the statutory severance, not seven. An amount closer to EUR 61,800 is realistic only if you and your lawyer have found specific mistakes in the procedure.
 
 ### How to read the calculation
 
-The company pays the first three rows every time, even after a flawless procedure, so any employee can rely on them. The risks work only with facts: 20% with no specific mistake in the selection order is a bluff, and the company's lawyer will see it. The risks that undo the dismissal cost most: one real WMCO argument can outweigh five weak ones.
+The company pays the unavoidable costs from the conservative case every time, even after a flawless procedure, so any employee can rely on them. The risks work only with facts: 20% with no specific mistake in the selection order is a bluff, and the company's lawyer will see it. The risks that undo the dismissal cost most: one real WMCO argument can outweigh five weak ones.
 
-You pay too, in lawyer's fees, time, stress and the risk of losing, so the final amount is usually below the full cost to the company. Aim for the middle of the zone or higher.
+You pay too, in lawyer's fees, time, stress and the risk of losing, so the final amount is usually below the full cost to the company. Aim for the middle of the zone between the first offer and the cost to the company as the facts of your case put it.
 
 ### Market benchmarks
 
 The legal minimum is statutory severance: one third of a monthly salary per year worked. One legal website [cites an average](https://webwoordenboek.nl/kenniscentrum/heb-ik-recht-op-transitievergoeding-bij-vaststellingsovereenkomst) of about 0.57 of a monthly salary per year worked in a VSO, but gives no data or date, so treat it as a rough and possibly dated benchmark.
 
-In practice companies often offer a flat 6 months' salary, regardless of length of service. An offer of 3 months is a lowball: companies open with it hoping you won't negotiate. If your risk calculation comes out higher, negotiate above 6 months too.
+In my experience and that of people I know, with one to five years of service companies in large layoffs often offer about 6 months' salary in total. I have no data behind this number, and it depends on length of service. After one year, 3 months can be a fair offer if the procedure has no weak spots. With a few years of service and a rushed procedure, 3 months is a lowball first offer, made in the hope that you won't negotiate. With long service the benchmark changes: after 18 years the statutory severance alone equals 6 months' salary, so compare the offer with the statutory severance and count how many months the company adds on top.
 
 The old subdistrict court formula A x B x C (*kantonrechtersformule*: weighted years of service x salary x correction factor) has been formally abolished but [is still used as a benchmark](https://www.rocketlawyer.com/nl/nl/personeel/ontslag-geven/rechtwijzer/verschillende-berekenmethodes-ontslagvergoeding) in negotiations. C = 1 means a neutral case, and C goes above 1 when the employer is at fault.
 
-With short service, count in months of salary: with 2 or 3 years of service, statutory severance is one month's pay, and a reasonable negotiation covers several months on top for the procedure time, the risks and the visa.
+With short service, count in months of salary: with 3 years of service, statutory severance is one month's pay, and a reasonable negotiation covers several months on top for the procedure time, the risks and the visa.
 
 ### How to use the risks in negotiations
 
@@ -1383,32 +1224,32 @@ WMCO, OR and selection-order risks affect everyone being laid off at once. If te
 
 #### 4. Protect your leverage in the agreement
 
-A signed VSO with a full waiver of claims usually closes most of the risks, so agree on protections before you sign. The 26-week rule on rehiring for your job applies to dismissal with a UWV permit. A VSO can recreate it by contract: a top-up or a right of first refusal if the role reopens within 26 weeks.
+A signed VSO with a full waiver of claims usually closes most of the risks, so agree on protections before you sign. The 26-week rehiring rule (Section 14) applies only to dismissal with a UWV permit. A VSO can recreate it by contract: a top-up or a right of first refusal if the role reopens within 26 weeks.
 
-WMCO annulment also covers a VSO signed in breach, so if in doubt, check the dates with your lawyer. Put your arguments on the table before you sign: after signing and the 14-day period only narrow grounds remain.
+WMCO annulment also covers a VSO signed in breach, so if in doubt, check the dates with your lawyer. Put your arguments on the table before you sign: after signing and the 14-day period (Section 8) only narrow grounds remain.
 
 #### 5. Watch the vacancies after the dismissal
 
-If you were dismissed through the UWV, watch the company's and the group's vacancies for 26 weeks and screenshot ads with the same tasks. Rehiring for your job is a separate ground for a claim, even if everything else went cleanly.
+If you were dismissed through the UWV, watch the company's and the group's vacancies for 26 weeks and screenshot ads with the same tasks. Rehiring for your job is a separate ground for a claim (Section 14), even if everything else went cleanly.
 
 ### The negotiation, step by step
 
-1. At the HR meeting, listen, take the written offer, and sign and promise nothing. You can say: "Thank you, I'll review this with my lawyer."
+1. At the HR meeting, listen, take the written offer, and sign and promise nothing. Say: "Thank you, I'll review this with my lawyer."
 2. Build your position: send the GDPR request and written questions to HR, calculate the money and deadlines, and draw up the company's risk map.
 3. Have your lawyer send the counteroffer, in writing and with arguments: from a lawyer it carries more weight.
 4. Negotiations usually take 2 to 4 rounds. The company almost always improves its first offer, and the final amount is often well above the starting one.
 5. If the money hits a ceiling, negotiate the whole package: the end date, garden leave (*vrijstelling van werk*), the bonus, the lawyer's fee and the reference. [Practitioners note](https://www.bruto-netto.nl/vaststellingsovereenkomst-onderhandelen-ontslagvergoeding/) that negotiating several items often yields more than one amount.
 6. Check the final text: WW-proof, the end date, the payment deadline, the waiver of claims, confidentiality and a mutual non-disparagement clause.
-7. Sign the agreement, and remember the 14 days to cancel.
+7. Sign the agreement, and remember the 14 days to cancel (Section 8).
 
 ### Tactics
 
 - While you're employed, time works for you: your salary keeps coming and the company needs to finish the reorganisation, so HR's deadlines press on the company harder than on you.
 - Anchor high and tie the number to the cost of the procedure and the risks: the company easily dismisses a number with no arguments.
-- The Netherlands has no strict rule, as the UK does, that settlement correspondence can't be used in court, so don't write anything you're not prepared to see in the case file.
+- Settlement negotiations between lawyers are confidential: a lawyer can't show them to the court without the other side's lawyer's consent ([rule 27 of the Gedragsregels advocatuur](https://www.advocatenorde.nl/voor-advocaten/wet-en-regelgeving/gedragsregels/gedragsregels-advocatuur/de-advocaat-de-1)). Your own emails to HR fall outside this rule and are ordinary evidence, so negotiate through your lawyer and don't write anything yourself that you're not prepared to see in the case file.
 - Compare offers with colleagues, if they're willing to share: companies often make everyone the same first offer, and the full picture shows how much room the company has.
-- If the relationship is damaged but both sides want to settle, mediation is a reasonable option (Section 8). The mediator is neutral, and the company usually pays.
-- You can settle after the dismissal too. If you have claims, negotiations take place under the threat of a lawsuit, so keep an eye on the two-month deadline.
+- If the relationship is damaged but both sides want to settle, try mediation (Section 8). The mediator is neutral, and the company usually pays.
+- You can settle after the dismissal too. If you have claims, you negotiate under the threat of a lawsuit, so watch the two-month deadline (Section 14).
 - Put the payment deadline in the agreement, for example 30 days after the contract ends, or the money may be delayed.
 
 ### The limits of the move
@@ -1421,9 +1262,9 @@ The move works against a company that's in a hurry and skimping on lawyers. Agai
 - If your role truly has no equivalent, the selection order doesn't apply to it and the selection-order argument won't work.
 - A threat without facts, or a missed deadline, shows you have no leverage, and later offers get worse.
 - You pay too: your lawyer's fee if no union or insurance covers it, months of uncertainty and, if you refuse the VSO, the risk of ending up with only the legal minimum.
-- Courts apply the deadlines strictly: 2 months for most claims and 6 months under the WMCO. Once you miss a deadline, the threat of a claim stops being worth anything.
+- The deadlines are strict limitation periods: 2 months for most claims and 6 months under the WMCO (Section 14). Once you miss one, the threat of a claim is worth nothing.
 
-The company pays for the risk that you and your lawyer have calculated and shown: the more precisely you show the procedure's weak points and what each costs, the more it costs the company not to settle.
+The company pays for the risk that you and your lawyer have calculated and shown: the more precisely you name the procedure's weak points and what each costs, the more it costs the company not to settle.
 
 ## Section 16. What to do right now
 
@@ -1492,10 +1333,191 @@ Take these steps before your first conversation with HR: your access may be cut 
 | Dutch Data Protection Authority ([Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl)) | The company doesn't answer your GDPR request |
 | The judiciary ([Rechtspraak](https://www.rechtspraak.nl)) | Information about court procedure and court rulings |
 
+## Appendix 1. Quick guide to the laws
+
+### Burgerlijk Wetboek Boek 7 (Civil Code, Book 7: the employment contract)
+
+| Article | What it says |
+|---|---|
+| 7:611 BW | *Goed werkgeverschap / goed werknemerschap*: both sides must act as a "good employer" and a "good employee". You invoke this principle when the company pressures you, isolates you, provokes a conflict or breaks its written promises. |
+| 7:611a BW | The company can't claw back the cost of training that the law or a CAO makes mandatory. |
+| 7:613 BW | The employer can change your working conditions unilaterally only if the contract provides for it and the employer's interest outweighs yours. |
+| 7:625 BW | For late salary, the employer pays a statutory increase of up to 50%. |
+| 7:641 BW | Untaken holiday is paid out when you leave. |
+| 7:656 BW | The employer must give you a certificate of employment (*getuigschrift*) on request. |
+| 7:662 BW onwards | In a transfer of undertaking (*overgang van onderneming*), employees move to the new employer automatically; dismissal because of the transfer itself is prohibited. |
+| 7:668 BW | *Aanzegplicht*: for a temporary contract of 6 months or more, the company must say in writing a month before the end whether it'll renew. |
+| 7:669 BW | Dismissal at the employer's initiative needs a valid reason (*redelijke grond*) from a closed list and proof that redeployment isn't possible. |
+| 7:670 BW | Dismissal bans (*opzegverbod*): during illness, pregnancy, OR membership and in other cases. |
+| 7:670b BW | 14 days to cancel a termination agreement. |
+| 7:672 BW | Notice periods. |
+| 7:673 BW | *Transitievergoeding*: the minimum severance payment for dismissal at the employer's initiative. |
+| 7:682 BW | If a dismissal permit was wrongly granted, the court reinstates the contract or awards a *billijke vergoeding*. The article also sets the rule on rehiring within 26 weeks. |
+| 7:686a BW | Claim deadline: 2 months for most claims, 3 months for the transitievergoeding. These are strict limitation periods (*vervaltermijn*). |
+
+### Free speech and protection against retaliation
+
+| Article or law | What it says |
+|---|---|
+| Article 7 of the Grondwet (the Constitution) and Article 10 of the ECHR (European Convention on Human Rights) | Protect freedom of expression, including about your employer, within the duty to be a good employee. |
+| Wet bescherming klokkenluiders | Prohibits disadvantaging a whistleblower; the burden of proof is on the company. |
+| AWGB, WGBH/CZ | Prohibit disadvantaging anyone who complained about discrimination. |
+
+### Burgerlijk Wetboek Boek 2 (Book 2: legal entities)
+
+| Article | What it says |
+|---|---|
+| 2:216 BW | Before a B.V. pays out to shareholders, the board checks that the company can still pay its debts after the distribution. Otherwise the directors are personally liable. |
+| 2:334a BW onwards | In a legal demerger (*splitsing*, *afsplitsing*), creditors can object, and after the demerger both companies are jointly liable for the debts. |
+| 2:403 BW | Under a 403 declaration, the parent company is liable for a subsidiary's debts, and the subsidiary may skip publishing full accounts. |
+
+### Burgerlijk Wetboek Boek 3
+
+Article 3:45 BW (*actio pauliana*) lets you challenge transactions that harm creditors, especially in insolvency.
+
+### Wet melding collectief ontslag (WMCO)
+
+If a company dismisses 20 or more people within 3 months in one UWV region, it must notify the UWV and the unions and wait a month. If it breaches this rule, you have 6 months to annul the dismissal and the VSO.
+
+### Wet op de ondernemingsraden (WOR)
+
+A company with 50 or more people must have an OR (works council).
+
+| Article | What it says |
+|---|---|
+| Article 25 | The OR has a right of advice (*adviesrecht*) on reorganisations, changes of control and major changes to the organisation. The company must ask while the advice can still affect the decision. |
+| Article 26 | The OR can appeal a decision to the Ondernemingskamer within one month. |
+
+### Werkloosheidswet (WW)
+
+The Unemployment Insurance Act (*Werkloosheidswet*) sets the amount and duration of unemployment benefit and the duty to look for work.
+
+### Algemene verordening gegevensbescherming (AVG / GDPR)
+
+Article 15 of the AVG gives the right to request all your personal data, including your personnel file and HR's notes.
+
+## Appendix 2. Glossary
+
+### Abbreviations
+
+| Term | Meaning |
+|---|---|
+| AVG (Algemene verordening gegevensbescherming) | The Dutch name for the GDPR. |
+| B.V. (Besloten vennootschap) | Private limited company, the most common company form. Flexible rules for paying out to shareholders. |
+| BW (Burgerlijk Wetboek) | The Civil Code. |
+| CAO (Collectieve Arbeidsovereenkomst) | Collective labour agreement. |
+| IND (Immigratie- en Naturalisatiedienst) | The Immigration and Naturalisation Service. |
+| KvK (Kamer van Koophandel) | The Chamber of Commerce trade register: company accounts, 403 declarations, demerger proposals. |
+| NLA (Nederlandse Arbeidsinspectie) | The Netherlands Labour Authority. |
+| N.V. (Naamloze vennootschap) | Public limited company. Mandatory minimum capital and stricter payout rules. |
+| OR (Ondernemingsraad) | Works council: a body elected by your colleagues, mandatory from 50 people. |
+| PIP (Performance Improvement Plan) | A formal plan to improve your performance. |
+| RSU (Restricted Stock Units) | Company shares that become yours on a schedule (vesting). |
+| UWV (Uitvoeringsinstituut Werknemersverzekeringen) | The employee insurance agency: grants permits for economic dismissals and pays WW. |
+| VSO (Vaststellingsovereenkomst) | Settlement agreement, a termination by mutual consent and the most common way to part. |
+| WMCO (Wet melding collectief ontslag) | The Collective Redundancy Act. |
+| WOR (Wet op de ondernemingsraden) | The Works Councils Act. |
+| WW (Werkloosheidswet) | The Unemployment Insurance Act, and the benefit itself. |
+| ZZP (Zelfstandige zonder personeel) | A freelancer, self-employed without staff. |
+
+### Dismissal and procedure
+
+| Term | Meaning |
+|---|---|
+| Afspiegelingsbeginsel | The selection rule that sets the selection order in an economic layoff. |
+| Bedrijfsvestiging | The business unit within which the selection order is calculated. |
+| Disfunctioneren | Poor performance, the d-ground. |
+| Dringende reden | An urgent cause for summary dismissal. |
+| Herplaatsing | The duty to move you to a suitable position before dismissing you, including in group companies. |
+| Herstel | Reinstatement of the contract by court order. |
+| Kantonrechter | Subdistrict court judge, the standard court for employment disputes. |
+| Ondernemingskamer | The Enterprise Chamber of the Amsterdam Court of Appeal; hears works council appeals. |
+| Ontbinding | Termination of the contract by court ruling. |
+| Ontslagadviescommissie | The UWV committee that reviews a dismissal application. |
+| Ontslag op staande voet | Summary dismissal for serious misconduct; courts review it very strictly. |
+| Ontslagvergunning | The UWV's dismissal permit. |
+| Opzegverbod | A ban on dismissal, for example during illness. |
+| Redelijke grond | A valid legal ground for dismissal from a closed list (a to i). |
+| Sociaal plan | An agreement between the company and the unions or the OR on layoff payments. |
+| Uitwisselbare functies | Interchangeable positions, the pool within which the selection order is calculated. |
+| Verbetertraject | An improvement plan, the Dutch PIP. |
+| Vernietiging | Annulment of a dismissal, after which the contract is treated as never having ended. |
+| Verstoorde arbeidsverhouding | A broken working relationship, the g-ground. |
+| Vervaltermijn | A strict limitation period: a letter can't interrupt it, and it can't be extended. |
+| Verweer | Your written objection to the UWV. |
+| Verwijtbaar handelen | Employee misconduct, the e-ground. |
+| Vrijwillige vertrekregeling | A voluntary departure scheme in a social plan. |
+| Wederhoor | The right to respond to allegations: your written reply to a review or a PIP. |
+
+### Money and the agreement
+
+| Term | Meaning |
+|---|---|
+| Bijzondere beloning | Special remuneration, the tax category of a severance payment. |
+| Billijke vergoeding | An additional "fair compensation" from a court if the employer behaved unacceptably (*ernstig verwijtbaar*), or in place of reinstatement. |
+| Boetebeding | A penalty clause for breaching the agreement. |
+| Concurrentiebeding | Non-compete clause. |
+| Ernstig verwijtbaar | Seriously culpable conduct by the employer. |
+| Excl. btw | Excluding VAT; a VSO usually states the lawyer's fee this way. |
+| Fictieve opzegtermijn | The "fictitious" notice period the UWV applies to a VSO; WW isn't paid until it has passed. |
+| Finale kwijting | A mutual waiver of all claims in a VSO. |
+| Kort geding | Summary proceedings in court, for example to recover unpaid salary. |
+| Mediationovereenkomst | A mediation agreement, usually with a confidentiality clause. |
+| Non-actiefstelling | Suspension from work on full pay. |
+| Relatiebeding | A ban on working with the former employer's clients. |
+| Transitievergoeding | Statutory severance: one third of a monthly salary per year worked. |
+| Turbo-clausule | The right to leave before the end date and receive part of the remaining salary. |
+| Vakantiegeld | Holiday allowance, 8% of annual salary. |
+| Vrijstelling van werk | Release from work on full pay (garden leave). |
+| Werkgeversverklaring | The employer's statement you need to apply for WW. |
+
+### Corporate structure
+
+| Term | Meaning |
+|---|---|
+| 403-verklaring | A parent company's declaration of joint liability for a subsidiary's debts. |
+| Actio pauliana | A challenge to a transaction that harms creditors. |
+| Afsplitsing | A legal demerger: part of the assets moves to another company. |
+| Holding | A company that owns shares in other group companies. |
+| Overgang van onderneming | Transfer of undertaking: employees move with the work. |
+
+### Health and protection
+
+| Term | Meaning |
+|---|---|
+| Arbodienst | Occupational health service. |
+| Bedrijfsarts | Company doctor: assesses your fitness for work, doesn't share your diagnosis with the employer. |
+| Benadeling | Disadvantageous treatment; prohibited towards a whistleblower or anyone who complained about discrimination. |
+| College voor de Rechten van de Mens | The Netherlands Institute for Human Rights; reviews discrimination complaints free of charge. |
+| Deskundigenoordeel | An independent UWV opinion if you disagree with the bedrijfsarts. |
+| Huisarts | General practitioner. |
+| Huis voor Klokkenluiders | The Whistleblowers Authority. |
+| Klokkenluider | A whistleblower who reports wrongdoing. |
+| Plan van aanpak | The return-to-work plan during illness, signed by week 8. |
+| Rechtsbijstandsverzekering | Legal expenses insurance. Buy it before a conflict starts. |
+| Tweede spoor | The search for work outside the company after a year of illness. |
+| Vertrouwenspersoon | Confidential adviser on harassment. |
+| Wet verbetering Poortwachter | The Gatekeeper Improvement Act: reintegration steps during long illness. |
+| Ziektewet (ZW) | Sickness benefit from the UWV if your contract ends while you're ill. |
+
+### Visa and tax
+
+| Term | Meaning |
+|---|---|
+| 30% ruling (30%-regeling) | A tax benefit for expats. |
+| DAFT (Dutch-American Friendship Treaty) | A treaty under which US citizens can get a residence permit for their own business. |
+| DigiD | The digital ID for government services; needed to apply for WW. |
+| Erkend referent | "Recognised sponsor" status with the IND. |
+| Kennismigrant | Residence permit for a highly skilled migrant. |
+| Zoekjaar hoogopgeleiden | The orientation year, a job-search year for university graduates. |
+
 ## Sources
 
 ### Procedure and collective redundancy
 
+- [Ontslagregeling: the selection order and its exceptions](https://wetten.overheid.nl/BWBR0036599/)
+- [NOvA: lawyers' code of conduct, rule 27](https://www.advocatenorde.nl/voor-advocaten/wet-en-regelgeving/gedragsregels/gedragsregels-advocatuur/de-advocaat-de-1)
+- [UWV: the PD U1 form for work in another EU country](https://www.uwv.nl/en/individuals/forms/pdu1-form)
 - [UWV: collective redundancy and the waiting month](https://www.uwv.nl/werkgevers/werkgever-en-ontslag/ik-wil-ontslag-aanvragen/detail/collectief-ontslag)
 - [Ondernemersplein: rules for collective redundancy](https://ondernemersplein.overheid.nl/regels-voor-collectief-ontslag/)
 - [KHN: the WMCO and the waiting month](https://khn.nl/kennis/collectief-ontslag-om-bedrijfseconomische-redenen-hoe-zit-dat)
@@ -1564,3 +1586,4 @@ Take these steps before your first conversation with HR: your access may be cut 
 | Version | Date | Event |
 |---------|------|-------|
 | 1.0 | 2026-11-03 | First publication: the layoff guide, the company's legal risks, group restructuring and employers' dirty tricks |
+| 1.1 | 2026-11-04 | Settlement benchmark tied to length of service, a conservative calculation, exceptions to the selection order, confidentiality of negotiations, EU work history for WW, law guide and glossary moved to appendices, editorial pass |
