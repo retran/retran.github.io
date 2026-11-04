@@ -9,7 +9,7 @@ ogImage: /assets/articles/which-ai-tool-wins.jpg
 
 ![](/assets/articles/which-ai-tool-wins.jpg)
 
-_Updated 2026-10-25._
+_Updated 2026-11-04._
 
 *The views expressed here are my own and do not represent the position of my employer.*
 
@@ -17,7 +17,7 @@ Last month I watched a colleague hunt down a bug: an agent's frontend refactor h
 
 I asked him why he didn't pick one. He looked at me as if I'd asked why he owns both a screwdriver and a hammer.
 
-Before going further, a caveat: that colleague is a senior engineer with fifteen years of experience. He knew which tool to reach for because he understood the problem deeply enough to decompose it. For the median team, three tools mean three times the context switching and no clear signal about which output to trust. The anecdotes in this article come mostly from skilled practitioners. The more common failure is real too: agents produce plausible but wrong code that nobody on the team can evaluate, and Part III deals with it. The article argues for the direction the industry is taking, and today's average outcome lags behind it.
+Before going further, a caveat: that colleague is a senior engineer with fifteen years of experience. He knew which tool to reach for because he understood the problem deeply enough to decompose it. For the median team, three tools mean three times the context switching and no clear signal about which output to trust. The anecdotes in this article come mostly from skilled practitioners. The colleague above and the 400-line diff in Part I are my own experience. The other scenes that open sections are composites, among them the 03:14 merge, the developer in São Paulo, the Uber migration, the Amsterdam team and the board meeting. I built each one from several cases I've seen or heard about, and none of them describes one specific team. The more common failure is real too: agents produce plausible but wrong code that nobody on the team can evaluate, and Part III deals with it. The article argues for the direction the industry is taking, and today's average outcome lags behind it.
 
 One survey reports that [73% of developers use two or more AI coding tools regularly](https://ivern.ai/blog/state-of-ai-agents-developer-survey-2026) (Ivern AI, n=312, April 2026). The industry keeps asking "which one will win?", and it has asked the same question about editors before. In the 1990s the answer was going to be Visual Studio, in the 2000s Eclipse and in the 2010s VS Code. None of them won. Thirty years later, classical IDEs (integrated development environments), VS Code and Vim/Neovim coexist, because each maps to a different way of thinking about code. Terminal users don't become GUI (graphical user interface) users, and visual builders don't become keyboard users. The tools diverge because the people who use them think differently.
 
@@ -34,7 +34,7 @@ The article backs four claims, in about twenty minutes of reading:
 - For an engineering organization, "which AI tool?" is the wrong question, because the platform is the investment. The right question is "what does our platform expose to agents, and is it governed?"
 - AI coding tools serve three markets: pro-dev, enterprise low-code and citizen-dev. Each serves different people with different failure modes, and AI makes each segment more capable without dissolving the boundaries between them.
 - The tools diverge while the protocols converge. MCP (Model Context Protocol), ACP (Agent Client Protocol) and A2A (Agent-to-Agent) standardize the infrastructure underneath, so your editor is becoming a preference, like your shell theme.
-- The governance gap is real and growing: [89% of enterprise organizations have had an AI-related production incident](https://qodo.ai/resources/the-ai-coding-paradox) (Qodo/Censuswide, 500 US IT engineers, March 2026). The tools that build governance into their architecture, where others add it as a checkbox, will capture enterprise adoption.
+- The governance gap is real and growing: [89% of enterprise organizations have had an AI-related production incident](https://qodo.ai/resources/the-ai-coding-paradox) (Qodo/Censuswide, 500 US IT engineers, March 2026). Qodo sells AI code review, so read that number as a vendor's survey; Part III discusses the sources. The tools that build governance into their architecture, where others add it as a checkbox, will capture enterprise adoption.
 
 Pro-dev, enterprise low-code and citizen-dev aren't segments of one market. They're three markets that happen to share the words "developer tool" and "AI".
 
@@ -81,9 +81,9 @@ Three years ago, my average day looked like this: I wrote code for about five ho
 
 Now, on some days, I don't write code at all. I spend hours discussing specs with the agent: clarifying intent, narrowing scope and defining what it mustn't touch. I review agent output for two or three hours, and the rest is still meetings and Slack.
 
-Teams that adopted agent workflows report that coding dropped from about 55% to about 20% of a senior developer's day (multiple practitioner reports, 2026). The other 80% is review, architecture, orchestration and spec writing, so the job didn't shrink; it shifted.
+In my own week, and in the teams I talk to that adopted agent workflows, coding dropped from about half of a senior developer's day to about a fifth. I know of no survey that measures this, so treat the numbers as my estimate. The rest of the day is review, architecture, orchestration and spec writing, so the job didn't shrink; it shifted.
 
-The shift changes what a tool has to be good at, because every IDE in history was designed for the version of the job where coding took 55% of the day. When writing code becomes the minority of the work, a tool optimized for writing code is optimized for the minority of the work.
+The shift changes what a tool has to be good at, because every IDE in history was designed for the version of the job where coding took half the day. When writing code becomes the minority of the work, a tool optimized for writing code is optimized for the minority of the work.
 
 #### How the editors responded
 
@@ -125,7 +125,7 @@ I now spend more time writing `AGENTS.md` files and task specs than writing code
 
 #### Classic IDEs: not dead, narrowing
 
-Visual Studio and Eclipse built their advantage when writing code was the job. That job changed, and they're becoming specialists. The reason is structural: a monolithic IDE invests in being a better code editor, while a lightweight editor with an agent invests in being a better agent host. The agent updates weekly and the IDE quarterly. The agent's context is a 2-million-token window that RAG (retrieval-augmented generation) can extend, while the IDE's context is whatever fits in heap memory. So the two architectures diverge, and so do the users they serve.
+Visual Studio and Eclipse built their advantage when writing code was the job. That job changed, and they're becoming specialists. The reason is structural: a monolithic IDE invests in being a better code editor, while a lightweight editor with an agent invests in being a better agent host. The agent updates weekly and the IDE quarterly. The agent's context is a window of a few hundred thousand tokens, a million on the largest models, and RAG (retrieval-augmented generation) can extend it, while the IDE's context is whatever fits in heap memory. So the two architectures diverge, and so do the users they serve.
 
 Visual Studio (the full IDE, as opposed to VS Code) shipped cloud agent sessions, custom agents defined in `.agent.md` and an enterprise MCP allowlist in April 2026. Its differentiator is a `@debugger` agent that reproduces bugs by driving live runtime execution, which is real debugging where other agents stop at static analysis. It also ships `@profiler`, `@test` and `@modernize`. This is the enterprise .NET and C++ story, and it pulls Visual Studio further away from VS Code.
 
@@ -181,7 +181,7 @@ The cost of leaving a custom internal platform or an aging vendor used to be pro
 
 AI models change this. Translating a legacy internal workflow engine or an outdated vendor's DSL into Mendix microflows is now a tractable problem. It isn't trivial and the result isn't guaranteed correct, but it's tractable in a way it never was before. Migration tools, such as Amazon Q Developer Transform for Java and Claude Code for general-purpose rewrites, are the early form of this pattern.
 
-The platforms that win enterprise customers in 2027 and 2028 will win them for two reasons. Their governance model, audit trail and metamodel validation are better, and AI-assisted migration finally makes moving to them feasible. The best platforms benefit from de-platforming, because they're where organizations migrate *to*.
+AI-assisted migration lowers the cost of arriving on a platform as much as the cost of leaving one. So a platform whose governance model, audit trail and metamodel validation are strong can gain customers from de-platforming, and a weak one can lose them. I have no market data yet on which way these migrations go, and I work for one of these vendors, so weigh this paragraph with that in mind.
 
 So AI coding tools aren't disrupting enterprise low-code platforms; the platforms are integrating them as governed components. The governance layer, made of the metamodel, the permission model and the upgrade path, is what pro-dev tools don't provide and can't easily add. That layer is the platforms' lasting advantage. It has to rest on *value* and not on the *cost of leaving*, because AI-assisted migration is lowering that cost now.
 
@@ -231,9 +231,9 @@ The fusion team needs a coordination layer that none of the individual tools pro
 
 The shift from writing to reviewing works only if the agent knows what to build, because a faster executor with no brief produces noise faster. The industry learned this at the same time, from several directions.
 
-A developer prompted Claude Code: "Add user authentication to this app." The agent produced 400 lines of plausible authentication code with login forms, session management and token refresh logic. The tests passed, and the code looked right.
+Here is a composite case. A developer prompted Claude Code: "Add user authentication to this app." The agent produced 400 lines of plausible authentication code with login forms, session management and token refresh logic. The tests passed, and the code looked right.
 
-Three days later, a penetration test showed that the session tokens never expired. The code was correct by the standards of a generic tutorial and wrong by our security requirements, which lived on a Confluence page the agent had never seen.
+Three days later, a penetration test showed that the session tokens never expired. The code was correct by the standards of a generic tutorial and wrong by the team's security requirements, which lived on a Confluence page the agent had never seen.
 
 The agent failed because nobody told it what "authentication" meant in this context, so it interpolated from its training data. The missing spec cost three days and a security incident.
 
@@ -260,7 +260,7 @@ SDD isn't requirements engineering under a new name. A requirements document des
 
 Every major AI coding tool now has its own version of SDD:
 
-- [GitHub Spec Kit](https://arxiv.org/abs/2604.05278) is an open-source, model-agnostic research framework, published as a paper and not shipped as a product. It runs the loop above as a CLI workflow: `/specify`, `/plan`, `/tasks`, `/implement`.
+- [GitHub Spec Kit](https://github.com/github/spec-kit) is an open-source, model-agnostic toolkit from GitHub. Its `specify` CLI installs slash commands into your agent, and they run the loop above: `/speckit.specify`, `/speckit.plan`, `/speckit.tasks` and `/speckit.implement`.
 - AWS Kiro keeps the spec, the plan, the tasks and the code in one agentic IDE workspace. AWS's marketing claims an 18-month rearchitecture completed in 76 days; treat that as a vendor demo and not as a reproducible result. The direction is clear whatever the exact numbers.
 - Claude Code uses `CLAUDE.md` as a persistent context file. The agent reads it before every session, so your project context, constraints and conventions live in a file the agent consults the way a contractor checks the brief before starting work.
 - [Cursor 3](https://cursor.com/blog/cursor-3) combines Plan Mode with `AGENTS.md`, so the spec lives in the editor and needs no separate document.
@@ -276,9 +276,9 @@ Managing what information the agent holds across long sessions is becoming an ex
 
 #### The model provider lock-in risk
 
-The spec also survives disruption at the model provider, and most teams underestimate how often such disruption happens. Anthropic deprecated Claude 3 Opus with six weeks' notice. OpenAI's price for GPT-4 dropped 90% in eighteen months, which changed every cost assumption built on the old rate. Google replaced Bard with Gemini and broke every integration that used the old API.
+The spec also survives disruption at the model provider, and most teams underestimate how often such disruption happens. Anthropic announced the deprecation of Claude 3 Opus on 2025-06-30 and [retired it on 2026-01-05](https://platform.claude.com/docs/en/about-claude/model-deprecations). Six months' notice is generous by industry standards, and every team pinned to that model still had to migrate. OpenAI's price for GPT-4 dropped 90% in eighteen months, which changed every cost assumption built on the old rate. Google [shut down the PaLM API](https://ai.google.dev/palm_docs/deprecation) for Google AI services in August 2024 in favor of the Gemini API, and every integration built on PaLM had to move.
 
-Teams that tied their workflow to one model ("we use Claude Sonnet for everything") discovered the coupling when the model changed behavior after a minor version bump. A refactoring agent that produced clean, idiomatic code on Sonnet 3.5 started generating subtly different patterns on Sonnet 4.0. The tests still passed and the code was correct. But the drift in style made diffs harder to review and broke the team's sense of what their codebase looks like.
+Teams that tied their workflow to one model ("we use Claude Sonnet for everything") discovered the coupling when the model changed behavior after an upgrade. A refactoring agent that produced clean, idiomatic code on Sonnet 3.5 started generating subtly different patterns on Sonnet 4.0. The tests still passed and the code was correct. But the drift in style made diffs harder to review and broke the team's sense of what their codebase looks like.
 
 A structural mitigation works where a contract can't. Specs, context files and `AGENTS.md` don't depend on any one model, because they describe the intent and leave the implementation to whichever model runs. A team with strong specs can swap providers in a day. A team with only prompt history and model-specific workarounds is locked in without knowing it, until the deprecation email arrives.
 
@@ -288,7 +288,7 @@ The spec is the convergence layer. It makes the fusion team possible, the platfo
 
 A pull request merged at 03:14 on a Tuesday while the engineer who opened it was asleep in Berlin. The agent that wrote the code also reviewed the diff against the repository's conventions, confirmed that CI (continuous integration) passed and triggered the merge. By the time the engineer's alarm went off, the change was in production, and no human had touched it after the first prompt.
 
-I've heard versions of this story from several teams running GitHub Copilot Enterprise. The details differ, and the pattern repeats.
+This scene is a composite. I've heard versions of it from several teams running GitHub Copilot Enterprise, with different details and the same pattern.
 
 While the editor debate dominated developer Twitter, GitHub and GitLab moved into territory that used to belong to separate code review tools. They absorbed the whole category.
 
@@ -308,7 +308,7 @@ The [one-click fix for failing Actions](https://github.blog/changelog/2026-05-18
 
 In [GitLab 19.0](https://about.gitlab.com/blog/transform-mrs-to-automated-workflow) (May 2026), Developer Flow covers the whole MR lifecycle: it addresses reviewer feedback, resolves merge conflicts and splits oversized MRs. One-click rebase-and-merge is in beta. GitLab also runs [Claude Code as an external agent](https://about.gitlab.com/blog/claude-code-and-gitlab): you assign external agents to MRs with an `@mention`.
 
-Code review times rose [91% on teams using AI coding tools](https://about.gitlab.com/blog/agentic-code-reviews-with-flat-rate-pricing). AI made writing code faster and reviewing it slower, because reviewers got much more code and none of it came with the author's context. GitLab bets that the bottleneck disappears if the platform does the review.
+Code review times rose [91% on teams using AI coding tools](https://about.gitlab.com/blog/agentic-code-reviews-with-flat-rate-pricing), by GitLab's own figure, published alongside the product that answers it. AI made writing code faster and reviewing it slower, because reviewers got much more code and none of it came with the author's context. GitLab bets that the bottleneck disappears if the platform does the review.
 
 #### The dedicated review bots: squeezed but not dead
 
@@ -328,7 +328,7 @@ The SCM platforms keep absorbing review, CI and now the fix loop itself, and tha
 
 ### The Open-Source Undercurrent
 
-A developer in São Paulo opens a terminal, types `aider --model ollama/qwen2.5-coder:32b` and starts refactoring a payment integration. The model runs on their M4 Max MacBook Pro, with no API key, no vendor and no data leaving the machine, so the session costs nothing.
+Picture a developer in São Paulo who opens a terminal, types `aider --model ollama/qwen3-coder:30b` and starts refactoring a payment integration. The model runs on their M4 Max MacBook Pro, with no API key, no vendor and no data leaving the machine, so the session costs nothing.
 
 Their colleague on the same team uses Claude Code at $0.12 per task. Both are productive, and the market has room for both; that coexistence is the subject of this section.
 
@@ -351,13 +351,13 @@ One mid-sized refactor session costs about $8 in Claude Sonnet tokens across sev
 The self-hosted tools share one structural argument: if the model is a commodity, the value lies in the integration layer, and that layer shouldn't tie you to a vendor. Each tool below bets on a different place for the integration layer:
 
 - Cline (VS Code) brings a Cursor-style agent flow to a stock editor and works with any provider. Its bet: the IDE is the integration layer, and the model is swappable.
-- Continue is an open-source Copilot replacement with inline autocomplete and chat. With Qwen 2.5 Coder 32B on local Ollama it reaches roughly 60-70% of frontier quality at zero marginal cost. Its bet: autocomplete is a solved problem, and paying $20 a month for it is a market inefficiency.
+- Continue is an open-source Copilot replacement with inline autocomplete and chat. With Qwen3-Coder 30B on local Ollama it reaches roughly 60-70% of frontier quality at zero marginal cost. Its bet: autocomplete is a solved problem, and paying $20 a month for it is a market inefficiency.
 - Aider is terminal-native and disciplined about git: it makes atomic commits with generated messages. It's arguably the best tool for diff-aware refactors where you want every change in its own commit. Its bet: the integration layer is git itself, meaning diffs, commits and branches.
 - OpenHands (formerly OpenDevin) is a fully autonomous agent in a Docker sandbox with a browser, a terminal, an editor and a file system. It's built for long-running delegated tasks you walk away from. Its bet: the integration layer is the whole OS (operating system), and you need no editor.
 
 The four tools give four answers to the question of where the interface between human and agent lives: the editor, the prompt line, the git history or nowhere. This fragmentation is the market discovering that different workflows have different natural boundaries.
 
-Here is what each costs per month. Cline with the Claude Sonnet API costs $15-60 depending on usage, Aider with the Claude Sonnet API $10-40, and Continue with local Ollama (Qwen 32B) nothing. Cursor Pro costs $20 or more, and GitHub Copilot Business $10-19 per seat.
+Here is what each costs per month. Cline with the Claude Sonnet API costs $15-60 depending on usage, Aider with the Claude Sonnet API $10-40, and Continue with local Ollama (Qwen3-Coder 30B) nothing. Cursor Pro costs $20 or more, and GitHub Copilot Business $10-19 per seat.
 
 The self-hosted path isn't always cheaper in total, because setup and maintenance take engineering time. For teams with strict data residency requirements, air-gapped environments or specific compliance constraints, though, it's the only viable path. For individual developers who own the right hardware, it's often free.
 
@@ -365,18 +365,18 @@ The self-hosted path isn't always cheaper in total, because setup and maintenanc
 
 Most Western analyst reports leave these models out, but they show up more and more in self-hosted and cost-sensitive environments:
 
-- Qwen Code (Alibaba) is a terminal agent and VS Code extension that supports MCP. Qwen 2.5 Max scored 80.4% on [SWE-Bench Verified](https://swebench.com) (May 2026), which puts it level with frontier models.
-- Kimi k2 (Moonshot AI) scored 80.2% on SWE-Bench Verified and is available through an API.
-- [Trae](https://trae.ai) (ByteDance) is a VS Code fork built as an AI-native IDE. Its free tier includes access to GPT-4o and Claude 3.5 Sonnet, and its Builder mode generates multi-file apps from descriptions. It has real traction in markets where Cursor's $20 a month is a barrier.
-- DeepSeek V4 Pro scored 80.6% on SWE-Bench Verified and has open weights. It's the highest-performing open model for coding tasks, and for teams running self-hosted inference it's the one that closes the gap with Claude and GPT.
+- Qwen Code (Alibaba) is a terminal agent and VS Code extension that supports MCP. Alibaba reports 76.2% on [SWE-Bench Verified](https://swebench.com) for Qwen3.5-397B-A17B, close to frontier models.
+- Kimi K2.6 (Moonshot AI) scored 80.2% on SWE-Bench Verified by Moonshot's own report and is available through an API.
+- [Trae](https://trae.ai) (ByteDance) is a VS Code fork built as an AI-native IDE, and its Builder mode generates multi-file apps from descriptions. At launch its free tier included GPT-4o and Claude 3.5 Sonnet. Claude models were removed in 2025, and the model list changes often, so check it before you rely on a specific model. Trae has real traction in markets where Cursor's $20 a month is a barrier.
+- DeepSeek V4 Pro scored 80.6% on SWE-Bench Verified in DeepSeek's report of April 2026 and has open weights. It's the highest-performing open model for coding tasks, and for teams running self-hosted inference it's the one that closes the gap with Claude and GPT.
 
-So the claim that open source is significantly worse no longer holds for routine coding tasks. The remaining gap is in long-horizon reasoning across many files and in architectural coherence. For most day-to-day implementation work, open models are viable.
+All four scores come from the model vendors, and independent runs often land a few points lower. Even so, the claim that open source is significantly worse no longer holds for routine coding tasks. The remaining gap is in long-horizon reasoning across many files and in architectural coherence. For most day-to-day implementation work, open models are viable.
 
 For teams evaluating self-hosted paths, the compliance argument for local inference now has a quality argument behind it. You keep the capability and gain control; what you trade is a vendor invoice for a hardware budget.
 
 #### The VRAM tax
 
-Local AI inference has a physical constraint that vendor marketing plays down. Running Qwen 2.5 Coder 32B with useful quantization and a useful context window requires Apple Silicon with 64GB of unified memory or a high-end NVIDIA GPU with enough VRAM (video memory). That's a hardware procurement decision, and no software setting changes it.
+Local AI inference has a physical constraint that vendor marketing plays down. Running Qwen3-Coder 30B with useful quantization and a useful context window requires Apple Silicon with 64GB of unified memory or a high-end NVIDIA GPU with enough VRAM (video memory). That's a hardware procurement decision, and no software setting changes it.
 
 The self-hosted path turns build-versus-buy into a choice between capital and operating expenses (CAPEX and OPEX). The organization pays $20-60 per developer per month in SaaS fees and carries the compliance risk. Or it doubles the laptop budget for every developer who needs local inference, or the platform team builds and maintains an on-premise GPU cluster.
 
@@ -386,7 +386,7 @@ The open-source ecosystem isn't replacing commercial tools. It keeps commercial 
 
 ### The Platform Engineering Layer
 
-An engineer at Uber submits a migration PR that updates a deprecated API call across 47 services. They didn't write any of the code: they wrote one spec file describing the migration, pointed Minion at it and went to lunch. When they came back, the PR was open, CI was green, and the agent had left a summary of the decisions it made where the old API didn't map cleanly onto the new one. The engineer spent twenty minutes reviewing those decisions. A migration that would have taken the team two sprints took one afternoon.
+Picture a composite case built on how Uber describes Minion, not a migration Uber published. An engineer submits a migration PR that updates a deprecated API call across 47 services. They didn't write any of the code: they wrote one spec file describing the migration, pointed Minion at it and went to lunch. When they came back, the PR was open, CI was green, and the agent had left a summary of the decisions it made where the old API didn't map cleanly onto the new one. The engineer spent twenty minutes reviewing those decisions. A migration that would have taken the team two sprints took one afternoon.
 
 Individual developers barely see this trend, and it affects engineering organizations most. While the tool debates ran hot, large engineering organizations built something independent of them: a governed layer that every agent operates through, whichever tool it comes from.
 
@@ -430,7 +430,7 @@ So the more autonomous the agent, the more tokens it burns. A multi-step agentic
 
 Autonomous agents in multi-step loops raise the cost further. A review agent flags a test failure. A fix agent writes a patch and pushes it, CI runs, and another agent reads the failure log and retries with a different approach. The human who would have looked at the terminal and stopped the loop is asleep, and the agents keep going.
 
-Agentic loops without a circuit breaker, where agents retry, revert and try again indefinitely, have produced overnight CI bills of $10,000-50,000 at early adopters. Platform engineers at several companies report this, though no public case study names an organization yet. Only 27% of organizations set hard limits on token usage (CloudBees, 2026), and the rest find out from the invoice.
+Agentic loops without a circuit breaker, where agents retry, revert and try again indefinitely, have reportedly produced overnight CI bills of $10,000-50,000 at early adopters. I've heard this from platform engineers at several companies, but no public case study names an organization, so treat the range as hearsay until one does. Only 27% of organizations set hard limits on token usage (CloudBees, 2026), and the rest find out from the invoice.
 
 Platform teams are answering with a new infrastructure discipline. It sets hard token quotas at the organization level and CI minute budgets per agent. It detects loops automatically, halting when the same diff hash arrives twice, and escalates to a human when the retry count passes a threshold. Platform teams building the agent control plane have to treat FinOps (cloud cost management) as a first-class requirement from the start.
 
@@ -448,7 +448,7 @@ The three markets in Part I diverge by design, and the convergence layer in Part
 
 ### The Governance Gap
 
-A VP of Engineering sits in a board meeting. The CISO (chief information security officer) asks: "What percentage of our production code was written by AI, and how do we know it's correct?" The VP knows roughly the answer to the first question and has no answer to the second. Nobody has that answer yet, because the governance framework was built for human developers who make traceable decisions, and agents don't make them.
+Picture a VP of Engineering in a board meeting. The CISO (chief information security officer) asks: "What percentage of our production code was written by AI, and how do we know it's correct?" The VP knows roughly the answer to the first question and has no answer to the second. Nobody has that answer yet, because the governance framework was built for human developers who make traceable decisions, and agents don't make them.
 
 Vendor marketing promises faster delivery, happier developers and more output per engineer. The production data looks like this.
 
@@ -460,7 +460,7 @@ Vendor marketing promises faster delivery, happier developers and more output pe
 
 [43%](https://venturebeat.com/technology/43-of-ai-generated-code-changes-need-debugging-in-production-survey-finds) of AI-generated code changes need manual debugging in production even after passing QA (quality assurance) and staging (Lightrun, 200 SRE (site reliability engineering) and DevOps leaders, 2026).
 
-These numbers describe the baseline, and none of them is an edge case.
+Most of these numbers come from vendors that sell a fix for the problem they measure. Qodo sells AI code review and test generation, Lightrun sells production debugging, and Sonar (below) sells code quality tooling. That doesn't make the numbers wrong. But a company with a stake in the answer chose each sample and wrote each question, so read the figures as the direction of the problem and not its exact size. They all point the same way, and none of them describes an edge case.
 
 #### The verification bottleneck
 
@@ -478,9 +478,9 @@ False coverage is more dangerous than low coverage, because low coverage signals
 
 The tools that will command a premium in 2027 are those that break this tautology:
 
-- TDD-first agents: Qodo's Alpha Agent applies test-driven development (TDD). It generates tests from the spec *before* the implementation, then uses those tests as the acceptance gate for code generation, so the test and the code have different authors by design.
+- TDD-first agents: Qodo's Alpha Agent applies test-driven development (TDD). Qodo also ran the incident survey above, so weigh this example with that in mind. It generates tests from the spec *before* the implementation, then uses those tests as the acceptance gate for code generation, so the test and the code have different authors by design.
 - Formal property-based verification: Hypothesis (Python), fast-check (TypeScript) and jqwik (Java) generate thousands of random inputs against declared invariants, with no LLM heuristics involved. If the property holds, it holds however the code was written.
-- Mutation testing: Stryker, pitest and mutmut inject faults into the code and check whether the tests catch them. A suite with 90% coverage and a 40% mutation score misses most of the faults it should catch. Mutation score is the only metric that measures whether tests verify behavior.
+- Mutation testing: Stryker, pitest and mutmut inject faults into the code and check whether the tests catch them. A suite with 90% coverage and a 40% mutation score misses most of the faults it should catch. Mutation score measures directly whether the existing tests catch faults, which coverage can't show. Property-based tests answer a different question, whether the invariants hold, so the two complement each other.
 - Multi-model review: a different model, or a model from a different provider, reviews the code one model wrote; for example, Claude writes and GPT reviews. Their blind spots don't overlap perfectly, so this improves on self-review structurally, though it guarantees nothing.
 
 #### The technical debt no one wrote
@@ -507,7 +507,7 @@ The governance gap has a legal counterpart, and the legal counterpart has deadli
 
 ### The Legal Layer
 
-An engineering team in Amsterdam uses Cursor with individual-tier accounts on a codebase that processes EU customer data. Test fixtures contain real email addresses from staging. Every keystroke sends code context, including those emails, to Anthropic's servers in the US, and no DPA (data processing agreement) covers this data flow. The team is violating the GDPR (General Data Protection Regulation) in real time, and nobody on it has noticed.
+Picture an engineering team in Amsterdam that uses Cursor with individual-tier accounts on a codebase that processes EU customer data. Test fixtures contain real email addresses from staging. Every keystroke sends code context, including those emails, to Cursor's servers, which pass it on to model providers such as Anthropic and OpenAI in the US. Nobody turned on Privacy Mode, which is on by default only for Enterprise teams and stops Cursor and its providers from storing or training on the code. Even with Privacy Mode on, the data still leaves the EU, and no DPA (data processing agreement) covers this data flow. The team is violating the GDPR (General Data Protection Regulation) in real time, and nobody on it has noticed.
 
 The cause isn't malice but a gap between how engineers choose tools and how compliance works.
 
@@ -548,7 +548,7 @@ For engineering organizations with development in Amsterdam, Berlin, Warsaw or S
 
 *Doe v. GitHub* (filed 2022) is a class action against GitHub, Microsoft and OpenAI. The court dismissed 20 of 22 claims, including the one under Section 1202 of the DMCA (Digital Millennium Copyright Act). Two claims survive, open-source license violation and breach of contract, and the case is active in 2026. The surviving claims don't require proving exact reproduction; they require showing that license terms weren't followed.
 
-The real exposure lies in what the model outputs, more than in what it was trained on. Audit firms report that 30-40% of Copilot-generated code samples contain licensing irregularities. GPL-licensed code in a proprietary product can trigger copyleft obligations across the entire codebase.
+The real exposure lies in what the model outputs, more than in what it was trained on. I've seen claims that 30-40% of Copilot-generated code samples contain licensing irregularities, but I found no published audit behind the figure, so treat it as unverified. GPL-licensed code in a proprietary product can trigger copyleft obligations across the entire codebase.
 
 Vendors indemnify their customers against IP (intellectual property) claims as follows:
 
@@ -598,7 +598,7 @@ A fourth scenario sits outside the A/B/C frame. A, B and C are market outcomes, 
 
 AI inference moves to the edge: Apple Silicon with 128GB or more of unified memory, dedicated NPUs (neural processing units) and next-generation laptop GPUs. The model runs where the developer sits, with no API call, no vendor and no network latency.
 
-Apple's M4 Ultra already ships with 192GB of unified memory. If Apple keeps its pace, the next generation will likely reach 256GB. That's enough to run a 70B-parameter model at full precision with a 200,000-token context window, and at that point the VRAM tax disappears for developers whose employers buy top-spec hardware.
+The memory already exists. The Mac Studio with M3 Ultra shipped in March 2025 with up to 512GB of unified memory, and [Apple has since cut the top option to 256GB](https://9to5mac.com/2026/03/05/apple-no-longer-offers-m3-ultra-mac-studio-with-original-highest-ram-configuration/). 256GB is enough to run a 70B-parameter model at full precision with a 200,000-token context window. What keeps the VRAM tax in place is price: a 256GB configuration costs more than the $5,000 line in the signal below, so only developers whose employers buy top-spec hardware escape it today.
 
 If frontier-competitive inference becomes a one-time hardware purchase amortized over three years, the SaaS subscription model loses pricing power. The compliance argument becomes trivial, because no data leaves the machine. Governance gets simpler, because the organization controls the model, the weights and the guardrails.
 
@@ -661,7 +661,11 @@ An engineer who keeps asking that question is worth more than any tool, because 
 - GitHub "Fix with Copilot" (May 2026): [github.blog/changelog](https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent/)
 - GitHub Copilot Code Review billing moves to Actions minutes (2026-06-01): [github.blog/changelog](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/)
 - GitHub one-click fix for failing Actions (May 2026): [github.blog/changelog](https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent/)
-- GitHub Spec Kit: [arxiv.org/abs/2604.05278](https://arxiv.org/abs/2604.05278)
+- GitHub Spec Kit: [github.com/github/spec-kit](https://github.com/github/spec-kit)
+- Anthropic model deprecations (Claude 3 Opus retired 2026-01-05): [platform.claude.com](https://platform.claude.com/docs/en/about-claude/model-deprecations)
+- Google PaLM API deprecation (August 2024): [ai.google.dev](https://ai.google.dev/palm_docs/deprecation)
+- Mac Studio M3 Ultra memory options (9to5Mac, March 2026): [9to5mac.com](https://9to5mac.com/2026/03/05/apple-no-longer-offers-m3-ultra-mac-studio-with-original-highest-ram-configuration/)
+- Cursor data use and Privacy Mode: [cursor.com/data-use](https://cursor.com/data-use)
 - GitLab Code Review Flow ($0.25 per MR, March 2026): [about.gitlab.com/blog](https://about.gitlab.com/blog/agentic-code-reviews-with-flat-rate-pricing)
 - GitLab 19.0 Developer Flow (May 2026): [about.gitlab.com/blog](https://about.gitlab.com/blog/transform-mrs-to-automated-workflow)
 - Claude Code as an external agent in GitLab: [about.gitlab.com/blog](https://about.gitlab.com/blog/claude-code-and-gitlab)
